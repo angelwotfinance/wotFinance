@@ -4,7 +4,7 @@
 const content = {
     // Configuración general
     brand: {
-        name: "WOT",
+        name: "WOTFinance",
         tagline: "Win Over Time"
     },
 
