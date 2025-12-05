@@ -1,0 +1,94 @@
+.theme-toggle {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid var(--toggle-border, rgba(255, 255, 255, 0.3));
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    padding: 0;
+    overflow: hidden;
+}
+
+.theme-toggle:hover {
+    border-color: var(--toggle-border-hover, rgba(255, 255, 255, 0.5));
+    transform: scale(1.05);
+}
+
+.theme-toggle-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: var(--toggle-bg, rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius-full);
+}
+
+.theme-toggle-thumb {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    transition: transform var(--transition-normal);
+    left: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Posición del thumb cuando está en modo oscuro */
+[data-theme="dark"] .theme-toggle-thumb {
+    transform: translateX(30px);
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+/* Estilos para modo oscuro */
+[data-theme="dark"] .theme-toggle {
+    --toggle-border: rgba(100, 150, 255, 0.4);
+    --toggle-border-hover: rgba(100, 150, 255, 0.6);
+    --toggle-bg: rgba(100, 150, 255, 0.1);
+}
+
+/* Estilos para modo claro */
+[data-theme="light"] .theme-toggle {
+    --toggle-border: rgba(102, 126, 234, 0.3);
+    --toggle-border-hover: rgba(102, 126, 234, 0.5);
+    --toggle-bg: rgba(102, 126, 234, 0.1);
+}
+
+/* Animación al hacer hover */
+.theme-toggle:active .theme-toggle-thumb {
+    transform: scale(0.9);
+}
+
+[data-theme="dark"] .theme-toggle:active .theme-toggle-thumb {
+    transform: translateX(30px) scale(0.9);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .theme-toggle {
+        width: 50px;
+        height: 26px;
+    }
+
+    .theme-toggle-thumb {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    [data-theme="dark"] .theme-toggle-thumb {
+        transform: translateX(24px);
+    }
+
+    [data-theme="dark"] .theme-toggle:active .theme-toggle-thumb {
+        transform: translateX(24px) scale(0.9);
+    }
+}

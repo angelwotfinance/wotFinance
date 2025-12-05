@@ -1,0 +1,100 @@
+.testimonials {
+    background: var(--bg-secondary);
+    overflow: hidden;
+}
+
+.testimonials-track {
+    margin-top: var(--space-12);
+    position: relative;
+}
+
+.testimonials-scroll {
+    display: flex;
+    gap: var(--space-6);
+    animation: scroll 40s linear infinite;
+    width: max-content;
+}
+
+.testimonials-scroll:hover {
+    animation-play-state: paused;
+}
+
+.testimonial-card {
+    background: var(--card-bg);
+    border-radius: var(--radius-xl);
+    padding: var(--space-8);
+    width: 400px;
+    flex-shrink: 0;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+    border: 1px solid var(--card-border);
+}
+
+.testimonial-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+    border-color: var(--primary-color);
+}
+
+.testimonial-quote {
+    font-size: 4rem;
+    font-weight: 900;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    margin-bottom: var(--space-4);
+}
+
+.testimonial-text {
+    font-size: var(--font-size-base);
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--space-6);
+    min-height: 120px;
+}
+
+.testimonial-author {
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+}
+
+.author-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-full);
+    background: var(--primary-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: var(--font-size-xl);
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.author-location {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+    .testimonial-card {
+        width: 300px;
+    }
+
+    .testimonials-scroll {
+        animation: scroll 30s linear infinite;
+    }
+}
