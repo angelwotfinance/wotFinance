@@ -146,12 +146,12 @@ const content = {
                 specialty: "Experiencia en desarrollo de software y seguridad de la información",
                 image: "/team/ANGEL-ARELLANO-GR.jpg"
             },
-            {
+            /*{
                 name: "Francisco Carrión Cárdenas",
                 role: "Especialista en Inversiones en Coches Clásicos",
                 specialty: "Experiencia en inversiones en coches clásicos y automóviles de lujo",
                 image: "/team/FRANCISCO-CARRION-GR.jpg"
-            }
+            }*/
         ]
     },
 
