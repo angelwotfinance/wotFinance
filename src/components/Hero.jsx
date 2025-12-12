@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import content from '../config/content';
+import TasadorModal from './TasadorModal';
 import './Hero.css';
 
 const Hero = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
     return (
         <section id="inicio" className="hero">
             <div className="hero-background">
@@ -28,7 +30,10 @@ const Hero = () => {
                         <button className="btn btn-primary btn-lg">
                             {content.hero.buttons.primary}
                         </button>
-                        <button className="btn btn-secondary btn-lg">
+                        <button
+                            className="btn btn-secondary btn-lg"
+                            onClick={() => setIsModalOpen(true)}
+                        >
                             {content.hero.buttons.secondary}
                         </button>
                     </div>
@@ -46,6 +51,11 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
+
+            <TasadorModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+            />
         </section>
     );
 };

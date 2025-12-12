@@ -33,7 +33,7 @@ const content = {
         subtitle: "WOT proporciona asesoramiento de inversión en activos refugio o alternativos vinculados al lujo: vinos finos, whiskies raros, coches clásicos, relojes exclusivos y joyas antiguas. Abrimos las puertas a particulares al mundo de la inversión en estos objetos especiales con rentabilidad probada.",
         buttons: {
             primary: "Comenzar Ahora",
-            secondary: "Ver Catálogo"
+            secondary: "Tasador IA"
         },
         trust: {
             rating: "Calificación 4.9/5",
