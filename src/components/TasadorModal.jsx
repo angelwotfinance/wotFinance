@@ -29,7 +29,11 @@ const TasadorModal = ({ isOpen, onClose }) => {
         setTasacion('');
 
         try {
-            const response = await fetch('https://tasador-service-303276520902.europe-west1.run.app/api/tasacion', {
+            const apiUrl = import.meta.env.VITE_API_URL;
+            if (!apiUrl) {
+                throw new Error('API URL not configured');
+            }
+            const response = await fetch(apiUrl, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
