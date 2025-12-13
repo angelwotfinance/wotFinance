@@ -72,7 +72,7 @@ const TasadorModal = ({ isOpen, onClose }) => {
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <div className="modal-header">
                     <h2 className="modal-title">
-                        <span className="modal-icon">🤖</span>
+                        <img src="/logo-wot.png" alt="WOT Finance" className="modal-icon-img" />
                         Tasador IA
                     </h2>
                     <button className="modal-close" onClick={handleClose}>
@@ -138,7 +138,10 @@ const TasadorModal = ({ isOpen, onClose }) => {
                                     Analizando...
                                 </>
                             ) : (
-                                '✨ Obtener Tasación'
+                                <>
+                                    <img src="/logo-wot.png" alt="" className="btn-icon-img" />
+                                    Obtener Tasación
+                                </>
                             )}
                         </button>
                     </form>

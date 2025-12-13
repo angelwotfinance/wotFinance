@@ -14,6 +14,7 @@ const Hero = () => {
             <div className="container">
                 <div className="hero-content">
                     <div className="hero-badge fade-in">
+                        <img src="/logo-wot.png" alt="" className="hero-badge-icon" />
                         {content.hero.badge}
                     </div>
 

@@ -69,8 +69,10 @@
     margin: 0;
 }
 
-.modal-icon {
-    font-size: 2rem;
+.modal-icon-img {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
 }
 
 .modal-close {
@@ -176,7 +178,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.75rem;
+}
+
+.btn-icon-img {
+    height: 24px;
+    width: auto;
+    object-fit: contain;
+    /* Removed filter to show original red brand color */
 }
 
 .btn-submit:disabled {

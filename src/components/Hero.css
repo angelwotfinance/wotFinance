@@ -16,6 +16,8 @@
     z-index: -1;
 }
 
+
+
 .hero-gradient {
     position: absolute;
     top: -50%;
@@ -49,6 +51,12 @@
     color: var(--primary-color);
     margin-bottom: var(--space-6);
     animation-delay: 0.1s;
+}
+
+.hero-badge-icon {
+    height: 20px;
+    width: auto;
+    object-fit: contain;
 }
 
 .hero-title {

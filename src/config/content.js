@@ -25,7 +25,7 @@ const content = {
 
     // Hero Section
     hero: {
-        badge: "✨ Inversiones en activos tangibles de lujo",
+        badge: "Inversiones en activos tangibles de lujo",
         title: {
             main: "Inversiones exclusivas en",
             highlight: "vinos, whiskies, coches clásicos y joyas"
