@@ -55,19 +55,12 @@
     transform: scaleX(1);
 }
 
-.step-icon {
-    font-size: 3rem;
-    margin-bottom: var(--space-4);
-}
-
-.step-number {
-    font-size: var(--font-size-4xl);
-    font-weight: 900;
-    background: var(--primary-gradient);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: var(--space-2);
+.step-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: var(--space-6);
+    border-radius: var(--radius-lg);
 }
 
 .step-title {

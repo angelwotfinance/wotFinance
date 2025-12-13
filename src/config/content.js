@@ -51,19 +51,22 @@ const content = {
                 number: "01",
                 title: "Selecciona tu activo",
                 description: "Explora nuestra colección curada de vinos premium, coches clásicos certificados y joyas antiguas autenticadas. Cada pieza ha sido verificada por expertos.",
-                icon: "🎯"
+                icon: "🎯",
+                image: "/wot-selecciona-activo.png"
             },
             {
                 number: "02",
                 title: "Nosotros gestionamos todo",
                 description: "Nos encargamos del almacenamiento en condiciones óptimas, seguro, mantenimiento y toda la logística. Tu inversión está en las mejores manos.",
-                icon: "⚡"
+                icon: "⚡",
+                image: "/nosotros-gestionamos.png"
             },
             {
                 number: "03",
                 title: "Obtén rentabilidad",
                 description: "Sigue la apreciación de tu activo en tiempo real. Vende cuando quieras o disfruta de tu colección. Liquidez y flexibilidad garantizadas.",
-                icon: "📈"
+                icon: "📈",
+                image: "/obten-rentabilidad.png"
             }
         ],
         cta: "Comenzar Ahora"

@@ -14,8 +14,7 @@ const HowItWorks = () => {
                 <div className="steps-grid">
                     {content.howItWorks.steps.map((step, index) => (
                         <div key={index} className="step-card fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
-                            <div className="step-icon">{step.icon}</div>
-                            <div className="step-number">{step.number}</div>
+                            <img src={step.image} alt={step.title} className="step-image" />
                             <h3 className="step-title">{step.title}</h3>
                             <p className="step-description">{step.description}</p>
                         </div>
