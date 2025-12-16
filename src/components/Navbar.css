@@ -105,6 +105,13 @@
     transition: all var(--transition-fast);
 }
 
+/* Mobile actions - hidden on desktop */
+.mobile-actions {
+    display: none;
+    align-items: center;
+    gap: var(--space-3);
+}
+
 @media (max-width: 768px) {
     .navbar-menu {
         position: fixed;
@@ -126,6 +133,10 @@
 
     .navbar-actions {
         display: none;
+    }
+
+    .mobile-actions {
+        display: flex;
     }
 
     .mobile-menu-btn {

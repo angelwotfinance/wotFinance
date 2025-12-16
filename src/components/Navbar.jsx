@@ -48,14 +48,18 @@ const Navbar = () => {
                         <button className="btn btn-primary">{content.navbar.buttons.getStarted}</button>
                     </div>
 
-                    <button
-                        className="mobile-menu-btn"
-                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    >
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+                    <div className="mobile-actions">
+                        <LanguageSelector />
+                        <ThemeToggle />
+                        <button
+                            className="mobile-menu-btn"
+                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        >
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </nav>
