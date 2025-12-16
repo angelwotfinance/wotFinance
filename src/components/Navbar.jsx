@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import content from '../config/content';
+import { useLanguage } from '../context/LanguageContext';
 import ThemeToggle from './ThemeToggle';
+import LanguageSelector from './LanguageSelector';
 import './Navbar.css';
 
 const Navbar = () => {
+    const { content } = useLanguage();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -40,6 +42,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="navbar-actions">
+                        <LanguageSelector />
                         <ThemeToggle />
                         <button className="btn-login">{content.navbar.buttons.login}</button>
                         <button className="btn btn-primary">{content.navbar.buttons.getStarted}</button>
@@ -60,4 +63,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

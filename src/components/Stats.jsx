@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import content from '../config/content';
+import { useLanguage } from '../context/LanguageContext';
 import './Stats.css';
 
 const Stats = () => {
+    const { content } = useLanguage();
     const [counters, setCounters] = useState({});
 
     useEffect(() => {

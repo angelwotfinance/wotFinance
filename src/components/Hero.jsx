@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import content from '../config/content';
+import { useLanguage } from '../context/LanguageContext';
 import TasadorModal from './TasadorModal';
 import './Hero.css';
 
 const Hero = () => {
+    const { content } = useLanguage();
     const [isModalOpen, setIsModalOpen] = useState(false);
     return (
         <section id="inicio" className="hero">

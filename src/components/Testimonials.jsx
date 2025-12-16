@@ -1,8 +1,9 @@
 import React from 'react';
-import content from '../config/content';
+import { useLanguage } from '../context/LanguageContext';
 import './Testimonials.css';
 
 const Testimonials = () => {
+    const { content } = useLanguage();
     // Duplicate testimonials for infinite scroll effect
     const allTestimonials = [...content.testimonials.items, ...content.testimonials.items];
 

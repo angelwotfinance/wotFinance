@@ -1,8 +1,9 @@
 import React from 'react';
-import content from '../config/content';
+import { useLanguage } from '../context/LanguageContext';
 import './Benefits.css';
 
 const Benefits = () => {
+    const { content } = useLanguage();
     return (
         <section id="beneficios" className="benefits">
             <div className="container">
