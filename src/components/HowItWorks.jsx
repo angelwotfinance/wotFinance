@@ -1,9 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import './HowItWorks.css';
 
 const HowItWorks = () => {
     const { content } = useLanguage();
+    const navigate = useNavigate();
     return (
         <section id="como-funciona" className="how-it-works">
             <div className="container">
@@ -23,7 +25,7 @@ const HowItWorks = () => {
                 </div>
 
                 <div className="cta-section">
-                    <button className="btn btn-primary btn-lg">{content.howItWorks.cta}</button>
+                    <button className="btn btn-primary btn-lg" onClick={() => navigate('/comenzar')}>{content.howItWorks.cta}</button>
                 </div>
             </div>
         </section>

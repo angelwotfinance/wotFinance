@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import TasadorModal from './TasadorModal';
 import './Hero.css';
 
 const Hero = () => {
     const { content } = useLanguage();
+    const navigate = useNavigate();
     const [isModalOpen, setIsModalOpen] = useState(false);
     return (
         <section id="inicio" className="hero">
@@ -29,7 +31,10 @@ const Hero = () => {
                     </p>
 
                     <div className="hero-buttons fade-in-up">
-                        <button className="btn btn-primary btn-lg">
+                        <button
+                            className="btn btn-primary btn-lg"
+                            onClick={() => navigate('/comenzar')}
+                        >
                             {content.hero.buttons.primary}
                         </button>
                         <button

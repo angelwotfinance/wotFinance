@@ -216,6 +216,209 @@ const fr = {
             cookies: "Cookies"
         },
         copyright: "Tous droits réservés."
+    },
+
+    // Test Selection Page
+    testSelection: {
+        title: "Sélectionnez votre test",
+        subtitle: "Choisissez le test que vous devez passer pour continuer",
+        convenienceTest: {
+            title: "Passer le test d'adéquation",
+            description: "Évaluez vos connaissances et votre expérience pour les investissements non conseillés",
+            badge: "Obligatoire"
+        },
+        suitabilityTest: {
+            title: "Test d'appropriation",
+            description: "Pour les services de conseil personnalisé",
+            badge: "Conseil"
+        }
+    },
+
+    // Convenience Test
+    convenienceTest: {
+        title: "Test d'Adéquation",
+        subtitle: "(Applicable à la commercialisation simple ou à la souscription non conseillée)",
+        objectiveTitle: "Objectif",
+        objective: "Évaluer si le client possède les connaissances et l'expérience suffisantes pour comprendre les risques des produits financiers proposés en dehors du cadre du conseil personnalisé.",
+        blockLabel: "Bloc",
+        yes: "Oui",
+        no: "Non",
+        blocks: {
+            financial: "Connaissances Financières Générales",
+            experience: "Expérience en Investissement",
+            risks: "Compréhension des Produits et des Risques",
+            complexity: "Niveau de Complexité"
+        },
+        questions: {
+            1: "Avez-vous une formation académique ou professionnelle en finance, économie ou investissement ?",
+            2: "Connaissez-vous les concepts de rentabilité, risque et diversification d'un portefeuille d'investissement ?",
+            3: "Savez-vous que la valeur d'un investissement peut diminuer et générer des pertes partielles ou totales ?",
+            4: "Avez-vous déjà investi dans des actifs réels ou tangibles (vin, art, montres, bijoux, voitures classiques, etc.) ?",
+            5: "Pendant combien de temps avez-vous maintenu des investissements dans ce type de produits ?",
+            6: "À quelle fréquence avez-vous effectué des opérations d'investissement au cours des 3 dernières années ?",
+            7: "Quel a été le montant moyen des investissements réalisés ?",
+            8: "Connaissez-vous les risques d'illiquidité et de volatilité des actifs tangibles non cotés ?",
+            9: "Comprenez-vous que ces actifs peuvent manquer d'un marché secondaire immédiat ?",
+            10: "Comprenez-vous les coûts associés à leur entretien, conservation et assurance ?",
+            11: "Êtes-vous conscient que les prix peuvent varier en fonction de l'état physique, de l'authenticité ou de la demande de l'actif ?",
+            12: "Comprenez-vous la documentation contractuelle associée à la propriété et à la conservation d'un actif tangible ?",
+            13: "Connaissez-vous la différence entre investissement direct, fractionné ou conseillé ?",
+            14: "Savez-vous qu'il n'y a pas de rendement minimum garanti sur ces produits ?"
+        },
+        options: {
+            less1year: "<1 an",
+            "1to3years": "1–3 ans",
+            more3years: ">3 ans",
+            none: "Aucune",
+            "1to5": "1–5",
+            more5: ">5",
+            less10k: "<10 000 €",
+            "10kto50k": "10 000–50 000 €",
+            more50k: ">50 000 €"
+        },
+        scoreLabel: "Score",
+        results: {
+            apt: {
+                title: "ADÉQUAT",
+                message: "Vous pouvez souscrire des produits non conseillés",
+                action: "Continuer la souscription"
+            },
+            conditional: {
+                title: "ADÉQUAT SOUS CONDITIONS",
+                message: "Souscription autorisée avec avertissement sur les risques",
+                action: "Continuer avec avertissements"
+            },
+            notapt: {
+                title: "NON ADÉQUAT",
+                message: "Conseil obligatoire requis ou refus de souscription",
+                action: "Demander un conseil"
+            }
+        },
+        warning: {
+            title: "Avertissement",
+            message: "En cas de résultat \"Non Adéquat\", un avertissement automatique sera généré et la souscription sans conseil sera bloquée, conformément à l'article 62 du Règlement Délégué (UE) 2017/565."
+        },
+        errors: {
+            incomplete: "Veuillez répondre à toutes les questions avant de continuer."
+        },
+        buttons: {
+            submit: "Soumettre le test",
+            retry: "Refaire le test",
+            back: "Retour"
+        }
+    },
+
+    // Suitability Test
+    suitabilityTest: {
+        title: "Test d'Appropriation",
+        subtitle: "(Applicable aux services de conseil ou de recommandation personnalisée)",
+        objectiveTitle: "Objectif",
+        objective: "Évaluer les connaissances, l'expérience, la situation financière, les objectifs et la tolérance au risque du client pour recommander des produits adaptés à son profil.",
+        blockLabel: "Bloc",
+        yes: "Oui",
+        no: "Non",
+        blocks: {
+            knowledge: "Connaissances et Expérience",
+            financial: "Situation Financière",
+            objectives: "Objectifs d'Investissement",
+            risk: "Capacité et Tolérance au Risque"
+        },
+        questions: {
+            1: "Avez-vous une formation ou une expérience professionnelle liée aux investissements ou à la gestion de patrimoine ?",
+            2: "Avez-vous déjà investi dans des actifs tangibles ou alternatifs ?",
+            3: "Pendant combien de temps avez-vous maintenu des investissements de ce type ?",
+            4: "Connaissez-vous les principaux risques des actifs tangibles (valorisation, conservation, liquidité) ?",
+            5: "Savez-vous comment la valeur d'un actif tangible est déterminée (expertises, indices, comparables) ?",
+            6: "Revenu annuel approximatif",
+            7: "Patrimoine net approximatif",
+            8: "Pourcentage du patrimoine que vous consacrerez à cet investissement",
+            9: "Niveau d'endettement actuel",
+            10: "Quel est l'objectif principal de l'investissement ?",
+            11: "Horizon temporel d'investissement",
+            12: "Avez-vous besoin d'une liquidité immédiate ou pouvez-vous maintenir l'investissement à long terme ?",
+            13: "Quelle est votre attente de rendement annuel ?",
+            14: "Quel pourcentage de votre investissement pourriez-vous perdre sans compromettre votre stabilité financière ?",
+            15: "Comment réagiriez-vous à une perte temporaire de 10 % de la valeur de votre investissement ?",
+            16: "Laquelle des affirmations suivantes reflète le mieux votre profil ?"
+        },
+        options: {
+            less1year: "<1 an",
+            "1to3years": "1–3 ans",
+            more3years: ">3 ans",
+            incomeLow: "<40 000 €",
+            incomeMedium: "40 000–100 000 €",
+            incomeHigh: ">100 000 €",
+            wealthLow: "<100 000 €",
+            wealthMedium: "100 000–500 000 €",
+            wealthHigh: ">500 000 €",
+            allocationLow: "<10 %",
+            allocationMedium: "10–30 %",
+            allocationHigh: ">30 %",
+            debtLow: "Faible (<20 %)",
+            debtMedium: "Moyen (20–50 %)",
+            debtHigh: "Élevé (>50 %)",
+            goalPreserve: "Préserver le capital",
+            goalDiversify: "Diversifier",
+            goalReturns: "Rentabilité",
+            horizonShort: "<1 an",
+            horizonMedium: "1–3 ans",
+            horizonLong: ">3 ans",
+            liquidityImmediate: "J'ai besoin de liquidités",
+            liquidityMaintain: "Je peux maintenir",
+            liquidityLongterm: "Long terme",
+            returnLow: "<3 %",
+            returnMedium: "3–6 %",
+            returnHigh: ">6 %",
+            lossLow: "<10 %",
+            lossMedium: "10–25 %",
+            lossHigh: ">25 %",
+            reactionWithdraw: "Retirer immédiatement",
+            reactionMaintain: "Maintenir",
+            reactionIncrease: "Augmenter l'investissement",
+            profileConservative: "Je préfère la sécurité et la liquidité même si je gagne moins",
+            profileBalanced: "Je recherche une rentabilité équilibrée",
+            profileAggressive: "J'accepte des risques élevés pour une rentabilité supérieure"
+        },
+        resultTitle: "Profil d'Investisseur",
+        scoreLabel: "points",
+        profiles: {
+            conservative: {
+                title: "Conservateur",
+                description: "Priorise la sécurité et la liquidité, faible tolérance aux pertes"
+            },
+            moderate: {
+                title: "Modéré",
+                description: "Accepte une certaine volatilité pour des rendements supérieurs"
+            },
+            dynamic: {
+                title: "Dynamique",
+                description: "Prêt à prendre des risques intermédiaires pour la diversification"
+            },
+            aggressive: {
+                title: "Agressif",
+                description: "Haute tolérance au risque et horizon à long terme"
+            },
+            veryAggressive: {
+                title: "Très Agressif",
+                description: "Recherche des rendements élevés, accepte la volatilité et une liquidité limitée"
+            }
+        },
+        validity: {
+            title: "Validité",
+            message: "Ce test est valable 24 mois, sauf si votre situation change."
+        },
+        info: {
+            title: "Information",
+            message: "Toutes les opérations doivent être conformes à votre profil de risque assigné. Si vous souhaitez investir hors de votre profil, une procédure d'autorisation renforcée s'appliquera."
+        },
+        errors: {
+            incomplete: "Veuillez répondre à toutes les questions avant de continuer."
+        },
+        buttons: {
+            submit: "Soumettre le test",
+            retry: "Refaire le test",
+            back: "Retour"
+        }
     }
 };
 

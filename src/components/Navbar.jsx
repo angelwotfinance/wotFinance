@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import ThemeToggle from './ThemeToggle';
 import LanguageSelector from './LanguageSelector';
@@ -6,6 +7,8 @@ import './Navbar.css';
 
 const Navbar = () => {
     const { content } = useLanguage();
+    const navigate = useNavigate();
+    const location = useLocation();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -17,11 +20,30 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    // Handle hash-based navigation after route change
+    useEffect(() => {
+        if (location.hash && location.pathname === '/') {
+            const id = location.hash.replace('#', '');
+            setTimeout(() => {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
+        }
+    }, [location]);
+
     const scrollToSection = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-            setIsMobileMenuOpen(false);
+        setIsMobileMenuOpen(false);
+
+        // If not on landing page, navigate there first with hash
+        if (location.pathname !== '/') {
+            navigate('/#' + id);
+        } else {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
         }
     };
 
@@ -29,7 +51,7 @@ const Navbar = () => {
         <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
             <div className="container">
                 <div className="navbar-content">
-                    <div className="navbar-logo">
+                    <div className="navbar-logo" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
                         <span className="gradient-text">{content.brand.name}</span>
                     </div>
 
@@ -45,7 +67,7 @@ const Navbar = () => {
                         <LanguageSelector />
                         <ThemeToggle />
                         <button className="btn-login">{content.navbar.buttons.login}</button>
-                        <button className="btn btn-primary">{content.navbar.buttons.getStarted}</button>
+                        <button className="btn btn-primary" onClick={() => navigate('/comenzar')}>{content.navbar.buttons.getStarted}</button>
                     </div>
 
                     <div className="mobile-actions">

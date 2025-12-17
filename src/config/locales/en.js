@@ -216,6 +216,209 @@ const en = {
             cookies: "Cookies"
         },
         copyright: "All rights reserved."
+    },
+
+    // Test Selection Page
+    testSelection: {
+        title: "Select Your Test",
+        subtitle: "Choose the test you need to complete to continue",
+        convenienceTest: {
+            title: "Take Convenience Test",
+            description: "Assess your knowledge and experience for non-advised investments",
+            badge: "Required"
+        },
+        suitabilityTest: {
+            title: "Suitability Test",
+            description: "For personalized advisory services",
+            badge: "Advisory"
+        }
+    },
+
+    // Convenience Test
+    convenienceTest: {
+        title: "Convenience Test",
+        subtitle: "(Applicable to simple commercialization or non-advised contracting)",
+        objectiveTitle: "Objective",
+        objective: "To assess whether the client has sufficient knowledge and experience to understand the risks of financial products offered outside the framework of personalized advice.",
+        blockLabel: "Block",
+        yes: "Yes",
+        no: "No",
+        blocks: {
+            financial: "General Financial Knowledge",
+            experience: "Investment Experience",
+            risks: "Product and Risk Understanding",
+            complexity: "Complexity Level"
+        },
+        questions: {
+            1: "Do you have academic or professional training in finance, economics or investment?",
+            2: "Are you familiar with the concepts of profitability, risk and diversification of an investment portfolio?",
+            3: "Do you know that the value of an investment can decrease and generate partial or total losses?",
+            4: "Have you previously invested in real or tangible assets (wine, art, watches, jewelry, classic cars, etc.)?",
+            5: "How long have you maintained investments in this type of products?",
+            6: "How often have you made investment transactions in the last 3 years?",
+            7: "What has been the average amount of investments made?",
+            8: "Are you aware of the illiquidity and volatility risks of unlisted tangible assets?",
+            9: "Do you understand that these assets may lack an immediate secondary market?",
+            10: "Do you understand the costs associated with their maintenance, custody and insurance?",
+            11: "Are you aware that prices may vary depending on the physical condition, authenticity or demand of the asset?",
+            12: "Do you understand the contractual documentation associated with the ownership and conservation of a tangible asset?",
+            13: "Do you know the difference between direct, fractional or advised investment?",
+            14: "Do you know that there is no guaranteed minimum return on these products?"
+        },
+        options: {
+            less1year: "<1 year",
+            "1to3years": "1–3 years",
+            more3years: ">3 years",
+            none: "None",
+            "1to5": "1–5",
+            more5: ">5",
+            less10k: "<€10,000",
+            "10kto50k": "€10,000–50,000",
+            more50k: ">€50,000"
+        },
+        scoreLabel: "Score",
+        results: {
+            apt: {
+                title: "SUITABLE",
+                message: "You can purchase non-advised products",
+                action: "Continue with contracting"
+            },
+            conditional: {
+                title: "CONDITIONALLY SUITABLE",
+                message: "Contracting permitted with risk warning",
+                action: "Continue with warnings"
+            },
+            notapt: {
+                title: "NOT SUITABLE",
+                message: "Mandatory advice required or contracting denial",
+                action: "Request advisory"
+            }
+        },
+        warning: {
+            title: "Warning",
+            message: "In case of a \"Not Suitable\" result, an automatic warning will be generated and contracting without advice will be blocked, in accordance with Article 62 of Delegated Regulation (EU) 2017/565."
+        },
+        errors: {
+            incomplete: "Please answer all questions before continuing."
+        },
+        buttons: {
+            submit: "Submit Test",
+            retry: "Retry Test",
+            back: "Back"
+        }
+    },
+
+    // Suitability Test
+    suitabilityTest: {
+        title: "Suitability Test",
+        subtitle: "(Applicable to advisory or personalized recommendation services)",
+        objectiveTitle: "Objective",
+        objective: "Assess the client's knowledge, experience, financial situation, objectives and risk tolerance to recommend products according to their profile.",
+        blockLabel: "Block",
+        yes: "Yes",
+        no: "No",
+        blocks: {
+            knowledge: "Knowledge and Experience",
+            financial: "Financial Situation",
+            objectives: "Investment Objectives",
+            risk: "Risk Capacity and Tolerance"
+        },
+        questions: {
+            1: "Do you have training or professional experience related to investments or wealth management?",
+            2: "Have you previously invested in tangible or alternative assets?",
+            3: "How long have you maintained investments of this type?",
+            4: "Are you aware of the main risks of tangible assets (valuation, conservation, liquidity)?",
+            5: "Do you know how the value of a tangible asset is determined (appraisals, indices, comparables)?",
+            6: "Approximate annual income",
+            7: "Approximate net worth",
+            8: "Percentage of assets you will allocate to this investment",
+            9: "Current debt level",
+            10: "What is the main objective of the investment?",
+            11: "Investment time horizon",
+            12: "Do you require immediate liquidity or can you maintain the investment long-term?",
+            13: "What is your expected annual return?",
+            14: "What percentage of your investment could you afford to lose without compromising your financial stability?",
+            15: "How would you react to a temporary 10% loss in the value of your investment?",
+            16: "Which of the following statements best reflects your profile?"
+        },
+        options: {
+            less1year: "<1 year",
+            "1to3years": "1–3 years",
+            more3years: ">3 years",
+            incomeLow: "<€40,000",
+            incomeMedium: "€40,000–100,000",
+            incomeHigh: ">€100,000",
+            wealthLow: "<€100,000",
+            wealthMedium: "€100,000–500,000",
+            wealthHigh: ">€500,000",
+            allocationLow: "<10%",
+            allocationMedium: "10–30%",
+            allocationHigh: ">30%",
+            debtLow: "Low (<20%)",
+            debtMedium: "Medium (20–50%)",
+            debtHigh: "High (>50%)",
+            goalPreserve: "Preserve capital",
+            goalDiversify: "Diversify",
+            goalReturns: "Returns",
+            horizonShort: "<1 year",
+            horizonMedium: "1–3 years",
+            horizonLong: ">3 years",
+            liquidityImmediate: "I need liquidity",
+            liquidityMaintain: "I can maintain",
+            liquidityLongterm: "Long term",
+            returnLow: "<3%",
+            returnMedium: "3–6%",
+            returnHigh: ">6%",
+            lossLow: "<10%",
+            lossMedium: "10–25%",
+            lossHigh: ">25%",
+            reactionWithdraw: "Withdraw immediately",
+            reactionMaintain: "Maintain",
+            reactionIncrease: "Increase investment",
+            profileConservative: "I prefer safety and liquidity even if I earn less",
+            profileBalanced: "I seek balanced returns",
+            profileAggressive: "I accept high risks for higher returns"
+        },
+        resultTitle: "Investor Profile",
+        scoreLabel: "points",
+        profiles: {
+            conservative: {
+                title: "Conservative",
+                description: "Prioritizes safety and liquidity, low loss tolerance"
+            },
+            moderate: {
+                title: "Moderate",
+                description: "Accepts some volatility seeking higher returns"
+            },
+            dynamic: {
+                title: "Dynamic",
+                description: "Willing to take intermediate risks for diversification"
+            },
+            aggressive: {
+                title: "Aggressive",
+                description: "High risk tolerance and long-term horizon"
+            },
+            veryAggressive: {
+                title: "Very Aggressive",
+                description: "Seeks high returns, accepts volatility and limited liquidity"
+            }
+        },
+        validity: {
+            title: "Validity",
+            message: "This test is valid for 24 months, unless your situation changes."
+        },
+        info: {
+            title: "Information",
+            message: "All transactions must be within your assigned risk profile. If you wish to invest outside your profile, a reinforced authorization procedure will apply."
+        },
+        errors: {
+            incomplete: "Please answer all questions before continuing."
+        },
+        buttons: {
+            submit: "Submit Test",
+            retry: "Retry Test",
+            back: "Back"
+        }
     }
 };
 
