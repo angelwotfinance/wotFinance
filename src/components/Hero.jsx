@@ -16,11 +16,6 @@ const Hero = () => {
 
             <div className="container">
                 <div className="hero-content">
-                    <div className="hero-badge fade-in">
-                        <img src="/logo-wot.png" alt="" className="hero-badge-icon" />
-                        {content.hero.badge}
-                    </div>
-
                     <h1 className="hero-title fade-in-up">
                         {content.hero.title.main} <br />
                         <span className="gradient-text">{content.hero.title.highlight}</span>
@@ -45,16 +40,9 @@ const Hero = () => {
                         </button>
                     </div>
 
-                    <div className="hero-trust fade-in">
-                        <div className="trust-item">
-                            <span className="trust-stars">⭐⭐⭐⭐⭐</span>
-                            <span className="trust-text">{content.hero.trust.rating}</span>
-                        </div>
-                        <div className="trust-divider"></div>
-                        <div className="trust-item">
-                            <span className="trust-number">{content.hero.trust.clients}</span>
-                            <span className="trust-text">{content.hero.trust.clientsLabel}</span>
-                        </div>
+                    <div className="hero-categories fade-in">
+                        <img src="/logo-wot.png" alt="" className="hero-badge-icon" />
+                        <span className="categories-text">{content.hero.badge}</span>
                     </div>
                 </div>
             </div>

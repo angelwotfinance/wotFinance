@@ -51,6 +51,12 @@ const Footer = () => {
                     </div>
                 </div>
 
+                {content.footer.disclaimer && (
+                    <div className="footer-disclaimer">
+                        <p>{content.footer.disclaimer}</p>
+                    </div>
+                )}
+
                 <div className="footer-bottom">
                     <p className="footer-copyright">
                         © {currentYear} {content.brand.name}. {content.footer.copyright}

@@ -86,13 +86,29 @@
     animation-delay: 0.4s;
 }
 
-.hero-trust {
-    display: flex;
-    justify-content: center;
+.hero-categories {
+    display: inline-flex;
     align-items: center;
-    gap: var(--space-6);
-    flex-wrap: wrap;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-6);
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-full);
     animation-delay: 0.5s;
+}
+
+.hero-categories .hero-badge-icon {
+    height: 24px;
+    width: auto;
+    object-fit: contain;
+}
+
+.categories-text {
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--gold-500);
+    letter-spacing: 0.02em;
 }
 
 .trust-item {

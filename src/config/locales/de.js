@@ -23,77 +23,77 @@ const de = {
 
     // Hero Section
     hero: {
-        badge: "Investitionen in luxuriöse Sachwerte",
+        badge: "Edle Weine · Seltene Whiskys · Oldtimer · Feiner Schmuck",
         title: {
-            main: "Exklusive Investitionen in",
-            highlight: "Weine, Whiskys, Oldtimer und Schmuck"
+            main: "Digitaler Zugang zu hochwertigen",
+            highlight: "Sachwerten"
         },
-        subtitle: "WOT bietet Anlageberatung für sichere oder alternative Vermögenswerte im Luxussegment: edle Weine, seltene Whiskys, Oldtimer, exklusive Uhren und antiken Schmuck. Wir öffnen Privatpersonen die Türen zur Welt der Investitionen in diese besonderen Objekte mit nachgewiesener Rendite.",
+        subtitle: "Die Technologieplattform, die Luxus-Sammlerstücke mit der digitalen Wirtschaft verbindet. Verwalten, verwahren und verfolgen Sie Oldtimer, Weine und Schmuck mit Blockchain-Sicherheit.",
         buttons: {
-            primary: "Jetzt starten",
+            primary: "Zugang anfordern",
             secondary: "KI-Gutachter"
         },
         trust: {
-            rating: "Bewertung 4.9/5",
-            clients: "850+",
-            clientsLabel: "Zufriedene Investoren"
+            rating: "Edle Weine · Seltene Whiskys",
+            clients: "",
+            clientsLabel: "Oldtimer · Feiner Schmuck"
         }
     },
 
     // How It Works Section
     howItWorks: {
         title: "So funktioniert's",
-        subtitle: "Drei einfache Schritte zum Investieren",
+        subtitle: "Drei Schritte zu Ihrer Sammlung",
         steps: [
             {
                 number: "01",
-                title: "Wählen Sie Ihr Asset",
-                description: "Entdecken Sie unsere kuratierte Sammlung von Premium-Weinen, zertifizierten Oldtimern und authentifiziertem antiken Schmuck. Jedes Stück wurde von Experten verifiziert.",
+                title: "Katalogzugang",
+                description: "Zugang zu einer kuratierten Auswahl an Sachgütern. Jedes Stück verfügt über Herkunftszertifizierung und dokumentarische Rückverfolgbarkeit auf der Blockchain.",
                 icon: "🎯",
                 image: "/wot-selecciona-activo.png"
             },
             {
                 number: "02",
-                title: "Wir kümmern uns um alles",
-                description: "Wir übernehmen die Lagerung unter optimalen Bedingungen, Versicherung, Wartung und die gesamte Logistik. Ihre Investition ist in den besten Händen.",
+                title: "Logistik & Verwahrung",
+                description: "Wir übernehmen die physische Verifizierung, den sicheren Transport und die Lagerung in spezialisierten Tresoren mit optimalen Erhaltungsbedingungen und Vollversicherung.",
                 icon: "⚡",
                 image: "/nosotros-gestionamos.png"
             },
             {
                 number: "03",
-                title: "Erzielen Sie Rendite",
-                description: "Verfolgen Sie die Wertsteigerung Ihres Assets in Echtzeit. Verkaufen Sie, wann Sie möchten, oder genießen Sie Ihre Sammlung. Liquidität und Flexibilität garantiert.",
-                icon: "📈",
+                title: "Sammlungsmanagement",
+                description: "Verfolgen Sie die Marktpreisentwicklung Ihrer Vermögenswerte über Ihr Dashboard. Entscheiden Sie, wann Sie halten, abheben oder das Eigentum übertragen möchten.",
+                icon: "📊",
                 image: "/obten-rentabilidad.png"
             }
         ],
-        cta: "Jetzt starten"
+        cta: "Katalog ansehen"
     },
 
     // Benefits Section
     benefits: {
-        title: "Warum bei uns investieren?",
-        subtitle: "Exklusive Vorteile für kluge Investoren",
+        title: "Warum uns wählen?",
+        subtitle: "Exklusive Vorteile unserer Plattform",
         items: [
             {
-                icon: "💎",
-                title: "Überlegene Renditen",
-                description: "Seltene Weine, Oldtimer und antiker Schmuck haben historisch Renditen von 10-15% jährlich erzielt und traditionelle Indizes übertroffen."
+                icon: "📜",
+                title: "Dokumentarische Rückverfolgbarkeit",
+                description: "Wir implementieren ein strenges digitales Register für jeden Vermögenswert. Wir zentralisieren Echtheitszertifikate, Eigentumshistorie und rechtliche Dokumentation in einem sicheren Format."
             },
             {
                 icon: "🔒",
-                title: "Sachwerte",
-                description: "Investieren Sie in physische Güter mit innerem Wert. Geringe Korrelation mit traditionellen Märkten, ausgezeichneter Inflationsschutz."
+                title: "Echte physische Absicherung",
+                description: "Erwerben Sie Eigentum an bestehenden materiellen Gütern. Anders als bei synthetischen Assets besitzen Sie hier physische Stücke, die in Hochsicherheitsanlagen verwahrt werden."
             },
             {
                 icon: "🏆",
-                title: "Experten-Authentifizierung",
-                description: "Jedes Stück wird von zertifizierten Spezialisten verifiziert. Dokumentierte Provenienz, Echtheitszertifikate und professionelle Bewertung."
+                title: "Professionelle Validierung",
+                description: "Wir arbeiten mit unabhängigen Experten und führenden Zertifizierungshäusern zusammen, um sicherzustellen, dass jedes Fahrzeug, Schmuckstück oder jede Flasche höchste Standards erfüllt."
             },
             {
-                icon: "📊",
-                title: "Professionelles Management",
-                description: "Lagerung unter optimalen Bedingungen, Vollversicherung, spezialisierte Wartung. Ihre Investition ist geschützt und gepflegt."
+                icon: "🛡️",
+                title: "Spezialisierte Konservierung",
+                description: "Mechanische Wartung für Fahrzeuge, Feuchtigkeitskontrolle für Weine und gepanzerte Sicherheit für Schmuck. Ihre physischen Werte werden in Ausstellungszustand gehalten."
             }
         ]
     },
@@ -102,26 +102,22 @@ const de = {
     stats: {
         items: [
             {
-                value: "250",
-                suffix: "M€",
-                label: "Verwaltetes Vermögen"
-            },
-            {
-                value: "850",
-                suffix: "+",
-                label: "Investoren"
-            },
-            {
-                value: "14",
+                value: "12",
                 suffix: "%",
-                label: "Durchschnittliche Jahresrendite"
+                label: "Historische durchschnittliche Oldtimer-Wertsteigerung*"
             },
             {
-                value: "35",
-                suffix: "+",
-                label: "Länder"
+                value: "100",
+                suffix: "B€",
+                label: "Globales Volumen Luxus-Sammlermarkt"
+            },
+            {
+                value: "100",
+                suffix: "%",
+                label: "WOTfinance digitale Rückverfolgbarkeit"
             }
-        ]
+        ],
+        disclaimer: "*Quellen: Knight Frank Luxury Index. Vergangene Wertsteigerungen garantieren keine zukünftigen Ergebnisse."
     },
 
     // Team Section
@@ -180,15 +176,15 @@ const de = {
 
     // Footer
     footer: {
-        description: "Exklusive Investitionen in Sammlerweine, Oldtimer und antiken Schmuck. Außergewöhnliche Renditen bei Sachwerten.",
+        description: "WOTfinance (Betrieben von INTERVALUE S.L.) - Technologieplattform für die Verwaltung und Digitalisierung hochwertiger Sachwerte.",
         sections: {
             product: {
-                title: "Investitionen",
+                title: "Katalog",
                 links: [
                     { text: "Premium-Weine", href: "#" },
                     { text: "Oldtimer", href: "#" },
                     { text: "Antiker Schmuck", href: "#" },
-                    { text: "Vollständiger Katalog", href: "#" }
+                    { text: "Katalog ansehen", href: "#" }
                 ]
             },
             company: {
@@ -206,7 +202,7 @@ const de = {
                     { text: "Hilfecenter", href: "#" },
                     { text: "Kontakt", href: "#" },
                     { text: "FAQ", href: "#" },
-                    { text: "Datenschutz", href: "#" }
+                    { text: "Rechtlicher Hinweis", href: "#" }
                 ]
             }
         },
@@ -215,7 +211,8 @@ const de = {
             privacy: "Datenschutzrichtlinie",
             cookies: "Cookies"
         },
-        copyright: "Alle Rechte vorbehalten."
+        copyright: "Alle Rechte vorbehalten.",
+        disclaimer: "Wichtiger Hinweis: WOTfinance ist ein Technologiedienstleistungsunternehmen (CNAE 6201) und kein Wertpapierdienstleistungsunternehmen (ESI) oder Kreditinstitut. Die erbrachten Dienstleistungen beschränken sich auf die kommerzielle Vermittlung, Digitalisierung und Logistik von beweglichen Gütern. Informationen über historische Wertsteigerungen sind rein marktillustrativ und stellen kein Angebot von Finanzprodukten oder regulierte Anlageberatung dar."
     },
 
     // Test Selection Page

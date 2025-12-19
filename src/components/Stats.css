@@ -55,3 +55,12 @@
         font-size: var(--font-size-4xl);
     }
 }
+
+.stats-disclaimer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: var(--font-size-xs);
+    margin-top: var(--space-6);
+    position: relative;
+    z-index: 1;
+}

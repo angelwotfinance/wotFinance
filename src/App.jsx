@@ -8,7 +8,6 @@ import HowItWorks from './components/HowItWorks';
 import Benefits from './components/Benefits';
 import Stats from './components/Stats';
 import Team from './components/Team';
-import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import TestSelection from './pages/TestSelection';
 
@@ -19,7 +18,6 @@ const LandingPage = () => (
         <Benefits />
         <Stats />
         <Team />
-        <Testimonials />
         <Footer />
     </>
 );

@@ -63,6 +63,9 @@ const Stats = () => {
                         </div>
                     ))}
                 </div>
+                {content.stats.disclaimer && (
+                    <p className="stats-disclaimer">{content.stats.disclaimer}</p>
+                )}
             </div>
         </section>
     );

@@ -23,10 +23,6 @@ const HowItWorks = () => {
                         </div>
                     ))}
                 </div>
-
-                <div className="cta-section">
-                    <button className="btn btn-primary btn-lg" onClick={() => navigate('/comenzar')}>{content.howItWorks.cta}</button>
-                </div>
             </div>
         </section>
     );

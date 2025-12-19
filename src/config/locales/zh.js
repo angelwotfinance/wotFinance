@@ -23,77 +23,77 @@ const zh = {
 
     // 主页横幅
     hero: {
-        badge: "奢侈品实物资产投资",
+        badge: "精品葡萄酒 · 稀有威士忌 · 经典汽车 · 高级珠宝",
         title: {
-            main: "独家投资于",
-            highlight: "葡萄酒、威士忌、经典汽车和珠宝"
+            main: "数字化访问高价值",
+            highlight: "实物资产"
         },
-        subtitle: "WOT提供与奢侈品相关的避险或另类资产投资咨询：精品葡萄酒、稀有威士忌、经典汽车、名贵手表和古董珠宝。我们为个人投资者打开通往这些具有可靠回报的特殊物品投资世界的大门。",
+        subtitle: "连接奢侈品收藏与数字经济的技术平台。通过区块链安全技术管理、保管和追溯经典车辆、葡萄酒和珠宝。",
         buttons: {
-            primary: "立即开始",
+            primary: "申请访问",
             secondary: "AI估价师"
         },
         trust: {
-            rating: "评分 4.9/5",
-            clients: "850+",
-            clientsLabel: "满意的投资者"
+            rating: "精品葡萄酒 · 稀有威士忌",
+            clients: "",
+            clientsLabel: "经典汽车 · 高级珠宝"
         }
     },
 
     // 运作方式
     howItWorks: {
         title: "运作方式",
-        subtitle: "三个简单步骤开始投资",
+        subtitle: "三个步骤访问您的收藏",
         steps: [
             {
                 number: "01",
-                title: "选择您的资产",
-                description: "探索我们精心策划的优质葡萄酒、认证经典汽车和鉴定古董珠宝收藏。每件作品都经过专家验证。",
+                title: "目录访问",
+                description: "访问精心策划的实物资产精选。每件作品都具有产地认证和区块链上记录的文档可追溯性。",
                 icon: "🎯",
                 image: "/wot-selecciona-activo.png"
             },
             {
                 number: "02",
-                title: "我们管理一切",
-                description: "我们负责在最佳条件下存储、保险、维护和所有物流。您的投资在最好的手中。",
+                title: "物流与保管",
+                description: "我们负责实物验证、安全运输和专业保管库存储，提供最佳保存条件和全面保险。",
                 icon: "⚡",
                 image: "/nosotros-gestionamos.png"
             },
             {
                 number: "03",
-                title: "获得收益",
-                description: "实时跟踪资产增值。随时出售或享受您的收藏。保证流动性和灵活性。",
-                icon: "📈",
+                title: "收藏管理",
+                description: "从您的仪表板跟踪资产的市场价值变化。决定何时持有、提取或转让您的货物所有权。",
+                icon: "📊",
                 image: "/obten-rentabilidad.png"
             }
         ],
-        cta: "立即开始"
+        cta: "查看目录"
     },
 
     // 优势部分
     benefits: {
         title: "为什么选择我们？",
-        subtitle: "为精明投资者提供的独家优势",
+        subtitle: "我们平台的独家优势",
         items: [
             {
-                icon: "💎",
-                title: "卓越回报",
-                description: "稀有葡萄酒、经典汽车和古董珠宝历来年回报率达10-15%，超越传统指数。"
+                icon: "📜",
+                title: "文档可追溯性",
+                description: "我们为每项资产实施严格的数字登记。我们将真品证书、所有权历史和法律文件集中在安全格式中。"
             },
             {
                 icon: "🔒",
-                title: "实物资产",
-                description: "投资具有内在价值的实物商品。与传统市场低相关性，出色的通胀保护。"
+                title: "真实实物支持",
+                description: "获得现有实物资产的所有权。与合成资产不同，您在这里拥有保存在高安全设施中的实物物品。"
             },
             {
                 icon: "🏆",
-                title: "专家鉴定",
-                description: "每件作品都由认证专家验证。有据可查的来源、真品证书和专业评估。"
+                title: "专业验证",
+                description: "我们与独立专家和领先的认证机构合作，确保每辆车、每件珠宝或每瓶酒都符合最严格的标准。"
             },
             {
-                icon: "📊",
-                title: "专业管理",
-                description: "在最佳条件下存储、全额保险、专业维护。您的投资受到保护和照料。"
+                icon: "🛡️",
+                title: "专业保存",
+                description: "车辆的机械维护、葡萄酒的湿度控制和珠宝的装甲安全。您的实物资产保持展览状态。"
             }
         ]
     },
@@ -102,26 +102,22 @@ const zh = {
     stats: {
         items: [
             {
-                value: "250",
-                suffix: "M€",
-                label: "管理资产"
-            },
-            {
-                value: "850",
-                suffix: "+",
-                label: "投资者"
-            },
-            {
-                value: "14",
+                value: "12",
                 suffix: "%",
-                label: "平均年回报率"
+                label: "经典汽车历史平均增值*"
             },
             {
-                value: "35",
-                suffix: "+",
-                label: "国家"
+                value: "100",
+                suffix: "B€",
+                label: "全球奢侈品收藏市场规模"
+            },
+            {
+                value: "100",
+                suffix: "%",
+                label: "WOTfinance数字可追溯性"
             }
-        ]
+        ],
+        disclaimer: "*来源：Knight Frank奢侈品指数。过往的增值不保证未来结果。"
     },
 
     // 团队部分
@@ -180,15 +176,15 @@ const zh = {
 
     // 页脚
     footer: {
-        description: "独家投资收藏葡萄酒、经典汽车和古董珠宝。实物资产的卓越回报。",
+        description: "WOTfinance（由INTERVALUE S.L.运营）- 高价值实物资产管理和数字化技术平台。",
         sections: {
             product: {
-                title: "投资",
+                title: "目录",
                 links: [
                     { text: "优质葡萄酒", href: "#" },
                     { text: "经典汽车", href: "#" },
                     { text: "古董珠宝", href: "#" },
-                    { text: "完整目录", href: "#" }
+                    { text: "查看目录", href: "#" }
                 ]
             },
             company: {
@@ -206,7 +202,7 @@ const zh = {
                     { text: "帮助中心", href: "#" },
                     { text: "联系我们", href: "#" },
                     { text: "常见问题", href: "#" },
-                    { text: "隐私", href: "#" }
+                    { text: "法律声明", href: "#" }
                 ]
             }
         },
@@ -215,7 +211,8 @@ const zh = {
             privacy: "隐私政策",
             cookies: "Cookies"
         },
-        copyright: "版权所有。"
+        copyright: "版权所有。",
+        disclaimer: "重要声明：WOTfinance是一家技术服务公司（CNAE 6201），而非投资服务公司（ESI）或信贷机构。提供的服务仅限于商业中介、数字化和动产物流。关于历史增值的信息纯粹是市场说明性的，不构成金融产品要约或监管投资建议。"
     },
 
     // 测试选择页面

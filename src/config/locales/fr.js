@@ -23,77 +23,77 @@ const fr = {
 
     // Hero Section
     hero: {
-        badge: "Investissements dans des actifs tangibles de luxe",
+        badge: "Vins Fins · Whiskies Rares · Voitures Classiques · Haute Joaillerie",
         title: {
-            main: "Investissements exclusifs dans",
-            highlight: "vins, whiskies, voitures classiques et bijoux"
+            main: "Accès numérique aux actifs tangibles",
+            highlight: "de haute valeur"
         },
-        subtitle: "WOT fournit des conseils en investissement sur des actifs refuges ou alternatifs liés au luxe : vins fins, whiskies rares, voitures classiques, montres exclusives et bijoux anciens. Nous ouvrons aux particuliers les portes du monde de l'investissement dans ces objets spéciaux à rentabilité prouvée.",
+        subtitle: "La plateforme technologique qui connecte le collectionnisme de luxe avec l'économie numérique. Gérez, conservez et tracez véhicules classiques, vins et bijoux avec la sécurité Blockchain.",
         buttons: {
-            primary: "Commencer maintenant",
+            primary: "Demander l'accès",
             secondary: "Évaluateur IA"
         },
         trust: {
-            rating: "Note 4.9/5",
-            clients: "850+",
-            clientsLabel: "Investisseurs satisfaits"
+            rating: "Vins Fins · Whiskies Rares",
+            clients: "",
+            clientsLabel: "Voitures Classiques · Haute Joaillerie"
         }
     },
 
     // How It Works Section
     howItWorks: {
         title: "Comment ça marche",
-        subtitle: "Trois étapes simples pour commencer à investir",
+        subtitle: "Trois étapes pour accéder à votre collection",
         steps: [
             {
                 number: "01",
-                title: "Sélectionnez votre actif",
-                description: "Explorez notre collection sélectionnée de vins premium, de voitures classiques certifiées et de bijoux anciens authentifiés. Chaque pièce a été vérifiée par des experts.",
+                title: "Accès au Catalogue",
+                description: "Accédez à une sélection curatée de biens tangibles. Chaque pièce dispose d'une certification d'origine et d'une traçabilité documentaire enregistrée sur Blockchain.",
                 icon: "🎯",
                 image: "/wot-selecciona-activo.png"
             },
             {
                 number: "02",
-                title: "Nous gérons tout",
-                description: "Nous nous occupons du stockage dans des conditions optimales, de l'assurance, de l'entretien et de toute la logistique. Votre investissement est entre les meilleures mains.",
+                title: "Logistique et Conservation",
+                description: "Nous gérons la vérification physique, le transport sécurisé et le stockage dans des coffres spécialisés avec des conditions de conservation optimales et assurance tous risques.",
                 icon: "⚡",
                 image: "/nosotros-gestionamos.png"
             },
             {
                 number: "03",
-                title: "Obtenez des rendements",
-                description: "Suivez l'appréciation de votre actif en temps réel. Vendez quand vous voulez ou profitez de votre collection. Liquidité et flexibilité garanties.",
-                icon: "📈",
+                title: "Gestion de la Collection",
+                description: "Suivez l'évolution de la valeur marché de vos actifs depuis votre tableau de bord. Décidez quand conserver, retirer ou transférer la propriété de vos biens.",
+                icon: "📊",
                 image: "/obten-rentabilidad.png"
             }
         ],
-        cta: "Commencer maintenant"
+        cta: "Voir le Catalogue"
     },
 
     // Benefits Section
     benefits: {
-        title: "Pourquoi investir avec nous ?",
-        subtitle: "Avantages exclusifs pour les investisseurs avisés",
+        title: "Pourquoi nous choisir ?",
+        subtitle: "Avantages exclusifs de notre plateforme",
         items: [
             {
-                icon: "💎",
-                title: "Rendements supérieurs",
-                description: "Les vins rares, les voitures classiques et les bijoux anciens ont historiquement offert des rendements de 10-15% par an, surpassant les indices traditionnels."
+                icon: "📜",
+                title: "Traçabilité Documentaire",
+                description: "Nous implémentons un registre numérique rigoureux pour chaque actif. Nous centralisons les certificats d'authenticité, l'historique de propriété et la documentation juridique dans un format sécurisé."
             },
             {
                 icon: "🔒",
-                title: "Actifs tangibles",
-                description: "Investissez dans des biens physiques à valeur intrinsèque. Faible corrélation avec les marchés traditionnels, excellente protection contre l'inflation."
+                title: "Soutien Physique Réel",
+                description: "Acquérez la propriété de biens tangibles existants. Contrairement aux actifs synthétiques, vous possédez ici des pièces physiques conservées dans des installations de haute sécurité."
             },
             {
                 icon: "🏆",
-                title: "Authentification experte",
-                description: "Chaque pièce est vérifiée par des spécialistes certifiés. Provenance documentée, certificats d'authenticité et évaluation professionnelle."
+                title: "Validation Professionnelle",
+                description: "Nous travaillons avec des experts indépendants et des maisons de certification leaders pour garantir que chaque véhicule, bijou ou bouteille répond aux normes les plus exigeantes."
             },
             {
-                icon: "📊",
-                title: "Gestion professionnelle",
-                description: "Stockage dans des conditions optimales, assurance complète, entretien spécialisé. Votre investissement est protégé et soigné."
+                icon: "🛡️",
+                title: "Conservation Spécialisée",
+                description: "Entretien mécanique pour les véhicules, contrôle de l'humidité pour les vins et sécurité blindée pour les bijoux. Vos actifs physiques sont maintenus en état concours."
             }
         ]
     },
@@ -102,26 +102,22 @@ const fr = {
     stats: {
         items: [
             {
-                value: "250",
-                suffix: "M€",
-                label: "Actifs sous gestion"
-            },
-            {
-                value: "850",
-                suffix: "+",
-                label: "Investisseurs"
-            },
-            {
-                value: "14",
+                value: "12",
                 suffix: "%",
-                label: "Rendement annuel moyen"
+                label: "Appréciation historique moyenne Voitures Classiques*"
             },
             {
-                value: "35",
-                suffix: "+",
-                label: "Pays"
+                value: "100",
+                suffix: "B€",
+                label: "Volume mondial marché collectionnisme de luxe"
+            },
+            {
+                value: "100",
+                suffix: "%",
+                label: "Traçabilité numérique WOTfinance"
             }
-        ]
+        ],
+        disclaimer: "*Sources: Knight Frank Luxury Index. Les appréciations passées ne garantissent pas les résultats futurs."
     },
 
     // Team Section
@@ -180,15 +176,15 @@ const fr = {
 
     // Footer
     footer: {
-        description: "Investissements exclusifs dans les vins de collection, les voitures classiques et les bijoux anciens. Rendements exceptionnels sur des actifs tangibles.",
+        description: "WOTfinance (Opéré par INTERVALUE S.L.) - Plateforme technologique de gestion et numérisation d'actifs tangibles de haute valeur.",
         sections: {
             product: {
-                title: "Investissements",
+                title: "Catalogue",
                 links: [
                     { text: "Vins Premium", href: "#" },
                     { text: "Voitures Classiques", href: "#" },
                     { text: "Bijoux Anciens", href: "#" },
-                    { text: "Catalogue Complet", href: "#" }
+                    { text: "Voir le Catalogue", href: "#" }
                 ]
             },
             company: {
@@ -206,7 +202,7 @@ const fr = {
                     { text: "Centre d'aide", href: "#" },
                     { text: "Contact", href: "#" },
                     { text: "FAQ", href: "#" },
-                    { text: "Confidentialité", href: "#" }
+                    { text: "Mentions Légales", href: "#" }
                 ]
             }
         },
@@ -215,7 +211,8 @@ const fr = {
             privacy: "Politique de confidentialité",
             cookies: "Cookies"
         },
-        copyright: "Tous droits réservés."
+        copyright: "Tous droits réservés.",
+        disclaimer: "Avis Important: WOTfinance est une entreprise de services technologiques (CNAE 6201) et non une Entreprise de Services d'Investissement (ESI) ou un Établissement de Crédit. Les services fournis se limitent à l'intermédiation commerciale, la numérisation et la logistique de biens meubles. Les informations sur les appréciations historiques sont purement illustratives du marché et ne constituent pas une offre de produits financiers ni un conseil en investissement régulé."
     },
 
     // Test Selection Page
