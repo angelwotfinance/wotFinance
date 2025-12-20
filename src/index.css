@@ -1,14 +1,15 @@
 :root {
-  /* Luxury Color System - Exclusivity & Prestige */
-  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* Luxury Color System - Polished Gold Metal */
+  --primary-gradient: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+  --primary-gradient-animated: linear-gradient(90deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C, #BF953F);
 
   --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
   --dark-gradient: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
 
-  --primary-color: #667eea;
-  --secondary-color: #f5576c;
-  --accent-color: #00f2fe;
+  --primary-color: #B38728;
+  --secondary-color: #BF953F;
+  --accent-color: #FCF6BA;
 
   /* Light mode colors (default) */
   --bg-primary: #ffffff;
@@ -120,9 +121,33 @@ body {
   font-size: var(--font-size-base);
   line-height: 1.6;
   color: var(--text-primary);
-  background: var(--bg-primary);
+  background-color: var(--bg-primary);
+  background-image: url('/marble-light.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   overflow-x: hidden;
   transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: -1;
+  pointer-events: none;
+}
+
+[data-theme="dark"] body {
+  background-image: url('/marble-dark.png');
+}
+
+[data-theme="dark"] body::before {
+  background: rgba(15, 12, 41, 0.88);
 }
 
 /* Typography */
@@ -206,9 +231,11 @@ p {
 }
 
 .btn-primary {
-  background: var(--primary-gradient);
+  background: var(--primary-gradient-animated);
+  background-size: 400% 400%;
   color: white;
   box-shadow: var(--shadow-md);
+  animation: gradient-shift 8s ease infinite;
 }
 
 .btn-primary:hover {
@@ -256,10 +283,12 @@ p {
 
 /* Gradient Text */
 .gradient-text {
-  background: var(--primary-gradient);
+  background: var(--primary-gradient-animated);
+  background-size: 400% 400%;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: gradient-shift 8s ease infinite;
 }
 
 /* Section Spacing */
@@ -309,6 +338,20 @@ section {
 
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
   }
 }
 
