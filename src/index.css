@@ -235,7 +235,7 @@ p {
   background-size: 400% 400%;
   color: white;
   box-shadow: var(--shadow-md);
-  animation: gradient-shift 8s ease infinite;
+  animation: gradient-shift 15s ease infinite;
 }
 
 .btn-primary:hover {
@@ -288,7 +288,7 @@ p {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: gradient-shift 8s ease infinite;
+  animation: gradient-shift 15s ease infinite;
 }
 
 /* Section Spacing */
