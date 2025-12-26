@@ -141,7 +141,7 @@ const zh = {
                 name: "Ángel Arellano Del Olmo",
                 role: "IT专家",
                 specialty: "在软件开发和信息安全方面经验丰富",
-                image: "/team/ANGEL-ARELLANO-GR.jpg"
+                image: "/team/wot-angel.jpg"
             }
         ]
     },

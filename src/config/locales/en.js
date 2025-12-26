@@ -141,7 +141,7 @@ const en = {
                 name: "Ángel Arellano Del Olmo",
                 role: "IT Specialist",
                 specialty: "Experience in software development and information security",
-                image: "/team/ANGEL-ARELLANO-GR.jpg"
+                image: "/team/wot-angel.jpg"
             }
         ]
     },
