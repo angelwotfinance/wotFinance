@@ -18,7 +18,7 @@ const Hero = () => {
                 <div className="hero-content">
                     <h1 className="hero-title fade-in-up">
                         {content.hero.title.main} <br />
-                        <span className="gradient-text">{content.hero.title.highlight}</span>
+                        <span className="hero-highlight">{content.hero.title.highlight}</span>
                     </h1>
 
                     <p className="hero-subtitle fade-in-up">

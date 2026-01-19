@@ -141,7 +141,7 @@ const content = {
                 name: "Juan Carlos Gil Vega",
                 role: "Especialista en Negocio",
                 specialty: "Experiencia en gestión de negocios y marketing digital",
-                image: "/team/JUAN-CARLOS-GIL-GR.jpg"
+                image: "/team/JUAN-CARLOS-GIL-GR NEW.jpg.jpeg"
             },
             {
                 name: "Ángel Arellano Del Olmo",

@@ -12,8 +12,8 @@
 }
 
 [data-theme="dark"] .navbar {
-    --nav-bg-rgb: 15, 12, 41;
-    background: rgba(15, 12, 41, 0.9);
+    --nav-bg-rgb: 10, 10, 10;
+    background: rgba(10, 10, 10, 0.9);
 }
 
 .navbar.scrolled {

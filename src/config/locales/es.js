@@ -23,39 +23,39 @@ const es = {
 
     // Hero Section
     hero: {
-        badge: "Vinos Finos · Whiskies Raros · Coches Clásicos · Alta Joyería",
+        badge: "Vinos Finos - Whiskies Excepcionales - Coches Clásicos - Joyas Antiguas - Relojes de Colección",
         title: {
-            main: "Acceso digital a activos tangibles",
-            highlight: "de alto valor"
+            main: "Acceso a bienes de lujo",
+            highlight: "como activos alternativos"
         },
-        subtitle: "La plataforma tecnológica que conecta el coleccionismo de lujo con la economía digital. Gestiona, custodia y traza vehículos clásicos, vinos y joyas con seguridad Blockchain.",
+        subtitle: "La plataforma que asesora y orienta sobre cómo invertir en valores refugio ligados al lujo o al coleccionismo con la seguridad blockchain",
         buttons: {
-            primary: "Solicitar Acceso",
-            secondary: "Tasador IA"
+            primary: "Entra en WOTfinance",
+            secondary: "Tasador"
         },
         trust: {
-            rating: "Vinos Finos · Whiskies Raros",
+            rating: "Vinos Finos - Whiskies Excepcionales",
             clients: "",
-            clientsLabel: "Coches Clásicos · Alta Joyería"
+            clientsLabel: "Coches Clásicos - Joyas Antiguas - Relojes de Colección"
         }
     },
 
     // How It Works Section
     howItWorks: {
-        title: "Cómo Funciona",
+        title: "Saber invertir",
         subtitle: "Tres pasos para acceder a tu colección",
         steps: [
             {
                 number: "01",
-                title: "Acceso al Catálogo",
-                description: "Accede a una selección curada de bienes tangibles. Cada pieza cuenta con certificación de origen y trazabilidad documental registrada en Blockchain.",
+                title: "Consulta nuestro Catálogo",
+                description: "Cada pieza de nuestra colección cuenta con certificación de origen y trazabilidad documental registrada en blockchain.",
                 icon: "🎯",
                 image: "/wot-selecciona-activo.png"
             },
             {
                 number: "02",
                 title: "Logística y Custodia",
-                description: "Nos encargamos de la verificación física, el transporte seguro y el almacenamiento en bóvedas especializadas con condiciones óptimas de conservación y seguro a todo riesgo.",
+                description: "Nos encargamos de la verificación física, el transporte seguro y el almacenamiento en condiciones óptimas de conservación y seguro a todo riesgo.",
                 icon: "⚡",
                 image: "/nosotros-gestionamos.png"
             },
@@ -72,8 +72,8 @@ const es = {
 
     // Benefits Section
     benefits: {
-        title: "¿Por qué elegirnos?",
-        subtitle: "Ventajas exclusivas de nuestra plataforma",
+        title: "Cómodo y seguro",
+        subtitle: "Una buena elección",
         items: [
             {
                 icon: "📜",
@@ -82,18 +82,23 @@ const es = {
             },
             {
                 icon: "🔒",
-                title: "Respaldo Físico Real",
-                description: "Adquiere propiedad sobre bienes tangibles existentes. A diferencia de los activos sintéticos, aquí eres dueño de piezas físicas resguardadas en instalaciones de máxima seguridad."
+                title: "Respaldo Real",
+                description: "Hazte propietario de bienes tangibles. A diferencia de los activos sintéticos, aquí eres dueño de piezas físicas resguardadas en instalaciones de máxima seguridad."
             },
             {
                 icon: "🏆",
                 title: "Validación Profesional",
-                description: "Trabajamos con peritos independientes y casas de certificación líderes para asegurar que cada vehículo, joya o botella cumple con los estándares más exigentes."
+                description: "Trabajamos con un panel de reconocidos expertos en sectores diversos, peritos independientes y casas de certificación, además de contemplar diversos acuerdos con proveedores de garantía."
             },
             {
                 icon: "🛡️",
-                title: "Conservación Especializada",
-                description: "Mantenimiento mecánico para vehículos, control de humedad para vinos y seguridad acorazada para joyas. Tu patrimonio físico se mantiene en estado de concurso."
+                title: "Bajo control",
+                description: "Reglaje y mantenimiento de los vehículos, vigilancia ambiental de los vinos y seguridad acorazada para las joyas. El valor e integridad de tu patrimonio están plenamente garantizados."
+            },
+            {
+                icon: "🚀",
+                title: "Salida de inversión",
+                description: "Al final del plazo de inversión, WOTfinance implementa la estrategia de salida más adecuada (subastas, reventas privadas, ventas a través de un agente especializado). Existe la opción de reinvertir o cerrar la inversión definitivamente."
             }
         ]
     },
@@ -122,26 +127,40 @@ const es = {
 
     // Team Section
     team: {
-        title: "Nuestro Equipo de Expertos",
+        title: "Nuestro Equipo",
         subtitle: "Especialistas con experiencia en inversiones alternativas y activos de lujo",
         members: [
             {
-                name: "Victor Rodriguez Esteban",
-                role: "Especialista en Inversiones en Vino",
-                specialty: "Amplia experiencia en inversiones en vinos de alta calidad",
+                name: "Víctor Rodríguez Esteban",
+                role: "CEO",
+                specialty: "Especialista en inversiones",
                 image: "/team/VICTOR-RODRIGUEZ-GR.jpg"
             },
             {
                 name: "Juan Carlos Gil Vega",
-                role: "Especialista en Negocio",
-                specialty: "Experiencia en gestión de negocios y marketing digital",
-                image: "/team/JUAN-CARLOS-GIL-GR.jpg"
+                role: "Gestor de negocios",
+                specialty: "Marketing digital",
+                image: "/team/JUAN-CARLOS-GIL-GR NEW.jpg.jpeg"
             },
             {
                 name: "Ángel Arellano Del Olmo",
-                role: "Especialista en IT",
-                specialty: "Experiencia en desarrollo de software y seguridad de la información",
+                role: "IT Director",
+                specialty: "Desarrollo de software y seguridad de la información",
                 image: "/team/wot-angel.jpg"
+            },
+            {
+                name: "Corpus Pascua",
+                role: "Especialista en Joyas y Relojes",
+                specialty: "Responsable de tasaciones homologadas",
+                image: "/team/CORPUS-PASCUA.jpeg",
+                grayscale: true,
+                imagePosition: "center top"
+            },
+            {
+                name: "Francisco Carrión Cárdenas",
+                role: "Experto en Coches Clásicos",
+                specialty: "Coordinador de subastas",
+                image: "/team/FRANCISCO-CARRION-GR.jpg"
             }
         ]
     },
@@ -193,7 +212,8 @@ const es = {
                     { text: "Sobre Nosotros", href: "#" },
                     { text: "Equipo de Expertos", href: "#" },
                     { text: "Blog", href: "#" },
-                    { text: "Prensa", href: "#" }
+                    { text: "Prensa", href: "#" },
+                    { text: "Administración", href: "/admin" }
                 ]
             },
             support: {

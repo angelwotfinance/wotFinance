@@ -23,39 +23,39 @@ const zh = {
 
     // 主页横幅
     hero: {
-        badge: "精品葡萄酒 · 稀有威士忌 · 经典汽车 · 高级珠宝",
+        badge: "精品葡萄酒 - 顶级威士忌 - 经典汽车 - 古董珠宝 - 收藏腕表",
         title: {
-            main: "数字化访问高价值",
-            highlight: "实物资产"
+            main: "获取奢侈品",
+            highlight: "作为另类资产"
         },
-        subtitle: "连接奢侈品收藏与数字经济的技术平台。通过区块链安全技术管理、保管和追溯经典车辆、葡萄酒和珠宝。",
+        subtitle: "为您提供建议和指导，帮助您以区块链安全技术投资与奢侈品或收藏品相关的避险资产",
         buttons: {
-            primary: "申请访问",
-            secondary: "AI估价师"
+            primary: "进入WOTfinance",
+            secondary: "估价师"
         },
         trust: {
-            rating: "精品葡萄酒 · 稀有威士忌",
+            rating: "精品葡萄酒 - 顶级威士忌",
             clients: "",
-            clientsLabel: "经典汽车 · 高级珠宝"
+            clientsLabel: "经典汽车 - 古董珠宝 - 收藏腕表"
         }
     },
 
     // 运作方式
     howItWorks: {
-        title: "运作方式",
+        title: "智慧投资",
         subtitle: "三个步骤访问您的收藏",
         steps: [
             {
                 number: "01",
-                title: "目录访问",
-                description: "访问精心策划的实物资产精选。每件作品都具有产地认证和区块链上记录的文档可追溯性。",
+                title: "浏览我们的目录",
+                description: "我们收藏的每件作品都具有产地认证和区块链上记录的文档可追溯性。",
                 icon: "🎯",
                 image: "/wot-selecciona-activo.png"
             },
             {
                 number: "02",
                 title: "物流与保管",
-                description: "我们负责实物验证、安全运输和专业保管库存储，提供最佳保存条件和全面保险。",
+                description: "我们负责实物验证、安全运输和在最佳保存条件下的存储，提供全面保险。",
                 icon: "⚡",
                 image: "/nosotros-gestionamos.png"
             },
@@ -72,8 +72,8 @@ const zh = {
 
     // 优势部分
     benefits: {
-        title: "为什么选择我们？",
-        subtitle: "我们平台的独家优势",
+        title: "舒适与安全",
+        subtitle: "明智之选",
         items: [
             {
                 icon: "📜",
@@ -82,18 +82,23 @@ const zh = {
             },
             {
                 icon: "🔒",
-                title: "真实实物支持",
-                description: "获得现有实物资产的所有权。与合成资产不同，您在这里拥有保存在高安全设施中的实物物品。"
+                title: "真实支持",
+                description: "成为有形资产的所有者。与合成资产不同，您在这里拥有保存在高安全设施中的实物物品。"
             },
             {
                 icon: "🏆",
                 title: "专业验证",
-                description: "我们与独立专家和领先的认证机构合作，确保每辆车、每件珠宝或每瓶酒都符合最严格的标准。"
+                description: "我们与来自不同行业的知名专家、独立评估师和认证机构合作，并与担保提供商达成各种协议。"
             },
             {
                 icon: "🛡️",
-                title: "专业保存",
-                description: "车辆的机械维护、葡萄酒的湿度控制和珠宝的装甲安全。您的实物资产保持展览状态。"
+                title: "全程掌控",
+                description: "车辆调校和维护、葡萄酒环境监测以及珠宝装甲安全。您资产的价值和完整性得到充分保障。"
+            },
+            {
+                icon: "🚀",
+                title: "退出策略",
+                description: "在投资期限结束时，WOTfinance实施最合适的退出策略（拍卖、私人转售、通过专业代理销售）。您可以选择再投资或最终关闭投资。"
             }
         ]
     },
@@ -122,26 +127,40 @@ const zh = {
 
     // 团队部分
     team: {
-        title: "我们的专家团队",
+        title: "我们的团队",
         subtitle: "在另类投资和奢侈品资产方面经验丰富的专家",
         members: [
             {
-                name: "Victor Rodriguez Esteban",
-                role: "葡萄酒投资专家",
-                specialty: "在高品质葡萄酒投资方面拥有丰富经验",
+                name: "Víctor Rodríguez Esteban",
+                role: "首席执行官",
+                specialty: "投资专家",
                 image: "/team/VICTOR-RODRIGUEZ-GR.jpg"
             },
             {
                 name: "Juan Carlos Gil Vega",
-                role: "商业专家",
-                specialty: "在企业管理和数字营销方面经验丰富",
-                image: "/team/JUAN-CARLOS-GIL-GR.jpg"
+                role: "业务经理",
+                specialty: "数字营销",
+                image: "/team/JUAN-CARLOS-GIL-GR NEW.jpg.jpeg"
             },
             {
                 name: "Ángel Arellano Del Olmo",
-                role: "IT专家",
-                specialty: "在软件开发和信息安全方面经验丰富",
+                role: "IT总监",
+                specialty: "软件开发和信息安全",
                 image: "/team/wot-angel.jpg"
+            },
+            {
+                name: "Corpus Pascua",
+                role: "珠宝与腕表专家",
+                specialty: "认证鉴定负责人",
+                image: "/team/CORPUS-PASCUA.jpeg",
+                grayscale: true,
+                imagePosition: "center top"
+            },
+            {
+                name: "Francisco Carrión Cárdenas",
+                role: "经典汽车专家",
+                specialty: "拍卖协调员",
+                image: "/team/FRANCISCO-CARRION-GR.jpg"
             }
         ]
     },
@@ -193,7 +212,8 @@ const zh = {
                     { text: "关于我们", href: "#" },
                     { text: "专家团队", href: "#" },
                     { text: "博客", href: "#" },
-                    { text: "新闻", href: "#" }
+                    { text: "新闻", href: "#" },
+                    { text: "管理", href: "/admin" }
                 ]
             },
             support: {

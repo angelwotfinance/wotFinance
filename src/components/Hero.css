@@ -67,6 +67,11 @@
     animation-delay: 0.2s;
 }
 
+.hero-highlight {
+    color: var(--text-primary);
+    font-weight: 900;
+}
+
 .hero-subtitle {
     font-size: var(--font-size-xl);
     color: var(--gray-600);

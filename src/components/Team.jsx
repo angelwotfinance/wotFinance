@@ -19,7 +19,8 @@ const Team = () => {
                                 <img
                                     src={member.image}
                                     alt={member.name}
-                                    className="team-image"
+                                    className={`team-image${member.grayscale ? ' grayscale' : ''}`}
+                                    style={member.imagePosition ? { objectPosition: member.imagePosition } : {}}
                                 />
                                 <div className="team-overlay"></div>
                             </div>

@@ -4,6 +4,10 @@
     padding: var(--space-24) 0 var(--space-8) 0;
 }
 
+[data-theme="dark"] .footer {
+    background: #0a0a0a;
+}
+
 .footer-content {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;

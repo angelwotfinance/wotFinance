@@ -23,39 +23,39 @@ const en = {
 
     // Hero Section
     hero: {
-        badge: "Fine Wines · Rare Whiskies · Classic Cars · Fine Jewelry",
+        badge: "Fine Wines - Exceptional Whiskies - Classic Cars - Antique Jewelry - Collectible Watches",
         title: {
-            main: "Digital access to high-value",
-            highlight: "tangible assets"
+            main: "Access to luxury goods",
+            highlight: "as alternative assets"
         },
-        subtitle: "The technology platform connecting luxury collectibles with the digital economy. Manage, custody and trace classic vehicles, wines and jewelry with Blockchain security.",
+        subtitle: "The platform that advises and guides on how to invest in safe haven assets linked to luxury or collectibles with blockchain security",
         buttons: {
-            primary: "Request Access",
-            secondary: "AI Appraiser"
+            primary: "Enter WOTfinance",
+            secondary: "Appraiser"
         },
         trust: {
-            rating: "Fine Wines · Rare Whiskies",
+            rating: "Fine Wines - Exceptional Whiskies",
             clients: "",
-            clientsLabel: "Classic Cars · Fine Jewelry"
+            clientsLabel: "Classic Cars - Antique Jewelry - Collectible Watches"
         }
     },
 
     // How It Works Section
     howItWorks: {
-        title: "How It Works",
+        title: "Smart Investing",
         subtitle: "Three steps to access your collection",
         steps: [
             {
                 number: "01",
-                title: "Catalog Access",
-                description: "Access a curated selection of tangible goods. Each piece has origin certification and documentary traceability registered on Blockchain.",
+                title: "Browse Our Catalog",
+                description: "Each piece in our collection has origin certification and documentary traceability registered on blockchain.",
                 icon: "🎯",
                 image: "/wot-selecciona-activo.png"
             },
             {
                 number: "02",
                 title: "Logistics & Custody",
-                description: "We handle physical verification, secure transport and storage in specialized vaults with optimal preservation conditions and comprehensive insurance.",
+                description: "We handle physical verification, secure transport and storage in optimal preservation conditions with comprehensive insurance.",
                 icon: "⚡",
                 image: "/nosotros-gestionamos.png"
             },
@@ -72,8 +72,8 @@ const en = {
 
     // Benefits Section
     benefits: {
-        title: "Why choose us?",
-        subtitle: "Exclusive advantages of our platform",
+        title: "Comfortable and Secure",
+        subtitle: "A Smart Choice",
         items: [
             {
                 icon: "📜",
@@ -82,18 +82,23 @@ const en = {
             },
             {
                 icon: "🔒",
-                title: "Real Physical Backing",
-                description: "Acquire ownership of existing tangible goods. Unlike synthetic assets, here you own physical pieces safeguarded in maximum security facilities."
+                title: "Real Backing",
+                description: "Become the owner of tangible goods. Unlike synthetic assets, here you own physical pieces safeguarded in maximum security facilities."
             },
             {
                 icon: "🏆",
                 title: "Professional Validation",
-                description: "We work with independent experts and leading certification houses to ensure each vehicle, jewelry piece or bottle meets the most demanding standards."
+                description: "We work with a panel of renowned experts across diverse sectors, independent appraisers and certification houses, as well as various agreements with guarantee providers."
             },
             {
                 icon: "🛡️",
-                title: "Specialized Conservation",
-                description: "Mechanical maintenance for vehicles, humidity control for wines and armored security for jewelry. Your physical assets are kept in show condition."
+                title: "Under Control",
+                description: "Vehicle tuning and maintenance, environmental monitoring for wines, and armored security for jewelry. The value and integrity of your assets are fully guaranteed."
+            },
+            {
+                icon: "🚀",
+                title: "Exit Strategy",
+                description: "At the end of the investment term, WOTfinance implements the most suitable exit strategy (auctions, private resales, sales through a specialized agent). There is the option to reinvest or definitively close the investment."
             }
         ]
     },
@@ -122,26 +127,40 @@ const en = {
 
     // Team Section
     team: {
-        title: "Our Team of Experts",
+        title: "Our Team",
         subtitle: "Specialists with experience in alternative investments and luxury assets",
         members: [
             {
-                name: "Victor Rodriguez Esteban",
-                role: "Wine Investment Specialist",
-                specialty: "Extensive experience in high-quality wine investments",
+                name: "Víctor Rodríguez Esteban",
+                role: "CEO",
+                specialty: "Investment Specialist",
                 image: "/team/VICTOR-RODRIGUEZ-GR.jpg"
             },
             {
                 name: "Juan Carlos Gil Vega",
-                role: "Business Specialist",
-                specialty: "Experience in business management and digital marketing",
-                image: "/team/JUAN-CARLOS-GIL-GR.jpg"
+                role: "Business Manager",
+                specialty: "Digital Marketing",
+                image: "/team/JUAN-CARLOS-GIL-GR NEW.jpg.jpeg"
             },
             {
                 name: "Ángel Arellano Del Olmo",
-                role: "IT Specialist",
-                specialty: "Experience in software development and information security",
+                role: "IT Director",
+                specialty: "Software Development and Information Security",
                 image: "/team/wot-angel.jpg"
+            },
+            {
+                name: "Corpus Pascua",
+                role: "Jewelry and Watch Specialist",
+                specialty: "Certified Appraisals Manager",
+                image: "/team/CORPUS-PASCUA.jpeg",
+                grayscale: true,
+                imagePosition: "center top"
+            },
+            {
+                name: "Francisco Carrión Cárdenas",
+                role: "Classic Car Expert",
+                specialty: "Auction Coordinator",
+                image: "/team/FRANCISCO-CARRION-GR.jpg"
             }
         ]
     },
@@ -193,7 +212,8 @@ const en = {
                     { text: "About Us", href: "#" },
                     { text: "Expert Team", href: "#" },
                     { text: "Blog", href: "#" },
-                    { text: "Press", href: "#" }
+                    { text: "Press", href: "#" },
+                    { text: "Administration", href: "/admin" }
                 ]
             },
             support: {

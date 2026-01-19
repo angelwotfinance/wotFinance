@@ -48,6 +48,10 @@
     transform: scale(1.05);
 }
 
+.team-image.grayscale {
+    filter: grayscale(100%);
+}
+
 .team-overlay {
     position: absolute;
     top: 0;

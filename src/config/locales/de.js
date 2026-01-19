@@ -23,39 +23,39 @@ const de = {
 
     // Hero Section
     hero: {
-        badge: "Edle Weine · Seltene Whiskys · Oldtimer · Feiner Schmuck",
+        badge: "Edle Weine - Außergewöhnliche Whiskys - Oldtimer - Antiker Schmuck - Sammleruhren",
         title: {
-            main: "Digitaler Zugang zu hochwertigen",
-            highlight: "Sachwerten"
+            main: "Zugang zu Luxusgütern",
+            highlight: "als alternative Anlagen"
         },
-        subtitle: "Die Technologieplattform, die Luxus-Sammlerstücke mit der digitalen Wirtschaft verbindet. Verwalten, verwahren und verfolgen Sie Oldtimer, Weine und Schmuck mit Blockchain-Sicherheit.",
+        subtitle: "Die Plattform, die berät und anleitet, wie man in sichere Wertanlagen investiert, die mit Luxus oder Sammlerstücken verbunden sind, mit Blockchain-Sicherheit",
         buttons: {
-            primary: "Zugang anfordern",
-            secondary: "KI-Gutachter"
+            primary: "WOTfinance betreten",
+            secondary: "Gutachter"
         },
         trust: {
-            rating: "Edle Weine · Seltene Whiskys",
+            rating: "Edle Weine - Außergewöhnliche Whiskys",
             clients: "",
-            clientsLabel: "Oldtimer · Feiner Schmuck"
+            clientsLabel: "Oldtimer - Antiker Schmuck - Sammleruhren"
         }
     },
 
     // How It Works Section
     howItWorks: {
-        title: "So funktioniert's",
+        title: "Klug investieren",
         subtitle: "Drei Schritte zu Ihrer Sammlung",
         steps: [
             {
                 number: "01",
-                title: "Katalogzugang",
-                description: "Zugang zu einer kuratierten Auswahl an Sachgütern. Jedes Stück verfügt über Herkunftszertifizierung und dokumentarische Rückverfolgbarkeit auf der Blockchain.",
+                title: "Unseren Katalog durchstöbern",
+                description: "Jedes Stück in unserer Kollektion verfügt über Herkunftszertifizierung und dokumentarische Rückverfolgbarkeit auf der Blockchain.",
                 icon: "🎯",
                 image: "/wot-selecciona-activo.png"
             },
             {
                 number: "02",
                 title: "Logistik & Verwahrung",
-                description: "Wir übernehmen die physische Verifizierung, den sicheren Transport und die Lagerung in spezialisierten Tresoren mit optimalen Erhaltungsbedingungen und Vollversicherung.",
+                description: "Wir übernehmen die physische Verifizierung, den sicheren Transport und die Lagerung unter optimalen Erhaltungsbedingungen mit Vollversicherung.",
                 icon: "⚡",
                 image: "/nosotros-gestionamos.png"
             },
@@ -72,8 +72,8 @@ const de = {
 
     // Benefits Section
     benefits: {
-        title: "Warum uns wählen?",
-        subtitle: "Exklusive Vorteile unserer Plattform",
+        title: "Bequem und sicher",
+        subtitle: "Eine kluge Wahl",
         items: [
             {
                 icon: "📜",
@@ -82,18 +82,23 @@ const de = {
             },
             {
                 icon: "🔒",
-                title: "Echte physische Absicherung",
-                description: "Erwerben Sie Eigentum an bestehenden materiellen Gütern. Anders als bei synthetischen Assets besitzen Sie hier physische Stücke, die in Hochsicherheitsanlagen verwahrt werden."
+                title: "Echte Absicherung",
+                description: "Werden Sie Eigentümer von materiellen Gütern. Anders als bei synthetischen Assets besitzen Sie hier physische Stücke, die in Hochsicherheitsanlagen verwahrt werden."
             },
             {
                 icon: "🏆",
                 title: "Professionelle Validierung",
-                description: "Wir arbeiten mit unabhängigen Experten und führenden Zertifizierungshäusern zusammen, um sicherzustellen, dass jedes Fahrzeug, Schmuckstück oder jede Flasche höchste Standards erfüllt."
+                description: "Wir arbeiten mit einem Panel anerkannter Experten aus verschiedenen Branchen, unabhängigen Gutachtern und Zertifizierungshäusern sowie verschiedenen Vereinbarungen mit Garantieanbietern."
             },
             {
                 icon: "🛡️",
-                title: "Spezialisierte Konservierung",
-                description: "Mechanische Wartung für Fahrzeuge, Feuchtigkeitskontrolle für Weine und gepanzerte Sicherheit für Schmuck. Ihre physischen Werte werden in Ausstellungszustand gehalten."
+                title: "Unter Kontrolle",
+                description: "Einstellung und Wartung der Fahrzeuge, Umweltüberwachung für Weine und gepanzerte Sicherheit für Schmuck. Der Wert und die Integrität Ihres Vermögens sind vollständig garantiert."
+            },
+            {
+                icon: "🚀",
+                title: "Ausstiegsstrategie",
+                description: "Am Ende der Investitionslaufzeit implementiert WOTfinance die am besten geeignete Ausstiegsstrategie (Auktionen, private Wiederverkäufe, Verkäufe über einen spezialisierten Agenten). Es besteht die Möglichkeit, zu reinvestieren oder die Investition endgültig zu beenden."
             }
         ]
     },
@@ -122,26 +127,40 @@ const de = {
 
     // Team Section
     team: {
-        title: "Unser Expertenteam",
+        title: "Unser Team",
         subtitle: "Spezialisten mit Erfahrung in alternativen Investitionen und Luxusgütern",
         members: [
             {
-                name: "Victor Rodriguez Esteban",
-                role: "Wein-Investment-Spezialist",
-                specialty: "Umfangreiche Erfahrung in hochwertigen Wein-Investments",
+                name: "Víctor Rodríguez Esteban",
+                role: "CEO",
+                specialty: "Investitionsspezialist",
                 image: "/team/VICTOR-RODRIGUEZ-GR.jpg"
             },
             {
                 name: "Juan Carlos Gil Vega",
-                role: "Business-Spezialist",
-                specialty: "Erfahrung in Geschäftsführung und digitalem Marketing",
-                image: "/team/JUAN-CARLOS-GIL-GR.jpg"
+                role: "Geschäftsführer",
+                specialty: "Digitales Marketing",
+                image: "/team/JUAN-CARLOS-GIL-GR NEW.jpg.jpeg"
             },
             {
                 name: "Ángel Arellano Del Olmo",
-                role: "IT-Spezialist",
-                specialty: "Erfahrung in Softwareentwicklung und Informationssicherheit",
+                role: "IT-Direktor",
+                specialty: "Softwareentwicklung und Informationssicherheit",
                 image: "/team/wot-angel.jpg"
+            },
+            {
+                name: "Corpus Pascua",
+                role: "Schmuck- und Uhrenspezialistin",
+                specialty: "Leiterin zertifizierter Gutachten",
+                image: "/team/CORPUS-PASCUA.jpeg",
+                grayscale: true,
+                imagePosition: "center top"
+            },
+            {
+                name: "Francisco Carrión Cárdenas",
+                role: "Oldtimer-Experte",
+                specialty: "Auktionskoordinator",
+                image: "/team/FRANCISCO-CARRION-GR.jpg"
             }
         ]
     },
@@ -193,7 +212,8 @@ const de = {
                     { text: "Über uns", href: "#" },
                     { text: "Expertenteam", href: "#" },
                     { text: "Blog", href: "#" },
-                    { text: "Presse", href: "#" }
+                    { text: "Presse", href: "#" },
+                    { text: "Verwaltung", href: "/admin" }
                 ]
             },
             support: {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import { LanguageProvider } from './context/LanguageContext';
 import Navbar from './components/Navbar';
@@ -10,6 +10,8 @@ import Stats from './components/Stats';
 import Team from './components/Team';
 import Footer from './components/Footer';
 import TestSelection from './pages/TestSelection';
+import AdminLogin from './components/AdminLogin';
+import AdminPanel from './components/AdminPanel';
 
 const LandingPage = () => (
     <>
@@ -22,18 +24,31 @@ const LandingPage = () => (
     </>
 );
 
+// Wrapper to conditionally show Navbar
+const AppContent = () => {
+    const location = useLocation();
+    const isAdminRoute = location.pathname.startsWith('/admin');
+
+    return (
+        <div className="App">
+            {!isAdminRoute && <Navbar />}
+            <Routes>
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/comenzar" element={<TestSelection />} />
+                <Route path="/admin/login" element={<AdminLogin />} />
+                <Route path="/admin/dashboard" element={<AdminPanel />} />
+                <Route path="/admin" element={<AdminLogin />} />
+            </Routes>
+        </div>
+    );
+};
+
 function App() {
     return (
         <LanguageProvider>
             <ThemeProvider>
                 <Router>
-                    <div className="App">
-                        <Navbar />
-                        <Routes>
-                            <Route path="/" element={<LandingPage />} />
-                            <Route path="/comenzar" element={<TestSelection />} />
-                        </Routes>
-                    </div>
+                    <AppContent />
                 </Router>
             </ThemeProvider>
         </LanguageProvider>
@@ -41,3 +56,4 @@ function App() {
 }
 
 export default App;
+

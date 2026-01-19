@@ -82,7 +82,7 @@ const TasadorModal = ({ isOpen, onClose }) => {
 
                 <div className="modal-body">
                     <p className="modal-description">
-                        Utiliza nuestra IA especializada para obtener una tasación profesional de tus activos de lujo.
+                        Cualquier usuario puede obtener una estimación casi inmediata del valor de sus bienes desde nuestra plataforma, optimizando el uso de la IA. La interpretación y validación por parte de nuestros expertos marca el grado de solvencia de los servicios de esta consultoría.
                     </p>
 
                     <form onSubmit={handleSubmit} className="tasador-form">

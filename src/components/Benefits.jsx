@@ -2,6 +2,14 @@ import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import './Benefits.css';
 
+const BENEFIT_IMAGES = [
+    '/benefit-traceability.png',
+    '/benefit-physical-backing.png',
+    '/benefit-validation.png',
+    '/benefit-conservation.png',
+    '/salida-inversion.png'
+];
+
 const Benefits = () => {
     const { content } = useLanguage();
     return (
@@ -15,8 +23,13 @@ const Benefits = () => {
                 <div className="benefits-grid">
                     {content.benefits.items.map((benefit, index) => (
                         <div key={index} className="benefit-card fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
-                            <div className="benefit-icon-wrapper">
-                                <div className="benefit-icon">{benefit.icon}</div>
+                            <div className="benefit-image-wrapper">
+                                <img
+                                    src={BENEFIT_IMAGES[index]}
+                                    alt={benefit.title}
+                                    className="benefit-image"
+                                    loading="lazy"
+                                />
                             </div>
                             <h3 className="benefit-title">{benefit.title}</h3>
                             <p className="benefit-description">{benefit.description}</p>
@@ -29,4 +42,5 @@ const Benefits = () => {
 };
 
 export default Benefits;
+
 

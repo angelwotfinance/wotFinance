@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../tasador-service"
+		}
+	],
+	"settings": {
+		"java.format.settings.url": "react-landing-page/.vscode/java-formatter.xml",
+		"java.compile.nullAnalysis.mode": "automatic"
+	}
+}
