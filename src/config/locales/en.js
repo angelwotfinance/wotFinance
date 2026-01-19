@@ -50,21 +50,21 @@ const en = {
                 title: "Browse Our Catalog",
                 description: "Each piece in our collection has origin certification and documentary traceability registered on blockchain.",
                 icon: "🎯",
-                image: "/wot-selecciona-activo.png"
+                image: "/TONDONIA.jpeg"
             },
             {
                 number: "02",
                 title: "Logistics & Custody",
                 description: "We handle physical verification, secure transport and storage in optimal preservation conditions with comprehensive insurance.",
                 icon: "⚡",
-                image: "/nosotros-gestionamos.png"
+                image: "/JOYAS.jpeg"
             },
             {
                 number: "03",
                 title: "Collection Management",
                 description: "Track the market value evolution of your assets from your dashboard. Decide when to hold, withdraw or transfer ownership of your goods.",
                 icon: "📊",
-                image: "/obten-rentabilidad.png"
+                image: "/LLANTA-WOT.jpeg"
             }
         ],
         cta: "View Catalog"

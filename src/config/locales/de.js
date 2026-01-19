@@ -50,21 +50,21 @@ const de = {
                 title: "Unseren Katalog durchstöbern",
                 description: "Jedes Stück in unserer Kollektion verfügt über Herkunftszertifizierung und dokumentarische Rückverfolgbarkeit auf der Blockchain.",
                 icon: "🎯",
-                image: "/wot-selecciona-activo.png"
+                image: "/TONDONIA.jpeg"
             },
             {
                 number: "02",
                 title: "Logistik & Verwahrung",
                 description: "Wir übernehmen die physische Verifizierung, den sicheren Transport und die Lagerung unter optimalen Erhaltungsbedingungen mit Vollversicherung.",
                 icon: "⚡",
-                image: "/nosotros-gestionamos.png"
+                image: "/JOYAS.jpeg"
             },
             {
                 number: "03",
                 title: "Sammlungsmanagement",
                 description: "Verfolgen Sie die Marktpreisentwicklung Ihrer Vermögenswerte über Ihr Dashboard. Entscheiden Sie, wann Sie halten, abheben oder das Eigentum übertragen möchten.",
                 icon: "📊",
-                image: "/obten-rentabilidad.png"
+                image: "/LLANTA-WOT.jpeg"
             }
         ],
         cta: "Katalog ansehen"

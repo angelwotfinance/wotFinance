@@ -50,21 +50,21 @@ const zh = {
                 title: "浏览我们的目录",
                 description: "我们收藏的每件作品都具有产地认证和区块链上记录的文档可追溯性。",
                 icon: "🎯",
-                image: "/wot-selecciona-activo.png"
+                image: "/TONDONIA.jpeg"
             },
             {
                 number: "02",
                 title: "物流与保管",
                 description: "我们负责实物验证、安全运输和在最佳保存条件下的存储，提供全面保险。",
                 icon: "⚡",
-                image: "/nosotros-gestionamos.png"
+                image: "/JOYAS.jpeg"
             },
             {
                 number: "03",
                 title: "收藏管理",
                 description: "从您的仪表板跟踪资产的市场价值变化。决定何时持有、提取或转让您的货物所有权。",
                 icon: "📊",
-                image: "/obten-rentabilidad.png"
+                image: "/LLANTA-WOT.jpeg"
             }
         ],
         cta: "查看目录"

@@ -50,21 +50,21 @@ const es = {
                 title: "Consulta nuestro Catálogo",
                 description: "Cada pieza de nuestra colección cuenta con certificación de origen y trazabilidad documental registrada en blockchain.",
                 icon: "🎯",
-                image: "/wot-selecciona-activo.png"
+                image: "/TONDONIA.jpeg"
             },
             {
                 number: "02",
                 title: "Logística y Custodia",
                 description: "Nos encargamos de la verificación física, el transporte seguro y el almacenamiento en condiciones óptimas de conservación y seguro a todo riesgo.",
                 icon: "⚡",
-                image: "/nosotros-gestionamos.png"
+                image: "/JOYAS.jpeg"
             },
             {
                 number: "03",
                 title: "Gestión de la Colección",
                 description: "Sigue la evolución de valor de mercado de tus activos desde tu panel de control. Decide cuándo mantener, retirar o transferir la propiedad de tus bienes.",
                 icon: "📊",
-                image: "/obten-rentabilidad.png"
+                image: "/LLANTA-WOT.jpeg"
             }
         ],
         cta: "Ver Catálogo"
