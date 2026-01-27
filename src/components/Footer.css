@@ -1,11 +1,12 @@
 .footer {
-    background: var(--gray-900);
+    background: #0a0a0a;
     color: white;
     padding: var(--space-24) 0 var(--space-8) 0;
+    border-top: 1px solid var(--metallic-border);
 }
 
 [data-theme="dark"] .footer {
-    background: #0a0a0a;
+    background: #050505;
 }
 
 .footer-content {
@@ -24,6 +25,7 @@
     font-size: var(--font-size-2xl);
     font-weight: 900;
     margin-bottom: var(--space-4);
+    color: var(--accent-color);
 }
 
 .footer-description {
@@ -41,18 +43,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: var(--radius-md);
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid var(--metallic-border);
+    border-radius: 50%;
     text-decoration: none;
     font-size: var(--font-size-xl);
     transition: all var(--transition-normal);
 }
 
 .social-link:hover {
-    background: var(--primary-gradient);
+    background: var(--accent-gradient);
+    border-color: var(--accent-color);
     transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(107, 123, 107, 0.3);
 }
 
 .footer-title {
@@ -76,15 +81,15 @@
 }
 
 .footer-links a:hover {
-    color: white;
+    color: var(--accent-color);
 }
 
 .footer-disclaimer {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
     padding: var(--space-4) var(--space-6);
     margin-bottom: var(--space-8);
-    border-left: 3px solid var(--gold-500);
+    border: 1px solid var(--metallic-border);
 }
 
 .footer-disclaimer p {
@@ -99,7 +104,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: var(--space-8);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--metallic-border);
     flex-wrap: wrap;
     gap: var(--space-4);
 }
@@ -122,7 +127,7 @@
 }
 
 .footer-legal a:hover {
-    color: white;
+    color: var(--accent-color);
 }
 
 @media (max-width: 968px) {

@@ -1,21 +1,26 @@
 :root {
-  /* === PREMIUM COLOR SYSTEM === */
-  /* Minimalist Animated Gradient - For buttons only (subtle shimmer) */
-  --primary-gradient: linear-gradient(135deg, #1a1a1a, #333333, #1a1a1a);
-  --primary-gradient-animated: linear-gradient(90deg, #1a1a1a, #444444, #1a1a1a, #333333, #1a1a1a, #1a1a1a);
+  /* === PREMIUM COLOR SYSTEM - Metallic Dark Theme === */
+  /* Minimalist Gradient - For buttons */
+  --primary-gradient: linear-gradient(135deg, #2a2a2a, #3d3d3d, #2a2a2a);
+  --primary-gradient-animated: linear-gradient(90deg, #2a2a2a, #4a4a4a, #2a2a2a, #3d3d3d, #2a2a2a, #2a2a2a);
 
   /* Secondary Accents */
-  --secondary-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-  --accent-gradient: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
-  --dark-gradient: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #0f0f0f 100%);
+  --secondary-gradient: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  --accent-gradient: linear-gradient(135deg, #6B7B6B 0%, #4a5a4a 100%);
+  --dark-gradient: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
 
   /* Core Accent Colors */
   --primary-color: #1a1a1a;
   /* Deep Black */
   --secondary-color: #2d2d2d;
   /* Charcoal */
-  --accent-color: #B38728;
-  /* Gold - for text highlights */
+  --accent-color: #6B7B6B;
+  /* Sage Green - muted, elegant */
+  --accent-color-bright: #8B9B8B;
+  /* Lighter sage for highlights */
+  --metallic-border: rgba(180, 180, 180, 0.3);
+  /* Chrome-like border */
+  --metallic-shine: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.1) 100%);
 
   /* LIGHT MODE - Clean, Professional, Premium */
   --bg-primary: #ffffff;
@@ -93,36 +98,43 @@
   --glass-bg: rgba(255, 255, 255, 0.8);
   --glass-border: rgba(0, 0, 0, 0.06);
   --glass-blur: blur(12px);
+
+  /* Circular Frame Styles */
+  --circle-border: 3px solid var(--metallic-border);
+  --circle-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
-/* === DARK MODE - Sophisticated Navy-Charcoal === */
+/* === DARK MODE - Sophisticated Charcoal with Green Accents === */
 [data-theme="dark"] {
-  --bg-primary: #0d0d0d;
-  /* Deep Black */
-  --bg-secondary: #141414;
+  --bg-primary: #0a0a0a;
+  /* Near Black */
+  --bg-secondary: #121212;
   /* Rich Charcoal */
-  --bg-tertiary: #1f1f1f;
+  --bg-tertiary: #1a1a1a;
   /* Dark Gray */
-  --text-primary: #f5f5f5;
+  --text-primary: #e8e8e8;
   /* Off-White */
-  --text-secondary: #b0b0b0;
+  --text-secondary: #a0a0a0;
   /* Light Gray */
-  --text-tertiary: #777777;
+  --text-tertiary: #666666;
   /* Muted Gray */
   --border-color: rgba(255, 255, 255, 0.08);
-  --card-bg: rgba(20, 20, 20, 0.9);
-  --card-border: rgba(255, 255, 255, 0.06);
+  --card-bg: rgba(25, 25, 25, 0.95);
+  --card-border: rgba(180, 180, 180, 0.15);
 
   /* Dark Mode Shadows */
-  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 4px 12px -2px rgba(0, 0, 0, 0.5);
-  --shadow-lg: 0 12px 24px -4px rgba(0, 0, 0, 0.6);
-  --shadow-xl: 0 20px 40px -8px rgba(0, 0, 0, 0.7);
-  --shadow-2xl: 0 32px 64px -12px rgba(0, 0, 0, 0.8);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 12px -2px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 12px 24px -4px rgba(0, 0, 0, 0.7);
+  --shadow-xl: 0 20px 40px -8px rgba(0, 0, 0, 0.8);
+  --shadow-2xl: 0 32px 64px -12px rgba(0, 0, 0, 0.9);
 
   /* Glass Effect for Dark Mode */
-  --glass-bg: rgba(15, 15, 15, 0.8);
-  --glass-border: rgba(255, 255, 255, 0.05);
+  --glass-bg: rgba(20, 20, 20, 0.85);
+  --glass-border: rgba(180, 180, 180, 0.1);
+
+  /* Metallic for dark mode */
+  --metallic-border: rgba(200, 200, 200, 0.25);
 }
 
 /* Reset and Base Styles */

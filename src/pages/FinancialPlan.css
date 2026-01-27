@@ -1,0 +1,167 @@
+.financial-plan-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.financial-plan-container {
+    flex: 1;
+    padding-bottom: 40px;
+}
+
+.financial-plan-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Tabs Container - Single Row with Horizontal Scroll */
+.tabs-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    margin-bottom: 25px;
+    padding: 12px 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 215, 0, 0.5) transparent;
+}
+
+.tabs-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.tabs-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.tabs-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 215, 0, 0.5);
+    border-radius: 3px;
+}
+
+/* Tab Button - Compact for Single Row */
+.tab-button {
+    background: linear-gradient(145deg, #2a2a2a 0%, #1a1a1a 100%);
+    color: #e0e0e0;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 8px 14px;
+    border-radius: 8px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    flex-shrink: 0;
+}
+
+.tab-button:hover {
+    background: linear-gradient(145deg, #3a3a3a 0%, #2a2a2a 100%);
+    border-color: rgba(255, 215, 0, 0.3);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Tab Button - Active State */
+.tab-button.active {
+    background: linear-gradient(135deg, #FFD700 0%, #FDB931 100%);
+    color: #000000;
+    border: none;
+    font-weight: 700;
+    box-shadow: 0 6px 20px rgba(253, 185, 49, 0.4);
+    transform: translateY(-2px);
+}
+
+.tab-button.active:hover {
+    background: linear-gradient(135deg, #FFE44D 0%, #FFC107 100%);
+    color: #000000;
+}
+
+/* Iframe Container - Simple approach */
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+/* Top overlay - Covers Google Sheets title bar */
+.iframe-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: linear-gradient(180deg, #1a1a1a 0%, #1a1a1a 70%, transparent 100%);
+    z-index: 10;
+    pointer-events: none;
+    border-radius: 16px 16px 0 0;
+}
+
+/* Bottom overlay - Covers Google Sheets footer */
+.iframe-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+    background: linear-gradient(0deg, #1a1a1a 0%, #1a1a1a 70%, transparent 100%);
+    z-index: 10;
+    pointer-events: none;
+    border-radius: 0 0 16px 16px;
+}
+
+.financial-iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: #ffffff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .tabs-container {
+        gap: 6px;
+        padding: 10px 12px;
+    }
+
+    .tab-button {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+
+    .iframe-container {
+        height: 500px;
+    }
+}
+
+/* Light mode adjustments */
+[data-theme="light"] .tab-button {
+    background: linear-gradient(145deg, #f5f5f5 0%, #e8e8e8 100%);
+    color: #333333;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .tab-button:hover {
+    background: linear-gradient(145deg, #ffffff 0%, #f0f0f0 100%);
+    border-color: rgba(255, 215, 0, 0.5);
+    color: #000000;
+}
+
+[data-theme="light"] .tabs-container {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}

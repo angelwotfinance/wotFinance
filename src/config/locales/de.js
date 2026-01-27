@@ -13,7 +13,8 @@ const de = {
             howItWorks: "So funktioniert's",
             benefits: "Vorteile",
             team: "Team",
-            testimonials: "Referenzen"
+            testimonials: "Referenzen",
+            financialPlan: "Finanzplan"
         },
         buttons: {
             login: "Anmelden",

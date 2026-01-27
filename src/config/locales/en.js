@@ -13,7 +13,8 @@ const en = {
             howItWorks: "How It Works",
             benefits: "Benefits",
             team: "Team",
-            testimonials: "Testimonials"
+            testimonials: "Testimonials",
+            financialPlan: "Financial Plan"
         },
         buttons: {
             login: "Login",

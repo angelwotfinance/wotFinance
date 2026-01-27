@@ -52,7 +52,11 @@ const Navbar = () => {
             <div className="container">
                 <div className="navbar-content">
                     <div className="navbar-logo" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
-                        <span className="gradient-text">{content.brand.name}</span>
+                        <img
+                            src="/wotfinance.png"
+                            alt={content.brand.name}
+                            className="navbar-logo-img"
+                        />
                     </div>
 
                     <div className={`navbar-menu ${isMobileMenuOpen ? 'active' : ''}`}>
@@ -60,6 +64,7 @@ const Navbar = () => {
                         <a onClick={() => scrollToSection('como-funciona')} className="nav-link">{content.navbar.links.howItWorks}</a>
                         <a onClick={() => scrollToSection('beneficios')} className="nav-link">{content.navbar.links.benefits}</a>
                         <a onClick={() => scrollToSection('equipo')} className="nav-link">{content.navbar.links.team}</a>
+                        <a onClick={() => navigate('/plan-financiero')} className="nav-link" style={{ cursor: 'pointer' }}>{content.navbar.links.financialPlan}</a>
                     </div>
 
                     <div className="navbar-actions">

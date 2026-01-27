@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import TestSelection from './pages/TestSelection';
 import AdminLogin from './components/AdminLogin';
 import AdminPanel from './components/AdminPanel';
+import FinancialPlan from './pages/FinancialPlan';
 
 const LandingPage = () => (
     <>
@@ -38,6 +39,7 @@ const AppContent = () => {
                 <Route path="/admin/login" element={<AdminLogin />} />
                 <Route path="/admin/dashboard" element={<AdminPanel />} />
                 <Route path="/admin" element={<AdminLogin />} />
+                <Route path="/plan-financiero" element={<FinancialPlan />} />
             </Routes>
         </div>
     );

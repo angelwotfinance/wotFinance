@@ -13,7 +13,8 @@ const zh = {
             howItWorks: "运作方式",
             benefits: "优势",
             team: "团队",
-            testimonials: "客户评价"
+            testimonials: "客户评价",
+            financialPlan: "财务计划"
         },
         buttons: {
             login: "登录",

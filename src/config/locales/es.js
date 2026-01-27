@@ -13,7 +13,8 @@ const es = {
             howItWorks: "Cómo Funciona",
             benefits: "Beneficios",
             team: "Equipo",
-            testimonials: "Testimonios"
+            testimonials: "Testimonios",
+            financialPlan: "Plan Financiero"
         },
         buttons: {
             login: "Iniciar Sesión",
