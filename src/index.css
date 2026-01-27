@@ -232,7 +232,9 @@ p {
 
 /* Buttons */
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: var(--space-3) var(--space-6);
   font-size: var(--font-size-base);
   font-weight: 600;
@@ -244,6 +246,7 @@ p {
   text-align: center;
   position: relative;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .btn::before {
