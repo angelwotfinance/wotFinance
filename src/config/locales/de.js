@@ -135,7 +135,8 @@ const de = {
                 name: "Víctor Rodríguez Esteban",
                 role: "CEO",
                 specialty: "Investitionsspezialist",
-                image: "/team/VICTOR-RODRIGUEZ-GR.jpg"
+                image: "/team/VICTOR-RODRIGUEZ-GR.jpg",
+                imagePosition: "center 30%"
             },
             {
                 name: "Juan Carlos Gil Vega",
@@ -161,7 +162,8 @@ const de = {
                 name: "Francisco Carrión Cárdenas",
                 role: "Oldtimer-Experte",
                 specialty: "Auktionskoordinator",
-                image: "/team/FRANCISCO-CARRION-GR.jpg"
+                image: "/team/FRANCISCO-CARRION-GR.jpg",
+                imagePosition: "center 30%"
             }
         ]
     },

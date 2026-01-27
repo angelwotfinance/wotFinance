@@ -135,7 +135,8 @@ const es = {
                 name: "Víctor Rodríguez Esteban",
                 role: "CEO",
                 specialty: "Especialista en inversiones",
-                image: "/team/VICTOR-RODRIGUEZ-GR.jpg"
+                image: "/team/VICTOR-RODRIGUEZ-GR.jpg",
+                imagePosition: "center 30%"
             },
             {
                 name: "Juan Carlos Gil Vega",
@@ -161,7 +162,8 @@ const es = {
                 name: "Francisco Carrión Cárdenas",
                 role: "Experto en Coches Clásicos",
                 specialty: "Coordinador de subastas",
-                image: "/team/FRANCISCO-CARRION-GR.jpg"
+                image: "/team/FRANCISCO-CARRION-GR.jpg",
+                imagePosition: "center 30%"
             }
         ]
     },

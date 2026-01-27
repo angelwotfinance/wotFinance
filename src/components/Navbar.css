@@ -44,9 +44,9 @@
     transition: filter var(--transition-normal);
 }
 
-/* Dark mode: invert and adjust for visibility */
+/* Dark mode: invert and rotate hue to preserve red */
 [data-theme="dark"] .navbar-logo-img {
-    filter: invert(1) brightness(0.9);
+    filter: invert(1) brightness(0.9) hue-rotate(180deg);
 }
 
 .navbar-menu {

@@ -135,7 +135,8 @@ const fr = {
                 name: "Víctor Rodríguez Esteban",
                 role: "PDG",
                 specialty: "Spécialiste en investissements",
-                image: "/team/VICTOR-RODRIGUEZ-GR.jpg"
+                image: "/team/VICTOR-RODRIGUEZ-GR.jpg",
+                imagePosition: "center 30%"
             },
             {
                 name: "Juan Carlos Gil Vega",
@@ -161,7 +162,8 @@ const fr = {
                 name: "Francisco Carrión Cárdenas",
                 role: "Expert en Voitures Classiques",
                 specialty: "Coordinateur des enchères",
-                image: "/team/FRANCISCO-CARRION-GR.jpg"
+                image: "/team/FRANCISCO-CARRION-GR.jpg",
+                imagePosition: "center 30%"
             }
         ]
     },

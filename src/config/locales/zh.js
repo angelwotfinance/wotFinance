@@ -135,7 +135,8 @@ const zh = {
                 name: "Víctor Rodríguez Esteban",
                 role: "首席执行官",
                 specialty: "投资专家",
-                image: "/team/VICTOR-RODRIGUEZ-GR.jpg"
+                image: "/team/VICTOR-RODRIGUEZ-GR.jpg",
+                imagePosition: "center 30%"
             },
             {
                 name: "Juan Carlos Gil Vega",
@@ -161,7 +162,8 @@ const zh = {
                 name: "Francisco Carrión Cárdenas",
                 role: "经典汽车专家",
                 specialty: "拍卖协调员",
-                image: "/team/FRANCISCO-CARRION-GR.jpg"
+                image: "/team/FRANCISCO-CARRION-GR.jpg",
+                imagePosition: "center 30%"
             }
         ]
     },
