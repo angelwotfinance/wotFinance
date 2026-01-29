@@ -65,7 +65,7 @@ const fr = {
                 title: "Gestion de la Collection",
                 description: "Suivez l'évolution de la valeur marché de vos actifs depuis votre tableau de bord. Décidez quand conserver, retirer ou transférer la propriété de vos biens.",
                 icon: "📊",
-                image: "/LLANTA-WOT.jpeg"
+                image: "/LLANTA-CLASICO.jpeg"
             }
         ],
         cta: "Voir le Catalogue"

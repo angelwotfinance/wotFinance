@@ -3,11 +3,11 @@ import { useLanguage } from '../context/LanguageContext';
 import './Benefits.css';
 
 const BENEFIT_IMAGES = [
-    '/benefit-traceability.png',
-    '/benefit-physical-backing.png',
-    '/benefit-validation.png',
-    '/benefit-conservation.png',
-    '/salida-inversion.png'
+    '/WINE-GALLERY.jpg',
+    '/JEWELRY-GEMS.jpg',
+    '/PATEK-RELOJ.jpeg',
+    '/WHISKY-BARRELS.jpg',
+    '/PORSCHE.jpg'
 ];
 
 const Benefits = () => {

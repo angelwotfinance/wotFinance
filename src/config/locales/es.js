@@ -65,7 +65,7 @@ const es = {
                 title: "Gestión de la Colección",
                 description: "Sigue la evolución de valor de mercado de tus activos desde tu panel de control. Decide cuándo mantener, retirar o transferir la propiedad de tus bienes.",
                 icon: "📊",
-                image: "/LLANTA-WOT.jpeg"
+                image: "/LLANTA-CLASICO.jpeg"
             }
         ],
         cta: "Ver Catálogo"

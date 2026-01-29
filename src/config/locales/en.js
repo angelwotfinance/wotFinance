@@ -65,7 +65,7 @@ const en = {
                 title: "Collection Management",
                 description: "Track the market value evolution of your assets from your dashboard. Decide when to hold, withdraw or transfer ownership of your goods.",
                 icon: "📊",
-                image: "/LLANTA-WOT.jpeg"
+                image: "/LLANTA-CLASICO.jpeg"
             }
         ],
         cta: "View Catalog"

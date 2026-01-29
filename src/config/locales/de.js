@@ -65,7 +65,7 @@ const de = {
                 title: "Sammlungsmanagement",
                 description: "Verfolgen Sie die Marktpreisentwicklung Ihrer Vermögenswerte über Ihr Dashboard. Entscheiden Sie, wann Sie halten, abheben oder das Eigentum übertragen möchten.",
                 icon: "📊",
-                image: "/LLANTA-WOT.jpeg"
+                image: "/LLANTA-CLASICO.jpeg"
             }
         ],
         cta: "Katalog ansehen"

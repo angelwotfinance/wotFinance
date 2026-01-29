@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
-import ThemeToggle from './ThemeToggle';
 import LanguageSelector from './LanguageSelector';
 import './Navbar.css';
 
@@ -53,7 +52,7 @@ const Navbar = () => {
                 <div className="navbar-content">
                     <div className="navbar-logo" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
                         <img
-                            src="/wotfinance.png"
+                            src="/logo-wot-oscuro.png"
                             alt={content.brand.name}
                             className="navbar-logo-img"
                         />
@@ -69,14 +68,12 @@ const Navbar = () => {
 
                     <div className="navbar-actions">
                         <LanguageSelector />
-                        <ThemeToggle />
                         <button className="btn-login">{content.navbar.buttons.login}</button>
                         <button className="btn btn-primary" onClick={() => navigate('/comenzar')}>{content.navbar.buttons.getStarted}</button>
                     </div>
 
                     <div className="mobile-actions">
                         <LanguageSelector />
-                        <ThemeToggle />
                         <button
                             className="mobile-menu-btn"
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

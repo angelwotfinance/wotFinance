@@ -65,7 +65,7 @@ const zh = {
                 title: "收藏管理",
                 description: "从您的仪表板跟踪资产的市场价值变化。决定何时持有、提取或转让您的货物所有权。",
                 icon: "📊",
-                image: "/LLANTA-WOT.jpeg"
+                image: "/LLANTA-CLASICO.jpeg"
             }
         ],
         cta: "查看目录"
