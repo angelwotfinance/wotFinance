@@ -51,7 +51,7 @@ const zh = {
                 title: "浏览我们的目录",
                 description: "我们收藏的每件作品都具有产地认证和区块链上记录的文档可追溯性。",
                 icon: "🎯",
-                image: "/TONDONIA.jpeg"
+                image: "/LA-TACHE.jpeg"
             },
             {
                 number: "02",

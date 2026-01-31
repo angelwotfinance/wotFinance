@@ -51,7 +51,7 @@ const en = {
                 title: "Browse Our Catalog",
                 description: "Each piece in our collection has origin certification and documentary traceability registered on blockchain.",
                 icon: "🎯",
-                image: "/TONDONIA.jpeg"
+                image: "/LA-TACHE.jpeg"
             },
             {
                 number: "02",

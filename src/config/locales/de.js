@@ -51,7 +51,7 @@ const de = {
                 title: "Unseren Katalog durchstöbern",
                 description: "Jedes Stück in unserer Kollektion verfügt über Herkunftszertifizierung und dokumentarische Rückverfolgbarkeit auf der Blockchain.",
                 icon: "🎯",
-                image: "/TONDONIA.jpeg"
+                image: "/LA-TACHE.jpeg"
             },
             {
                 number: "02",

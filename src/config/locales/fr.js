@@ -51,7 +51,7 @@ const fr = {
                 title: "Consultez notre Catalogue",
                 description: "Chaque pièce de notre collection dispose d'une certification d'origine et d'une traçabilité documentaire enregistrée sur blockchain.",
                 icon: "🎯",
-                image: "/TONDONIA.jpeg"
+                image: "/LA-TACHE.jpeg"
             },
             {
                 number: "02",
