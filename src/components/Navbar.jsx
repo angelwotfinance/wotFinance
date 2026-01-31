@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
+import { useTheme } from '../context/ThemeContext';
 import LanguageSelector from './LanguageSelector';
+import ThemeToggle from './ThemeToggle';
 import './Navbar.css';
 
 const Navbar = () => {
     const { content } = useLanguage();
+    const { theme } = useTheme();
     const navigate = useNavigate();
     const location = useLocation();
     const [isScrolled, setIsScrolled] = useState(false);
@@ -52,7 +55,7 @@ const Navbar = () => {
                 <div className="navbar-content">
                     <div className="navbar-logo" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
                         <img
-                            src="/logo-wot-oscuro.png"
+                            src={theme === 'light' ? '/logo-wot-claro.png' : '/logo-wot-oscuro.png'}
                             alt={content.brand.name}
                             className="navbar-logo-img"
                         />
@@ -67,12 +70,14 @@ const Navbar = () => {
                     </div>
 
                     <div className="navbar-actions">
+                        <ThemeToggle />
                         <LanguageSelector />
                         <button className="btn-login">{content.navbar.buttons.login}</button>
                         <button className="btn btn-primary" onClick={() => navigate('/comenzar')}>{content.navbar.buttons.getStarted}</button>
                     </div>
 
                     <div className="mobile-actions">
+                        <ThemeToggle />
                         <LanguageSelector />
                         <button
                             className="mobile-menu-btn"

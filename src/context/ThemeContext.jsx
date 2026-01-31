@@ -14,10 +14,10 @@ export const useTheme = () => {
 
 // Provider del tema
 export const ThemeProvider = ({ children }) => {
-    // Inicializar tema desde localStorage o usar 'light' por defecto
+    // Inicializar tema desde localStorage o usar 'dark' por defecto
     const [theme, setTheme] = useState(() => {
         const savedTheme = localStorage.getItem('theme');
-        return savedTheme || 'light';
+        return savedTheme || 'dark';
     });
 
     // Aplicar tema al documento cuando cambie
