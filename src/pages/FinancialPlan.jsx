@@ -12,7 +12,7 @@ const FinancialPlan = () => {
     const [error, setError] = useState('');
 
     // Password for access (you can change this)
-    const correctPassword = 'winefi';
+    const correctPassword = 'winovertime';
 
     // Sheet definitions with their GIDs
     const sheets = [
