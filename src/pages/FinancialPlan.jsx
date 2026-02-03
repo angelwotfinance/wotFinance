@@ -56,7 +56,14 @@ const FinancialPlan = () => {
                 <div className="password-overlay" onClick={handleOverlayClick}>
                     <div className="password-modal">
                         <button className="password-close-btn" onClick={handleClose}>✕</button>
-                        <h2>🔒 Acceso Restringido</h2>
+                        <div className="password-modal-header">
+                            <img
+                                src="/logo-wot.png"
+                                alt="WOT Logo"
+                                className="password-logo"
+                            />
+                            <h2>Acceso Restringido</h2>
+                        </div>
                         <p>Introduce la clave para acceder al Plan Financiero</p>
                         <form onSubmit={handleSubmit}>
                             <input

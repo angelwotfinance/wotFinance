@@ -13,6 +13,7 @@ import TestSelection from './pages/TestSelection';
 import AdminLogin from './components/AdminLogin';
 import AdminPanel from './components/AdminPanel';
 import FinancialPlan from './pages/FinancialPlan';
+import NewsletterPopup from './components/NewsletterPopup';
 
 const LandingPage = () => (
     <>
@@ -41,6 +42,7 @@ const AppContent = () => {
                 <Route path="/admin" element={<AdminLogin />} />
                 <Route path="/plan-financiero" element={<FinancialPlan />} />
             </Routes>
+            {!isAdminRoute && <NewsletterPopup />}
         </div>
     );
 };

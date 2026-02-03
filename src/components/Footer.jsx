@@ -1,9 +1,11 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import { useTheme } from '../context/ThemeContext';
 import './Footer.css';
 
 const Footer = () => {
     const { content } = useLanguage();
+    const { theme } = useTheme();
     const currentYear = new Date().getFullYear();
 
     return (
@@ -11,7 +13,14 @@ const Footer = () => {
             <div className="container">
                 <div className="footer-content">
                     <div className="footer-section">
-                        <h3 className="footer-brand gradient-text">{content.brand.name}</h3>
+                        <div className="footer-brand">
+                            <img
+                                src={theme === 'light' ? '/logo-wot.png' : '/logo-wot-oscuro.png'}
+                                alt={content.brand.name}
+                                className="footer-logo-img"
+                            />
+                            <span className="footer-brand-text">WOTfinance</span>
+                        </div>
                         <p className="footer-description">
                             {content.footer.description}
                         </p>

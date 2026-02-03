@@ -209,74 +209,109 @@
 }
 
 /* Password Modal Styles */
+/* Password Modal Styles - Matching Newsletter Popup */
 .password-overlay {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1000;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
 }
 
 .password-modal {
-    background: var(--card-bg, #1a1a1a);
-    border: 1px solid var(--border-color, rgba(255, 255, 255, 0.1));
-    border-radius: 16px;
+    background: #F2F0E6;
+    /* Base cream color */
+    border: 4px solid var(--accent-color);
+    /* Thick racing green border */
+    border-radius: 20px;
     padding: 40px;
     max-width: 400px;
     width: 90%;
     text-align: center;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
     position: relative;
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--text-primary);
 }
 
 .password-close-btn {
     position: absolute;
     top: 15px;
     right: 15px;
+    width: 30px;
+    height: 30px;
     background: transparent;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
     color: var(--text-secondary);
     font-size: 20px;
     cursor: pointer;
-    padding: 5px 10px;
-    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    padding: 0;
 }
 
 .password-close-btn:hover {
     color: var(--text-primary);
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.password-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.password-logo {
+    height: 32px;
+    /* Adjusted height for alignment */
+    width: auto;
+    object-fit: contain;
+    /* Racing Green Filter */
+    filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(1200%) hue-rotate(130deg) brightness(0.7);
 }
 
 .password-modal h2 {
-    margin-bottom: 16px;
+    margin: 0;
     color: var(--text-primary);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .password-modal p {
     color: var(--text-secondary);
     margin-bottom: 24px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.95rem;
 }
 
 .password-input {
     width: 100%;
     padding: 14px 18px;
-    border: 1px solid var(--border-color, rgba(255, 255, 255, 0.1));
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    background: var(--bg-secondary, #0a0a0a);
+    background: white;
     color: var(--text-primary);
     font-size: 16px;
     margin-bottom: 16px;
     outline: none;
     transition: border-color 0.3s ease;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .password-input:focus {
-    border-color: var(--accent-color, #004225);
+    border-color: var(--accent-color);
 }
 
 .password-input::placeholder {
@@ -284,27 +319,30 @@
 }
 
 .password-error {
-    color: #ff4444;
+    color: #cc0000;
     font-size: 14px;
     margin-bottom: 16px;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .password-btn {
     width: 100%;
     padding: 14px !important;
+    border-radius: 9999px !important;
+    background: var(--accent-color) !important;
+    border: none !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 600 !important;
+    transition: all 0.3s !important;
 }
 
-/* Light mode for password modal */
-[data-theme="light"] .password-overlay {
-    background: rgba(0, 0, 0, 0.6);
+.password-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 66, 37, 0.2);
 }
 
+/* Light mode overrides (already handled by base styles above, just ensuring consistency) */
 [data-theme="light"] .password-modal {
-    background: #ffffff;
-    border-color: rgba(0, 0, 0, 0.1);
-}
-
-[data-theme="light"] .password-input {
-    background: #f5f5f5;
-    border-color: rgba(0, 0, 0, 0.15);
+    background: #F2F0E6;
 }
