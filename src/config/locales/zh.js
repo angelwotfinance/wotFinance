@@ -18,7 +18,7 @@ const zh = {
         },
         buttons: {
             login: "登录",
-            getStarted: "开始使用"
+            getStarted: "注册"
         }
     },
 
@@ -31,7 +31,7 @@ const zh = {
         },
         subtitle: "为您提供建议和指导，帮助您以区块链安全技术投资与奢侈品或收藏品相关的避险资产",
         buttons: {
-            primary: "进入WOTfinance",
+            primary: "开始",
             secondary: "估价师"
         },
         trust: {

@@ -17,8 +17,8 @@ const es = {
             financialPlan: "Plan Financiero"
         },
         buttons: {
-            login: "Iniciar Sesión",
-            getStarted: "Comenzar"
+            login: "Entrar",
+            getStarted: "Registrarse"
         }
     },
 
@@ -31,7 +31,7 @@ const es = {
         },
         subtitle: "La plataforma que asesora y orienta sobre cómo invertir en valores refugio ligados al lujo o al coleccionismo con la seguridad blockchain",
         buttons: {
-            primary: "Entra en WOTfinance",
+            primary: "Comenzar",
             secondary: "Tasador"
         },
         trust: {

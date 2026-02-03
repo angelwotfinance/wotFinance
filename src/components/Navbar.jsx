@@ -74,7 +74,7 @@ const Navbar = () => {
                         <ThemeToggle />
                         <LanguageSelector />
                         <button className="btn-login">{content.navbar.buttons.login}</button>
-                        <button className="btn btn-primary" onClick={() => navigate('/comenzar')}>{content.navbar.buttons.getStarted}</button>
+                        <button className="btn btn-primary btn-navbar" onClick={() => navigate('/comenzar')}>{content.navbar.buttons.getStarted}</button>
                     </div>
 
                     <div className="mobile-actions">

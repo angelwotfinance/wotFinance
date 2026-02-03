@@ -18,7 +18,7 @@ const de = {
         },
         buttons: {
             login: "Anmelden",
-            getStarted: "Loslegen"
+            getStarted: "Registrieren"
         }
     },
 
@@ -31,7 +31,7 @@ const de = {
         },
         subtitle: "Die Plattform, die berät und anleitet, wie man in sichere Wertanlagen investiert, die mit Luxus oder Sammlerstücken verbunden sind, mit Blockchain-Sicherheit",
         buttons: {
-            primary: "WOTfinance betreten",
+            primary: "Loslegen",
             secondary: "Gutachter"
         },
         trust: {

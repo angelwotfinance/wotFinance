@@ -18,7 +18,7 @@ const fr = {
         },
         buttons: {
             login: "Connexion",
-            getStarted: "Commencer"
+            getStarted: "S'inscrire"
         }
     },
 
@@ -31,7 +31,7 @@ const fr = {
         },
         subtitle: "La plateforme qui conseille et guide sur la façon d'investir dans des valeurs refuges liées au luxe ou au collectionnisme avec la sécurité blockchain",
         buttons: {
-            primary: "Entrer dans WOTfinance",
+            primary: "Commencer",
             secondary: "Évaluateur"
         },
         trust: {

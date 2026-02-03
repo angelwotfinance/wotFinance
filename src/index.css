@@ -219,7 +219,7 @@ p {
   font-weight: 600;
   text-decoration: none;
   border: none;
-  border-radius: var(--radius-lg);
+  border-radius: 9999px;
   cursor: pointer;
   transition: all var(--transition-normal);
   text-align: center;

@@ -77,17 +77,18 @@
 
 .hero-buttons {
     display: flex;
-    gap: var(--space-6);
+    gap: var(--space-4);
     justify-content: center;
     flex-wrap: wrap;
     animation-delay: 0.5s;
 }
 
 .hero-buttons .btn {
-    min-width: 200px;
-    padding: var(--space-4) var(--space-8);
-    font-size: var(--font-size-base);
-    letter-spacing: 0.05em;
+    min-width: 160px;
+    padding: var(--space-3) var(--space-6);
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+    font-family: var(--font-primary);
     text-transform: uppercase;
     font-weight: 500;
 }

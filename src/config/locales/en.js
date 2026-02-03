@@ -17,8 +17,8 @@ const en = {
             financialPlan: "Financial Plan"
         },
         buttons: {
-            login: "Login",
-            getStarted: "Get Started"
+            login: "Sign In",
+            getStarted: "Sign Up"
         }
     },
 
@@ -31,7 +31,7 @@ const en = {
         },
         subtitle: "The platform that advises and guides on how to invest in safe haven assets linked to luxury or collectibles with blockchain security",
         buttons: {
-            primary: "Enter WOTfinance",
+            primary: "Get Started",
             secondary: "Appraiser"
         },
         trust: {
