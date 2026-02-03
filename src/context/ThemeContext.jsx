@@ -14,11 +14,8 @@ export const useTheme = () => {
 
 // Provider del tema
 export const ThemeProvider = ({ children }) => {
-    // Inicializar tema desde localStorage o usar 'light' por defecto
-    const [theme, setTheme] = useState(() => {
-        const savedTheme = localStorage.getItem('theme');
-        return savedTheme || 'light';
-    });
+    // Forzar siempre tema 'light' (ignorar localStorage)
+    const [theme, setTheme] = useState('light');
 
     // Aplicar tema al documento cuando cambie
     useEffect(() => {
