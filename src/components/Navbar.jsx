@@ -55,10 +55,11 @@ const Navbar = () => {
                 <div className="navbar-content">
                     <div className="navbar-logo" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
                         <img
-                            src={theme === 'light' ? '/logo-wot-claro.png' : '/logo-wot-oscuro.png'}
+                            src={theme === 'light' ? '/logo-wot.png' : '/logo-wot-oscuro.png'}
                             alt={content.brand.name}
                             className="navbar-logo-img"
                         />
+                        <span className="navbar-brand-text">WOTfinance</span>
                     </div>
 
                     <div className={`navbar-menu ${isMobileMenuOpen ? 'active' : ''}`}>

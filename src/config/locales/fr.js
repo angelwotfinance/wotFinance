@@ -145,10 +145,12 @@ const fr = {
                 image: "/team/JUAN-CARLOS-GIL-GR NEW.jpg.jpeg"
             },
             {
-                name: "Ángel Arellano Del Olmo",
-                role: "Directeur IT",
-                specialty: "Développement logiciel et sécurité de l'information",
-                image: "/team/wot-angel.jpg"
+                name: "Pablo García de los Salmones",
+                role: "CTO",
+                specialty: "Expert en cybersécurité",
+                image: "/team/PABLO-GARCIA.jpeg",
+                grayscale: true,
+                imagePosition: "center 25%"
             },
             {
                 name: "Corpus Pascua",
@@ -164,6 +166,12 @@ const fr = {
                 specialty: "Coordinateur des enchères",
                 image: "/team/FRANCISCO-CARRION-GR.jpg",
                 imagePosition: "center 30%"
+            },
+            {
+                name: "Ángel Arellano Del Olmo",
+                role: "Developer",
+                specialty: "Développement logiciel et sécurité de l'information",
+                image: "/team/wot-angel.jpg"
             }
         ]
     },

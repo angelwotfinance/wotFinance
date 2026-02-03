@@ -41,16 +41,16 @@
 
   /* Typography - Playfair Display */
   --font-primary: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  --font-size-xs: 0.75rem;
-  --font-size-sm: 0.875rem;
-  --font-size-base: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.25rem;
-  --font-size-2xl: 1.5rem;
-  --font-size-3xl: 1.875rem;
-  --font-size-4xl: 2.25rem;
-  --font-size-5xl: 3rem;
-  --font-size-6xl: 3.75rem;
+  --font-size-xs: 0.875rem;
+  --font-size-sm: 1rem;
+  --font-size-base: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.375rem;
+  --font-size-2xl: 1.625rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3.25rem;
+  --font-size-6xl: 4rem;
 
   /* Spacing */
   --space-1: 0.25rem;
@@ -89,54 +89,54 @@
   --glass-blur: blur(12px);
 }
 
-/* === LIGHT MODE THEME === */
+/* === LIGHT MODE THEME - SOTHEBY'S PAPER === */
 [data-theme="light"] {
-  /* Primary Colors - Light Theme */
-  --primary-gradient: linear-gradient(135deg, #f5f5f5, #e8e8e8);
-  --primary-gradient-animated: linear-gradient(90deg, #1a1a1a, #2a2a2a, #1a1a1a);
-  --secondary-gradient: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%);
-  --accent-gradient: linear-gradient(135deg, #6B7B6B 0%, #4a5a4a 100%);
-  --dark-gradient: linear-gradient(135deg, #ffffff 0%, #f5f5f5 50%, #ffffff 100%);
+  /* Primary Colors - Sotheby's Paper Palette */
+  --primary-gradient: linear-gradient(135deg, #F2F0E6, #E8E6DC);
+  --primary-gradient-animated: linear-gradient(90deg, #004225, #005530, #004225);
+  --secondary-gradient: linear-gradient(135deg, #F2F0E6 0%, #E8E6DC 100%);
+  --accent-gradient: linear-gradient(135deg, #004225 0%, #003318 100%);
+  --dark-gradient: linear-gradient(135deg, #F2F0E6 0%, #E8E6DC 50%, #F2F0E6 100%);
 
-  /* Core Accent Colors */
-  --primary-color: #ffffff;
-  --secondary-color: #fafafa;
-  --accent-color: #5a6a5a;
-  --accent-color-bright: #4a5a4a;
-  --metallic-border: rgba(0, 0, 0, 0.12);
-  --metallic-shine: linear-gradient(135deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.01) 50%, rgba(0, 0, 0, 0.02) 100%);
+  /* Core Accent Colors - Racing Green & Gold */
+  --primary-color: #F2F0E6;
+  --secondary-color: #E8E6DC;
+  --accent-color: #004225;
+  --accent-color-bright: #C5A059;
+  --metallic-border: rgba(34, 34, 34, 0.12);
+  --metallic-shine: linear-gradient(135deg, rgba(197, 160, 89, 0.1) 0%, rgba(197, 160, 89, 0.05) 50%, rgba(197, 160, 89, 0.1) 100%);
 
-  /* Background Colors - Light Theme */
-  --bg-primary: #ffffff;
-  --bg-secondary: #f8f8f8;
-  --bg-tertiary: #f0f0f0;
-  --text-primary: #1a1a1a;
-  --text-secondary: #4a4a4a;
-  --text-tertiary: #7a7a7a;
-  --border-color: rgba(0, 0, 0, 0.08);
-  --card-bg: rgba(255, 255, 255, 0.9);
-  --card-border: rgba(0, 0, 0, 0.06);
+  /* Background Colors - Paper Cream */
+  --bg-primary: #F2F0E6;
+  --bg-secondary: #E8E6DC;
+  --bg-tertiary: #DEDCD2;
+  --text-primary: #222222;
+  --text-secondary: #444444;
+  --text-tertiary: #666666;
+  --border-color: rgba(34, 34, 34, 0.1);
+  --card-bg: rgba(255, 255, 255, 0.7);
+  --card-border: rgba(34, 34, 34, 0.08);
 
   /* Neutral Palette */
-  --gray-50: #fafafa;
-  --gray-100: #f5f5f5;
-  --gray-200: #eeeeee;
-  --gray-300: #e0e0e0;
-  --gray-600: #757575;
-  --gray-700: #616161;
-  --gray-800: #424242;
-  --gray-900: #212121;
+  --gray-50: #F2F0E6;
+  --gray-100: #E8E6DC;
+  --gray-200: #DEDCD2;
+  --gray-300: #D4D2C8;
+  --gray-600: #666666;
+  --gray-700: #444444;
+  --gray-800: #333333;
+  --gray-900: #222222;
 
-  /* Shadows - Light mode */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  /* Shadows - Warm tones */
+  --shadow-sm: 0 1px 2px rgba(34, 34, 34, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(34, 34, 34, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(34, 34, 34, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(34, 34, 34, 0.12);
+  --shadow-2xl: 0 25px 50px -12px rgba(34, 34, 34, 0.18);
 
-  /* Glass Effect - Light mode */
-  --glass-bg: rgba(255, 255, 255, 0.85);
-  --glass-border: rgba(0, 0, 0, 0.08);
+  /* Glass Effect - Paper tone */
+  --glass-bg: rgba(242, 240, 230, 0.9);
+  --glass-border: rgba(34, 34, 34, 0.1);
   --glass-blur: blur(12px);
 }
 

@@ -145,10 +145,12 @@ const zh = {
                 image: "/team/JUAN-CARLOS-GIL-GR NEW.jpg.jpeg"
             },
             {
-                name: "Ángel Arellano Del Olmo",
-                role: "IT总监",
-                specialty: "软件开发和信息安全",
-                image: "/team/wot-angel.jpg"
+                name: "Pablo García de los Salmones",
+                role: "CTO",
+                specialty: "网络安全专家",
+                image: "/team/PABLO-GARCIA.jpeg",
+                grayscale: true,
+                imagePosition: "center 25%"
             },
             {
                 name: "Corpus Pascua",
@@ -164,6 +166,12 @@ const zh = {
                 specialty: "拍卖协调员",
                 image: "/team/FRANCISCO-CARRION-GR.jpg",
                 imagePosition: "center 30%"
+            },
+            {
+                name: "Ángel Arellano Del Olmo",
+                role: "Developer",
+                specialty: "软件开发和信息安全",
+                image: "/team/wot-angel.jpg"
             }
         ]
     },

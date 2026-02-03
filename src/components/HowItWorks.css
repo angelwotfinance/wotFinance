@@ -34,12 +34,12 @@
     transform: translateY(-4px);
 }
 
-/* Rectangular image - 4:5 ratio */
+/* Rectangular image - shorter to give more space to text (3/8 text, 5/8 image) */
 .step-image {
     width: 100%;
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
-    margin-bottom: var(--space-6);
+    margin-bottom: var(--space-4);
     transition: all var(--transition-normal);
     filter: saturate(0.6) contrast(0.9);
 }
