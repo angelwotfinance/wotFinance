@@ -13,7 +13,8 @@ export const PALETTES = {
     p4: { name: "Tuscan Leather (Serif)", colors: ['#EDEADE', '#8B4513'] },
     p4_sans: { name: "Tuscan Leather (Sans)", colors: ['#EDEADE', '#8B4513'] },
     p5: { name: "Monochrome (Serif)", colors: ['#FFFFFF', '#000000'] },
-    p5_sans: { name: "Monochrome (Sans)", colors: ['#FFFFFF', '#000000'] }
+    p5_sans: { name: "Monochrome (Sans)", colors: ['#FFFFFF', '#000000'] },
+    p6: { name: "Vintage Collection", colors: ['#F2F0E6', '#004225'] }
 };
 
 // Hook personalizado para usar el tema
