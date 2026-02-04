@@ -69,9 +69,8 @@
 .team-name {
     font-size: var(--font-size-xl);
     font-weight: 600;
-    margin-bottom: var(--space-2);
-    color: var(--text-primary);
-    letter-spacing: 0.02em;
+    margin-bottom: var(--space-4);
+    letter-spacing: -0.01em;
 }
 
 .team-role {
@@ -101,7 +100,6 @@
     font-size: var(--font-size-4xl);
     font-weight: 600;
     margin-bottom: var(--space-4);
-    color: var(--text-primary);
     letter-spacing: -0.01em;
 }
 

@@ -122,6 +122,7 @@
   --font-primary: 'Playfair Display', Georgia, 'Times New Roman', serif;
 
   /* Shared values (Spacing, Sizes, etc.) */
+  --green-racing: #004225;
   --font-size-xs: 0.875rem;
   --font-size-sm: 1rem;
   --font-size-base: 1.125rem;
@@ -203,9 +204,12 @@ h1 {
   font-weight: 900;
 }
 
-h2 {
+h2,
+.section-header h2,
+.benefits-header h2 {
   font-size: var(--font-size-4xl);
-  font-weight: 800;
+  font-weight: 600;
+  color: var(--green-racing);
 }
 
 h3 {
@@ -474,6 +478,7 @@ section {
 .gap-8 {
   gap: var(--space-8);
 }
+
 /* === SANS-SERIF OVERRIDE === */
 [data-theme$="_sans"] {
   --font-primary: 'Inter', sans-serif !important;
