@@ -4,11 +4,16 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 const ThemeContext = createContext();
 
 export const PALETTES = {
-    p1: { name: "Sotheby's Paper", colors: ['#F2F0E6', '#004225'] },
-    p2: { name: "The Sommelier", colors: ['#F9F9F9', '#4A0404'] },
-    p3: { name: "Alpine Vault", colors: ['#F5F7FA', '#3730A3'] },
-    p4: { name: "Tuscan Leather", colors: ['#EDEADE', '#8B4513'] },
-    p5: { name: "Monochrome", colors: ['#FFFFFF', '#000000'] }
+    p1: { name: "Sotheby's Paper (Serif)", colors: ['#F2F0E6', '#004225'] },
+    p1_sans: { name: "Sotheby's Paper (Sans)", colors: ['#F2F0E6', '#004225'] },
+    p2: { name: "The Sommelier (Serif)", colors: ['#F9F9F9', '#4A0404'] },
+    p2_sans: { name: "The Sommelier (Sans)", colors: ['#F9F9F9', '#4A0404'] },
+    p3: { name: "Alpine Vault (Serif)", colors: ['#F5F7FA', '#3730A3'] },
+    p3_sans: { name: "Alpine Vault (Sans)", colors: ['#F5F7FA', '#3730A3'] },
+    p4: { name: "Tuscan Leather (Serif)", colors: ['#EDEADE', '#8B4513'] },
+    p4_sans: { name: "Tuscan Leather (Sans)", colors: ['#EDEADE', '#8B4513'] },
+    p5: { name: "Monochrome (Serif)", colors: ['#FFFFFF', '#000000'] },
+    p5_sans: { name: "Monochrome (Sans)", colors: ['#FFFFFF', '#000000'] }
 };
 
 // Hook personalizado para usar el tema

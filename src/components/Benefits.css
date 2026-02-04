@@ -15,7 +15,10 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    flex-direction: column;
     justify-content: center;
+    padding-top: 8vh;
+    /* Shift center point down to avoid header overlap */
 }
 
 /* Horizontal Track */

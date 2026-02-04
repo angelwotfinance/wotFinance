@@ -3,7 +3,8 @@
 /* === LUXURY VAULT - PALETTE SYSTEM === */
 /* Default / P1: Sotheby's Paper */
 :root,
-[data-theme="p1"] {
+[data-theme="p1"],
+[data-theme="p1_sans"] {
   --primary-gradient: linear-gradient(135deg, #F2F0E6, #E8E6DC);
   --primary-gradient-animated: linear-gradient(90deg, #004225, #005530, #004225);
   --secondary-gradient: linear-gradient(135deg, #F2F0E6 0%, #E8E6DC 100%);
@@ -26,7 +27,8 @@
 }
 
 /* P2: The Sommelier */
-[data-theme="p2"] {
+[data-theme="p2"],
+[data-theme="p2_sans"] {
   --primary-gradient: linear-gradient(135deg, #F9F9F9, #ECE9E6);
   --primary-gradient-animated: linear-gradient(90deg, #4A0404, #630505, #4A0404);
 
@@ -47,7 +49,8 @@
 }
 
 /* P3: Alpine Vault */
-[data-theme="p3"] {
+[data-theme="p3"],
+[data-theme="p3_sans"] {
   --primary-gradient: linear-gradient(135deg, #F5F7FA, #C3CFE2);
   --primary-gradient-animated: linear-gradient(90deg, #3730A3, #4C51BF, #3730A3);
 
@@ -68,7 +71,8 @@
 }
 
 /* P4: Tuscan Leather */
-[data-theme="p4"] {
+[data-theme="p4"],
+[data-theme="p4_sans"] {
   --primary-gradient: linear-gradient(135deg, #EDEADE, #E3DAC9);
   --primary-gradient-animated: linear-gradient(90deg, #8B4513, #A0522D, #8B4513);
 
@@ -89,7 +93,8 @@
 }
 
 /* P5: Monochrome Gallery */
-[data-theme="p5"] {
+[data-theme="p5"],
+[data-theme="p5_sans"] {
   --primary-gradient: linear-gradient(135deg, #FFFFFF, #F0F0F0);
   --primary-gradient-animated: linear-gradient(90deg, #000000, #333333, #000000);
 
@@ -110,6 +115,7 @@
   --glass-bg: rgba(255, 255, 255, 0.95);
 }
 
+/* === SANS-SERIF OVERRIDE === */
 /* Shared Variables */
 :root {
   /* Typography - Playfair Display */
@@ -467,4 +473,8 @@ section {
 
 .gap-8 {
   gap: var(--space-8);
+}
+/* === SANS-SERIF OVERRIDE === */
+[data-theme$="_sans"] {
+  --font-primary: 'Inter', sans-serif !important;
 }

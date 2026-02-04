@@ -41,7 +41,10 @@
     padding: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     z-index: 1000;
-    width: 220px;
+    width: 250px;
+    /* Wider for names */
+    max-height: 400px;
+    overflow-y: auto;
     /* Glass effect if supported */
     backdrop-filter: blur(10px);
 }
