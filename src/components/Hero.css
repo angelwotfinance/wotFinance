@@ -34,7 +34,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(5, 5, 5, 0.45);
+    bottom: 0;
+    background: var(--bg-primary);
+    opacity: 0.85;
+    /* Strong tint of base color to let text pop */
     z-index: 1;
 }
 
@@ -111,9 +114,4 @@
     .hero-buttons .btn {
         min-width: unset;
     }
-}
-
-/* === LIGHT MODE HERO - SOTHEBY'S PAPER === */
-[data-theme="light"] .hero-overlay {
-    background: rgba(242, 240, 230, 0.80);
 }

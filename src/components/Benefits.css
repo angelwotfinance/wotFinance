@@ -69,8 +69,8 @@
     height: 50%;
     /* Mobile: Half height */
     inset: auto;
-    background: #F2F0E6;
-    /* Cream background */
+    background: var(--bg-primary);
+    /* Dynamic background */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,8 +84,9 @@
 .benefit-overlay h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: #004225;
-    /* Racing Green */
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+    /* Dynamic Accent Color */
     font-family: var(--font-primary);
     font-weight: 700;
 }
@@ -100,7 +101,8 @@
 /* Section Header */
 .benefits-header {
     position: absolute;
-    top: 5vh;
+    top: 12vh;
+    /* Increased from 5vh to prevent clipping */
     left: 0;
     width: 100%;
     text-align: center;

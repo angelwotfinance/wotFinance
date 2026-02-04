@@ -3,6 +3,14 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 // Crear el contexto de tema
 const ThemeContext = createContext();
 
+export const PALETTES = {
+    p1: { name: "Sotheby's Paper", colors: ['#F2F0E6', '#004225'] },
+    p2: { name: "The Sommelier", colors: ['#F9F9F9', '#4A0404'] },
+    p3: { name: "Alpine Vault", colors: ['#F5F7FA', '#3730A3'] },
+    p4: { name: "Tuscan Leather", colors: ['#EDEADE', '#8B4513'] },
+    p5: { name: "Monochrome", colors: ['#FFFFFF', '#000000'] }
+};
+
 // Hook personalizado para usar el tema
 export const useTheme = () => {
     const context = useContext(ThemeContext);
@@ -14,8 +22,10 @@ export const useTheme = () => {
 
 // Provider del tema
 export const ThemeProvider = ({ children }) => {
-    // Forzar siempre tema 'light' (ignorar localStorage)
-    const [theme, setTheme] = useState('light');
+    // Default to p1
+    const [theme, setTheme] = useState(() => {
+        return localStorage.getItem('theme') || 'p1';
+    });
 
     // Aplicar tema al documento cuando cambie
     useEffect(() => {
@@ -23,15 +33,17 @@ export const ThemeProvider = ({ children }) => {
         localStorage.setItem('theme', theme);
     }, [theme]);
 
-    // Función para alternar entre temas
-    const toggleTheme = () => {
-        setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+    const setPalette = (paletteKey) => {
+        if (PALETTES[paletteKey]) {
+            setTheme(paletteKey);
+        }
     };
 
     const value = {
         theme,
-        toggleTheme,
-        isDark: theme === 'dark'
+        setPalette,
+        currentPalette: PALETTES[theme] || PALETTES.p1,
+        isDark: false // All new palettes are fundamentally 'light/paper' based
     };
 
     return (

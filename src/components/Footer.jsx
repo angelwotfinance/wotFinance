@@ -5,7 +5,7 @@ import './Footer.css';
 
 const Footer = () => {
     const { content } = useLanguage();
-    const { theme } = useTheme();
+    const { theme, isDark } = useTheme();
     const currentYear = new Date().getFullYear();
 
     return (
@@ -14,10 +14,10 @@ const Footer = () => {
                 <div className="footer-content">
                     <div className="footer-section">
                         <div className="footer-brand">
-                            <img
-                                src={theme === 'light' ? '/logo-wot.png' : '/logo-wot-oscuro.png'}
-                                alt={content.brand.name}
-                                className="footer-logo-img"
+                            <div
+                                className="navbar-logo-container"
+                                style={{ height: '50px', maxWidth: '140px' }} /* Override sizes for footer if needed */
+                                aria-label={content.brand.name}
                             />
                             <span className="footer-brand-text">WOTfinance</span>
                         </div>

@@ -1,46 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
+/* === LUXURY VAULT - PALETTE SYSTEM === */
+/* Default / P1: Sotheby's Paper */
+:root,
+[data-theme="p1"] {
+  --primary-gradient: linear-gradient(135deg, #F2F0E6, #E8E6DC);
+  --primary-gradient-animated: linear-gradient(90deg, #004225, #005530, #004225);
+  --secondary-gradient: linear-gradient(135deg, #F2F0E6 0%, #E8E6DC 100%);
+  --accent-gradient: linear-gradient(135deg, #004225 0%, #003318 100%);
+
+  --bg-primary: #F2F0E6;
+  --bg-secondary: #E8E6DC;
+
+  --text-primary: #222222;
+  --text-secondary: #444444;
+
+  --primary-color: #F2F0E6;
+  --accent-color: #004225;
+  --accent-color-bright: #C5A059;
+  /* Gold */
+
+  --card-bg: rgba(255, 255, 255, 0.7);
+  --card-border: rgba(34, 34, 34, 0.08);
+  --glass-bg: rgba(242, 240, 230, 0.9);
+}
+
+/* P2: The Sommelier */
+[data-theme="p2"] {
+  --primary-gradient: linear-gradient(135deg, #F9F9F9, #ECE9E6);
+  --primary-gradient-animated: linear-gradient(90deg, #4A0404, #630505, #4A0404);
+
+  --bg-primary: #F9F9F9;
+  --bg-secondary: #ECE9E6;
+
+  --text-primary: #2C3E50;
+  --text-secondary: #5D6D7E;
+
+  --primary-color: #F9F9F9;
+  --accent-color: #4A0404;
+  /* Merlot */
+  --accent-color-bright: #DECBA4;
+  /* Sand */
+
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --glass-bg: rgba(249, 249, 249, 0.9);
+}
+
+/* P3: Alpine Vault */
+[data-theme="p3"] {
+  --primary-gradient: linear-gradient(135deg, #F5F7FA, #C3CFE2);
+  --primary-gradient-animated: linear-gradient(90deg, #3730A3, #4C51BF, #3730A3);
+
+  --bg-primary: #F5F7FA;
+  --bg-secondary: #E2E8F0;
+
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+
+  --primary-color: #F5F7FA;
+  --accent-color: #3730A3;
+  /* Indigo */
+  --accent-color-bright: #94A3B8;
+  /* Silver */
+
+  --card-bg: rgba(255, 255, 255, 0.75);
+  --glass-bg: rgba(245, 247, 250, 0.9);
+}
+
+/* P4: Tuscan Leather */
+[data-theme="p4"] {
+  --primary-gradient: linear-gradient(135deg, #EDEADE, #E3DAC9);
+  --primary-gradient-animated: linear-gradient(90deg, #8B4513, #A0522D, #8B4513);
+
+  --bg-primary: #EDEADE;
+  --bg-secondary: #E3DAC9;
+
+  --text-primary: #3E2723;
+  --text-secondary: #5D4037;
+
+  --primary-color: #EDEADE;
+  --accent-color: #8B4513;
+  /* Saddle */
+  --accent-color-bright: #F7E7CE;
+  /* Champ */
+
+  --card-bg: rgba(255, 255, 245, 0.6);
+  --glass-bg: rgba(237, 234, 222, 0.9);
+}
+
+/* P5: Monochrome Gallery */
+[data-theme="p5"] {
+  --primary-gradient: linear-gradient(135deg, #FFFFFF, #F0F0F0);
+  --primary-gradient-animated: linear-gradient(90deg, #000000, #333333, #000000);
+
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #FAFAFA;
+
+  --text-primary: #000000;
+  --text-secondary: #666666;
+
+  --primary-color: #FFFFFF;
+  --accent-color: #000000;
+  /* Black */
+  --accent-color-bright: #999999;
+  /* Grey */
+
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --card-border: #000000;
+  --glass-bg: rgba(255, 255, 255, 0.95);
+}
+
+/* Shared Variables */
 :root {
-  /* === LUXURY VAULT DESIGN SYSTEM - Rich Black === */
-
-  /* Primary Colors - Rich Black Theme */
-  --primary-gradient: linear-gradient(135deg, #1a1a1a, #2a2a2a);
-  --primary-gradient-animated: linear-gradient(90deg, #1a1a1a, #2a2a2a, #1a1a1a);
-  --secondary-gradient: linear-gradient(135deg, #0a0a0a 0%, #151515 100%);
-  --accent-gradient: linear-gradient(135deg, #6B7B6B 0%, #4a5a4a 100%);
-  --dark-gradient: linear-gradient(135deg, #050505 0%, #0a0a0a 50%, #050505 100%);
-
-  /* Core Accent Colors */
-  --primary-color: #050505;
-  --secondary-color: #0a0a0a;
-  --accent-color: #8B9B8B;
-  --accent-color-bright: #A8B8A8;
-  --metallic-border: rgba(140, 140, 140, 0.15);
-  --metallic-shine: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 50%, rgba(255, 255, 255, 0.03) 100%);
-
-  /* Background Colors - All Dark */
-  --bg-primary: #050505;
-  --bg-secondary: #080808;
-  --bg-tertiary: #0c0c0c;
-  --text-primary: #e8e8e8;
-  --text-secondary: #a0a0a0;
-  --text-tertiary: #606060;
-  --border-color: rgba(255, 255, 255, 0.06);
-  --card-bg: rgba(12, 12, 12, 0.6);
-  --card-border: rgba(255, 255, 255, 0.04);
-
-  /* Neutral Palette */
-  --gray-50: #0a0a0a;
-  --gray-100: #0f0f0f;
-  --gray-200: #151515;
-  --gray-300: #202020;
-  --gray-600: #888888;
-  --gray-700: #aaaaaa;
-  --gray-800: #cccccc;
-  --gray-900: #e8e8e8;
-
   /* Typography - Playfair Display */
   --font-primary: 'Playfair Display', Georgia, 'Times New Roman', serif;
+
+  /* Shared values (Spacing, Sizes, etc.) */
   --font-size-xs: 0.875rem;
   --font-size-sm: 1rem;
   --font-size-base: 1.125rem;
@@ -52,7 +127,6 @@
   --font-size-5xl: 3.25rem;
   --font-size-6xl: 4rem;
 
-  /* Spacing */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -63,7 +137,6 @@
   --space-16: 4rem;
   --space-24: 6rem;
 
-  /* Border Radius - Minimal, no circles */
   --radius-sm: 0.25rem;
   --radius-md: 0.375rem;
   --radius-lg: 0.5rem;
@@ -71,73 +144,18 @@
   --radius-2xl: 1rem;
   --radius-full: 9999px;
 
-  /* Shadows - Subtle, no floating effect */
-  --shadow-sm: none;
-  --shadow-md: 0 2px 8px -2px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 4px 12px -4px rgba(0, 0, 0, 0.5);
-  --shadow-xl: 0 8px 20px -6px rgba(0, 0, 0, 0.6);
-  --shadow-2xl: 0 12px 30px -8px rgba(0, 0, 0, 0.7);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 
-  /* Transitions */
   --transition-fast: 150ms ease-in-out;
   --transition-normal: 300ms ease-in-out;
   --transition-slow: 500ms ease-in-out;
 
-  /* Glass Effect - Very subtle */
-  --glass-bg: rgba(10, 10, 10, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.04);
   --glass-blur: blur(12px);
-}
-
-/* === LIGHT MODE THEME - SOTHEBY'S PAPER === */
-[data-theme="light"] {
-  /* Primary Colors - Sotheby's Paper Palette */
-  --primary-gradient: linear-gradient(135deg, #F2F0E6, #E8E6DC);
-  --primary-gradient-animated: linear-gradient(90deg, #004225, #005530, #004225);
-  --secondary-gradient: linear-gradient(135deg, #F2F0E6 0%, #E8E6DC 100%);
-  --accent-gradient: linear-gradient(135deg, #004225 0%, #003318 100%);
-  --dark-gradient: linear-gradient(135deg, #F2F0E6 0%, #E8E6DC 50%, #F2F0E6 100%);
-
-  /* Core Accent Colors - Racing Green & Gold */
-  --primary-color: #F2F0E6;
-  --secondary-color: #E8E6DC;
-  --accent-color: #004225;
-  --accent-color-bright: #C5A059;
-  --metallic-border: rgba(34, 34, 34, 0.12);
-  --metallic-shine: linear-gradient(135deg, rgba(197, 160, 89, 0.1) 0%, rgba(197, 160, 89, 0.05) 50%, rgba(197, 160, 89, 0.1) 100%);
-
-  /* Background Colors - Paper Cream */
-  --bg-primary: #F2F0E6;
-  --bg-secondary: #E8E6DC;
-  --bg-tertiary: #DEDCD2;
-  --text-primary: #222222;
-  --text-secondary: #444444;
-  --text-tertiary: #666666;
-  --border-color: rgba(34, 34, 34, 0.1);
-  --card-bg: rgba(255, 255, 255, 0.7);
-  --card-border: rgba(34, 34, 34, 0.08);
-
-  /* Neutral Palette */
-  --gray-50: #F2F0E6;
-  --gray-100: #E8E6DC;
-  --gray-200: #DEDCD2;
-  --gray-300: #D4D2C8;
-  --gray-600: #666666;
-  --gray-700: #444444;
-  --gray-800: #333333;
-  --gray-900: #222222;
-
-  /* Shadows - Warm tones */
-  --shadow-sm: 0 1px 2px rgba(34, 34, 34, 0.06);
-  --shadow-md: 0 4px 6px -1px rgba(34, 34, 34, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(34, 34, 34, 0.1);
-  --shadow-xl: 0 20px 25px -5px rgba(34, 34, 34, 0.12);
-  --shadow-2xl: 0 25px 50px -12px rgba(34, 34, 34, 0.18);
-
-  /* Glass Effect - Paper tone */
-  --glass-bg: rgba(242, 240, 230, 0.9);
-  --glass-border: rgba(34, 34, 34, 0.1);
-  --glass-blur: blur(12px);
+  --glass-border: rgba(0, 0, 0, 0.05);
 }
 
 /* Reset and Base Styles */

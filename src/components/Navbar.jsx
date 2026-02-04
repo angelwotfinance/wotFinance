@@ -4,11 +4,12 @@ import { useLanguage } from '../context/LanguageContext';
 import { useTheme } from '../context/ThemeContext';
 import LanguageSelector from './LanguageSelector';
 import ThemeToggle from './ThemeToggle';
+import PaletteSelector from './PaletteSelector';
 import './Navbar.css';
 
 const Navbar = () => {
     const { content } = useLanguage();
-    const { theme } = useTheme();
+    const { theme, isDark } = useTheme();
     const navigate = useNavigate();
     const location = useLocation();
     const [isScrolled, setIsScrolled] = useState(false);
@@ -54,10 +55,10 @@ const Navbar = () => {
             <div className="container">
                 <div className="navbar-content">
                     <div className="navbar-logo" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
-                        <img
-                            src={theme === 'light' ? '/logo-wot.png' : '/logo-wot-oscuro.png'}
-                            alt={content.brand.name}
-                            className="navbar-logo-img"
+                        <div
+                            className="navbar-logo-container"
+                            aria-label={content.brand.name}
+                            title={content.brand.name}
                         />
                         <span className="navbar-brand-text">WOTfinance</span>
                     </div>
@@ -71,14 +72,16 @@ const Navbar = () => {
                     </div>
 
                     <div className="navbar-actions">
-                        <ThemeToggle />
+                        <PaletteSelector />
+                        {/* <ThemeToggle /> */}
                         <LanguageSelector />
                         <button className="btn-login">{content.navbar.buttons.login}</button>
                         <button className="btn btn-primary btn-navbar" onClick={() => navigate('/comenzar')}>{content.navbar.buttons.getStarted}</button>
                     </div>
 
                     <div className="mobile-actions">
-                        <ThemeToggle />
+                        <PaletteSelector />
+                        {/* <ThemeToggle /> */}
                         <LanguageSelector />
                         <button
                             className="mobile-menu-btn"

@@ -4,16 +4,19 @@
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(5, 5, 5, 0.95);
-    backdrop-filter: blur(12px);
+    background: var(--glass-bg);
+    /* Dynamic background for all palettes */
+    backdrop-filter: var(--glass-blur);
     transition: all var(--transition-normal);
     padding: var(--space-4) 0;
     border-bottom: 1px solid var(--border-color);
 }
 
 .navbar.scrolled {
-    background: rgba(5, 5, 5, 0.98);
+    background: var(--glass-bg);
+    /* Or make it slightly more opaque logic handled by var or component */
     padding: var(--space-3) 0;
+    border-bottom-color: var(--border-color);
 }
 
 .navbar-content {
@@ -50,6 +53,23 @@
     object-position: center;
     transition: opacity var(--transition-normal);
 }
+
+/* Colorize Logo Logic */
+.navbar-logo-container {
+    display: block;
+    display: block;
+    width: 120px;
+    /* Fixed width required for mask to show if no content */
+    max-width: 120px;
+    height: 40px;
+    background-color: var(--accent-color);
+    -webkit-mask: url(/logo-wot.png) no-repeat center;
+    mask: url(/logo-wot.png) no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+/* Hide original img if present inside, use div in JSX */
 
 .navbar-logo-img:hover {
     opacity: 0.8;
@@ -191,42 +211,4 @@
     .nav-link::after {
         display: none;
     }
-}
-
-/* === LIGHT MODE NAVBAR - SOTHEBY'S PAPER === */
-[data-theme="light"] .navbar {
-    background: rgba(242, 240, 230, 0.95);
-    border-bottom-color: rgba(34, 34, 34, 0.08);
-}
-
-[data-theme="light"] .navbar.scrolled {
-    background: rgba(242, 240, 230, 0.98);
-}
-
-[data-theme="light"] .navbar-menu {
-    background: #F2F0E6;
-}
-
-/* Racing Green filter for logo in light mode */
-[data-theme="light"] .navbar-logo-img {
-    filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(1200%) hue-rotate(130deg) brightness(0.7);
-    transition: filter var(--transition-normal), opacity var(--transition-normal);
-}
-
-[data-theme="light"] .navbar-logo-img:hover {
-    filter: brightness(0) saturate(100%) invert(10%) sepia(95%) saturate(1500%) hue-rotate(130deg) brightness(0.4);
-}
-
-[data-theme="light"] .btn-login {
-    border-color: rgba(34, 34, 34, 0.15);
-    color: var(--text-secondary);
-}
-
-[data-theme="light"] .btn-login:hover {
-    color: var(--text-primary);
-    border-color: var(--accent-color);
-}
-
-[data-theme="light"] .mobile-menu-btn span {
-    background: var(--text-secondary);
 }
