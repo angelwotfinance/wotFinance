@@ -71,3 +71,143 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* Expanded Card Animation Styles */
+/* Expanded Card Animation Styles */
+.how-it-works-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    z-index: 50;
+}
+
+.expanded-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    /* Force centering override layoutId transform if needed */
+    width: 95vw;
+    /* Wider */
+    max-width: 1400px;
+    /* Much wider for immersion */
+    height: 90vh;
+    /* Taller */
+    background: var(--bg-primary);
+    border-radius: 20px;
+    z-index: 60;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.expanded-image-container {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    background: #000;
+}
+
+.expanded-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.expanded-content {
+    width: 50%;
+    padding: 60px;
+    /* More padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+    position: relative;
+    /* Context for close btn if needed, but close btn is sibling now */
+}
+
+/* Close button - Top Right of Card (over white/cream bg) -> Dark Color */
+.close-btn {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    background: rgba(0, 0, 0, 0.05);
+    /* Subtle dark container */
+    border: none;
+    color: var(--text-primary);
+    /* Dark text */
+    width: 44px;
+    /* Slightly bigger */
+    height: 44px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    z-index: 100;
+}
+
+.close-btn:hover {
+    background: rgba(0, 0, 0, 0.1);
+    transform: rotate(90deg);
+}
+
+.expanded-title {
+    font-size: 3rem;
+    /* Bigger title */
+    margin-bottom: 30px;
+    color: var(--accent-color);
+}
+
+.expanded-text {
+    font-size: 1rem;
+    /* Slightly smaller for more text */
+    line-height: 1.8;
+    color: var(--text-secondary);
+    white-space: pre-line;
+    /* Handle formatting */
+}
+
+/* Mobile Expanded Card */
+@media (max-width: 900px) {
+    .expanded-card {
+        flex-direction: column;
+        width: 90vw;
+        height: 85vh;
+        top: 50%;
+    }
+
+    .expanded-image-container {
+        width: 100%;
+        height: 40%;
+    }
+
+    .expanded-content {
+        width: 100%;
+        height: 60%;
+        padding: 24px;
+        justify-content: flex-start;
+    }
+
+    .expanded-title {
+        font-size: 1.8rem;
+    }
+
+    /* Close button visibility on mobile */
+    .close-btn {
+        background: rgba(255, 255, 255, 0.9);
+        /* Solid white */
+        color: #000;
+        /* Force black text */
+        top: 15px;
+        right: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+}

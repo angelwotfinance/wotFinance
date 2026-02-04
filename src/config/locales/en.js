@@ -68,7 +68,13 @@ const en = {
                 image: "/LLANTA-CLASICO.jpeg"
             }
         ],
-        cta: "View Catalog"
+        cta: "View Catalog",
+        startNow: "Start Now",
+        expandedDetails: [
+            "Immerse yourself in a catalog of unique opportunities, where each asset has passed a rigorous 'Due Diligence' process conducted by our committee of international experts. We don't offer simple products, but pieces of history and consolidated value: from 'Grand Cru' wines with decades of aging in certified cellars, to limited edition classic vehicles and vintage jewelry with proven traceability. Our team meticulously analyzes global market trends, the rarity of the piece and its state of conservation to ensure not only its authenticity, but its real potential for medium and long-term appreciation. By choosing WOT, you're not just buying an asset—you're accessing an investment category traditionally reserved for large fortunes, now democratized so you can build a solid and tangible legacy.",
+            "We redefine the purchase experience through cutting-edge technological infrastructure that eliminates traditional bureaucratic friction. Forget endless paperwork and opaque intermediaries; our platform allows you to acquire fractions or the entirety of high-value assets in seconds, with the same simplicity as an online purchase but with the legal robustness of a notarial contract. Each transaction is recorded immutably on the Blockchain, generating a 'token' or digital certificate of ownership that is unfalsifiable and completely transparent. This technology not only guarantees your indisputable legal title, but provides the asset with unprecedented liquidity, allowing you to transfer, sell or exchange your holdings instantly, securely and audited at any time of day, from anywhere in the world.",
+            "Take absolute control of your finances with our advanced Dashboard, designed to give you a 360° view of your wealth in real time. Watch your assets work for you: while wine matures in optimal temperature and humidity conditions, or classics appreciate in our high-security garages, you can graphically track their price evolution minute by minute, compare it with market indices and receive detailed performance reports. We don't tie up your capital; our structure offers flexible exit windows and an active secondary market. You decide when the optimal moment is to reap benefits: whether waiting for the ideal maturation of the product or taking advantage of a punctual surge in demand. Investing in passion has never been so rational, transparent and, above all, profitable."
+        ]
     },
 
     // Benefits Section

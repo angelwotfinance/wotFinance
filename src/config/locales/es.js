@@ -68,7 +68,13 @@ const es = {
                 image: "/LLANTA-CLASICO.jpeg"
             }
         ],
-        cta: "Ver Catálogo"
+        cta: "Ver Catálogo",
+        startNow: "Empezar ahora",
+        expandedDetails: [
+            "Sumérgete en un catálogo de oportunidades únicas, donde cada activo ha superado un riguroso proceso de 'Due Diligence' realizado por nuestro comité de expertos internacionales. No ofrecemos simples productos, sino piezas de historia y valor consolidado: desde vinos 'Grand Cru' con décadas de añejamiento en bodegas certificadas, hasta vehículos clásicos de edición limitada y joyas de época con trazabilidad probada. Nuestro equipo analiza minuciosamente las tendencias del mercado global, la rareza de la pieza y su estado de conservación para asegurar no solo su autenticidad, sino su capacidad real de revalorización a medio y largo plazo. Al elegir WOT, no solo compras un bien, accedes a una categoría de inversión reservada tradicionalmente a grandes patrimonios, democratizada ahora para que construyas un legado sólido y tangible.",
+            "Redefinimos la experiencia de compra mediante una infraestructura tecnológica de vanguardia que elimina la fricción burocrática tradicional. Olvida los trámites interminables y los intermediarios opacos; nuestra plataforma te permite adquirir fracciones o la totalidad de activos de alto valor en cuestión de segundos, con la misma sencillez que una compra online pero con la robustez legal de un contrato notarial. Cada transacción queda registrada de forma inmutable en la Blockchain, generando un 'token' o certificado digital de propiedad que es infalsificable y totalmente transparente. Esta tecnología no solo garantiza tu titularidad jurídica indiscutible, sino que dota al activo de una liquidez sin precedentes, permitiéndote transferir, vender o intercambiar tus participaciones de manera instantánea, segura y auditada en cualquier momento del día, desde cualquier lugar del mundo.",
+            "Toma el control absoluto de tus finanzas con nuestro Dashboard avanzado, diseñado para ofrecerte una visión 360º de tu patrimonio en tiempo real. Observa cómo tus activos trabajan por ti: mientras el vino madura en condiciones óptimas de temperatura y humedad, o los clásicos se revalorizan en nuestros garajes de alta seguridad, tú puedes seguir gráficamente su evolución de precio minuto a minuto, compararla con índices de mercado y recibir informes detallados de rendimiento. No atamos tu capital; nuestra estructura te ofrece ventanas de salida flexibles y un mercado secundario activo. Tú decides cuándo es el momento óptimo para recoger beneficios: ya sea esperando a la maduración ideal del producto o aprovechando una subida puntual de demanda. Invertir en pasión nunca había sido tan racional, transparente y, sobre todo, rentable."
+        ]
     },
 
     // Benefits Section
