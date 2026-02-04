@@ -49,69 +49,59 @@
 .tabs-container {
     display: flex;
     flex-wrap: nowrap;
-    gap: 8px;
+    gap: 0;
+    /* Connected tabs */
     margin-bottom: 25px;
-    padding: 12px 15px;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    justify-content: flex-start;
-    overflow-x: auto;
-    scrollbar-width: thin;
-    scrollbar-color: rgba(255, 215, 0, 0.5) transparent;
-}
-
-.tabs-container::-webkit-scrollbar {
-    height: 6px;
-}
-
-.tabs-container::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.tabs-container::-webkit-scrollbar-thumb {
-    background: rgba(255, 215, 0, 0.5);
-    border-radius: 3px;
+    padding: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    /* Lighter background */
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    justify-content: space-between;
+    width: 100%;
 }
 
 /* Tab Button - Compact for Single Row */
 .tab-button {
-    background: linear-gradient(145deg, #2a2a2a 0%, #1a1a1a 100%);
-    color: #e0e0e0;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    padding: 8px 14px;
+    flex: 1;
+    /* Occupy full width */
+    background: transparent;
+    color: var(--text-secondary);
+    border: none;
+    padding: 12px 14px;
     border-radius: 8px;
     white-space: nowrap;
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 500;
-    font-size: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    flex-shrink: 0;
+    font-size: 13px;
+    text-align: center;
+    box-shadow: none;
+    backdrop-filter: none;
 }
 
 .tab-button:hover {
-    background: linear-gradient(145deg, #3a3a3a 0%, #2a2a2a 100%);
-    border-color: rgba(255, 215, 0, 0.3);
-    color: #ffffff;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--text-primary);
+    transform: none;
+    box-shadow: none;
 }
 
 /* Tab Button - Active State */
 .tab-button.active {
-    background: linear-gradient(135deg, #FFD700 0%, #FDB931 100%);
-    color: #000000;
-    border: none;
-    font-weight: 700;
-    box-shadow: 0 6px 20px rgba(253, 185, 49, 0.4);
-    transform: translateY(-2px);
+    background: var(--accent-color);
+    /* Racing Green */
+    color: #ffffff;
+    /* White text */
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 66, 37, 0.2);
+    transform: none;
 }
 
 .tab-button.active:hover {
-    background: linear-gradient(135deg, #FFE44D 0%, #FFC107 100%);
-    color: #000000;
+    background: var(--accent-color);
+    opacity: 0.95;
+    color: #ffffff;
 }
 
 /* Iframe Container - Simple approach */
@@ -163,17 +153,54 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .tabs-container {
-        gap: 6px;
-        padding: 10px 12px;
+        gap: 8px;
+        padding: 12px;
+        flex-direction: column;
+        height: auto;
+        overflow-x: hidden;
     }
 
     .tab-button {
-        padding: 6px 10px;
-        font-size: 11px;
+        padding: 12px 16px;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
     }
 
     .iframe-container {
-        height: 500px;
+        height: 550px;
+        /* Base height */
+        overflow: hidden;
+        /* Hide overflow from scaling if any */
+        position: relative;
+    }
+
+    .financial-iframe {
+        width: 200%;
+        /* Double width to shrink back to 100% with scale(0.5) */
+        height: 200%;
+        /* Double height */
+        transform: scale(0.5);
+        transform-origin: 0 0;
+        border: 0;
+    }
+
+    /* Strengthen overlay positioning for mobile */
+    .iframe-container::before {
+        height: 55px;
+        /* Slightly larger to ensure coverage */
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .iframe-container::after {
+        height: 40px;
+        /* Slightly larger to ensure coverage */
+        width: 100%;
+        bottom: 0;
+        left: 0;
     }
 }
 
