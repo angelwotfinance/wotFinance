@@ -1,12 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import { useInView } from 'framer-motion';
 import './Stats.css';
 
 const Stats = () => {
     const { content } = useLanguage();
     const [counters, setCounters] = useState({});
+    const [isFinished, setIsFinished] = useState(false);
+
+    // Ref for intersection observer
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true, margin: "-100px" });
 
     useEffect(() => {
+        if (!isInView) return;
+
         const duration = 2000;
 
         // Extract target values from content
@@ -15,7 +23,7 @@ const Stats = () => {
             targets[`stat${index}`] = parseInt(item.value);
         });
 
-        const interval = 50;
+        const interval = 30; // Faster updates for smoother feel
         const steps = duration / interval;
 
         const increments = {};
@@ -35,19 +43,23 @@ const Stats = () => {
 
             if (step <= steps) {
                 Object.keys(targets).forEach(key => {
+                    // Easing out slightly for realism
                     current[key] = Math.min(current[key] + increments[key], targets[key]);
                 });
                 setCounters({ ...current });
             } else {
+                // Ensure final values are exact
+                setCounters(targets);
+                setIsFinished(true); // Trigger color change
                 clearInterval(timer);
             }
         }, interval);
 
         return () => clearInterval(timer);
-    }, []);
+    }, [isInView, content]);
 
     return (
-        <section className="stats">
+        <section className="stats" ref={ref}>
             <div className="container">
                 <div className="stats-grid">
                     {content.stats.items.map((stat, index) => (
@@ -56,7 +68,7 @@ const Stats = () => {
                             className="stat-item fade-in"
                             style={{ animationDelay: `${index * 0.1}s` }}
                         >
-                            <div className="stat-number">
+                            <div className={`stat-number ${isFinished ? 'finished' : ''}`}>
                                 {Math.floor(counters[`stat${index}`] || 0)}{stat.suffix}
                             </div>
                             <div className="stat-label">{stat.label}</div>
