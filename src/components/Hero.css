@@ -91,7 +91,6 @@
     padding: var(--space-3) var(--space-6);
     font-size: 0.9rem;
     letter-spacing: 0.03em;
-    font-family: var(--font-primary);
     text-transform: uppercase;
     font-weight: 500;
 }

@@ -1,29 +1,18 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { useTheme } from '../context/ThemeContext';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import './Benefits.css';
 
 const BENEFIT_IMAGES = [
-    '/WINE-GALLERY.jpg',
-    '/JEWELRY-GEMS.jpg',
-    '/PATEK-RELOJ.jpeg',
-    '/WHISKY-BARRELS.jpg',
-    '/PORSCHE.jpg'
-];
-
-// Images for "Vintage Collection" (p6)
-const BENEFIT_IMAGES_ALT = [
-    '/WINE-GALLERY.jpg',
-    '/JEWELRY-GEMS.jpg',
-    '/PATEK-RELOJ.jpeg',
-    '/BODEGA-AMARILLA.png',  // Index 3: Bajo Control
-    '/ESCARABAJO-VERDE.png'  // Index 4: Salida de Inversión
+    '/LUPA.jpg',             // Trazabilidad Documental
+    '/JEWELRY-GEMS.jpg',     // Respaldo Real
+    '/PATEK-RELOJ.jpeg',     // Validación Profesional
+    '/BODEGA-AMARILLA.png',  // Bajo control
+    '/ESCARABAJO-VERDE.png'  // Salida de inversión
 ];
 
 const Benefits = () => {
     const { content } = useLanguage();
-    const { theme } = useTheme();
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,
@@ -37,9 +26,6 @@ const Benefits = () => {
         window.addEventListener('resize', checkDesktop);
         return () => window.removeEventListener('resize', checkDesktop);
     }, []);
-
-    // Select images based on theme
-    const activeImages = theme === 'p6' ? BENEFIT_IMAGES_ALT : BENEFIT_IMAGES;
 
     // Exact scroll distance calculation:
     // Mobile: 4 gaps * (85vw card + 4vw gap) = 356vw distance to center 5th card
@@ -59,7 +45,7 @@ const Benefits = () => {
                         <div key={index} className="benefit-card-wrapper">
                             <div className="benefit-card-inner">
                                 <img
-                                    src={activeImages[index] || activeImages[0]}
+                                    src={BENEFIT_IMAGES[index] || BENEFIT_IMAGES[0]}
                                     alt={benefit.title}
                                     className="benefit-image"
                                 />

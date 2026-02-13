@@ -10,12 +10,16 @@ const Stats = () => {
 
     // Ref for intersection observer
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, margin: "-100px" });
+    const isInView = useInView(ref, { margin: "-100px" });
 
     useEffect(() => {
-        if (!isInView) return;
+        if (!isInView) {
+            setCounters({});
+            setIsFinished(false);
+            return;
+        }
 
-        const duration = 2000;
+        const duration = 1000;
 
         // Extract target values from content
         const targets = {};

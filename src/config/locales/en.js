@@ -24,56 +24,56 @@ const en = {
 
     // Hero Section
     hero: {
-        badge: "Fine Wines - Exceptional Whiskies - Classic Cars - Antique Jewelry - Collectible Watches",
+        badge: "Fine Wines - Exceptional Whiskies - Classic Cars - Antique Jewelry - Limited Edition Watches",
         title: {
-            main: "Access to luxury goods",
-            highlight: "as alternative assets"
+            main: "Turn exclusive goods into",
+            highlight: "alternative assets"
         },
-        subtitle: "The platform that advises and guides on how to invest in safe haven assets linked to luxury or collectibles with blockchain security",
+        subtitle: "We invite you to invest in safe haven assets linked to luxury and collectibles",
         buttons: {
-            primary: "Get Started",
+            primary: "Enter WOTfinance",
             secondary: "Appraiser"
         },
         trust: {
             rating: "Fine Wines - Exceptional Whiskies",
             clients: "",
-            clientsLabel: "Classic Cars - Antique Jewelry - Collectible Watches"
+            clientsLabel: "Classic Cars - Antique Jewelry - Limited Edition Watches"
         }
     },
 
     // How It Works Section
     howItWorks: {
-        title: "Smart Investing",
-        subtitle: "Three steps to access your collection",
+        title: "How it works",
+        subtitle: "An extraordinary catalog",
         steps: [
             {
                 number: "01",
-                title: "Browse Our Catalog",
-                description: "Each piece in our collection has origin certification and documentary traceability registered on blockchain.",
+                title: "An Extraordinary Catalog",
+                description: "We build wealth from unique pieces with proven appreciation potential.",
                 icon: "🎯",
                 image: "/LA-TACHE.jpeg"
             },
             {
                 number: "02",
-                title: "Logistics & Custody",
-                description: "We handle physical verification, secure transport and storage in optimal preservation conditions with comprehensive insurance.",
+                title: "Process Control",
+                description: "We handle physical verification, storage in optimal conditions, transport protection and comprehensive insurance coverage.",
                 icon: "⚡",
                 image: "/JOYAS.jpeg"
             },
             {
                 number: "03",
-                title: "Collection Management",
-                description: "Track the market value evolution of your assets from your dashboard. Decide when to hold, withdraw or transfer ownership of your goods.",
+                title: "Asset Management",
+                description: "Decide how long to keep them, when to promote an investment exit or how to transfer ownership of your assets.",
                 icon: "📊",
-                image: "/LLANTA-CLASICO.jpeg"
+                image: "/CADILLAC-ROJO.png"
             }
         ],
         cta: "View Catalog",
         startNow: "Start Now",
         expandedDetails: [
-            "Immerse yourself in a catalog of unique opportunities, where each asset has passed a rigorous 'Due Diligence' process conducted by our committee of international experts. We don't offer simple products, but pieces of history and consolidated value: from 'Grand Cru' wines with decades of aging in certified cellars, to limited edition classic vehicles and vintage jewelry with proven traceability. Our team meticulously analyzes global market trends, the rarity of the piece and its state of conservation to ensure not only its authenticity, but its real potential for medium and long-term appreciation. By choosing WOT, you're not just buying an asset—you're accessing an investment category traditionally reserved for large fortunes, now democratized so you can build a solid and tangible legacy.",
-            "We redefine the purchase experience through cutting-edge technological infrastructure that eliminates traditional bureaucratic friction. Forget endless paperwork and opaque intermediaries; our platform allows you to acquire fractions or the entirety of high-value assets in seconds, with the same simplicity as an online purchase but with the legal robustness of a notarial contract. Each transaction is recorded immutably on the Blockchain, generating a 'token' or digital certificate of ownership that is unfalsifiable and completely transparent. This technology not only guarantees your indisputable legal title, but provides the asset with unprecedented liquidity, allowing you to transfer, sell or exchange your holdings instantly, securely and audited at any time of day, from anywhere in the world.",
-            "Take absolute control of your finances with our advanced Dashboard, designed to give you a 360° view of your wealth in real time. Watch your assets work for you: while wine matures in optimal temperature and humidity conditions, or classics appreciate in our high-security garages, you can graphically track their price evolution minute by minute, compare it with market indices and receive detailed performance reports. We don't tie up your capital; our structure offers flexible exit windows and an active secondary market. You decide when the optimal moment is to reap benefits: whether waiting for the ideal maturation of the product or taking advantage of a punctual surge in demand. Investing in passion has never been so rational, transparent and, above all, profitable."
+            "Discover a valuable collection of unique pieces that stand out for their originality, beauty or antiquity. Fine wines from sought-after vintages, luxurious cars of legendary models, rare jewelry and limited edition watches. Objects that our team of experts has selected and studied to verify their authenticity and suitability to increase their value over time.",
+            "Take control of your finances through our advanced dashboard, designed to offer you a 360º view of your portfolio in real time. Watch how your assets work for you. While wines rest and mature in optimal conditions of temperature, humidity and silence, or vintage cars appreciate in high-security garages, you can graphically track the evolution of their prices, compare them with market indices and receive detailed performance reports.",
+            "Forget endless paperwork and opaque intermediaries. Our platform allows you to acquire fractions or the entirety of assets with the same immediacy as an online purchase but with the legal support of a notarial contract. Each transaction is recorded using blockchain technology, generating a 'token' or digital certificate of ownership that is unfalsifiable and transparent. This procedure guarantees your legal ownership and provides the asset with unprecedented liquidity, allowing you to transfer, sell or exchange your holdings instantly, securely and audited at any time and from anywhere."
         ]
     },
 
@@ -84,28 +84,28 @@ const en = {
         items: [
             {
                 icon: "📜",
-                title: "Documentary Traceability",
-                description: "We implement a rigorous digital registry for each asset. We centralize authenticity certificates, ownership history and legal documentation in a secure and accessible format."
+                title: "Documented Traceability",
+                description: "We implement a rigorous digital registry for each asset. We centralize authenticity certificates, ownership history and legal documentation in a secure and accessible format. We evaluate aspects such as the brand, model, rarity and condition of each piece."
             },
             {
                 icon: "🔒",
-                title: "Real Backing",
-                description: "Become the owner of tangible goods. Unlike synthetic assets, here you own physical pieces safeguarded in maximum security facilities."
+                title: "Liquid and Solid",
+                description: "Unlike synthetic assets, tangible goods have proven their resilience in the face of economic crises. Many investors consider them a protection against inflation and market volatility, especially in uncertain financial environments."
             },
             {
                 icon: "🏆",
-                title: "Professional Validation",
-                description: "We work with a panel of renowned experts across diverse sectors, independent appraisers and certification houses, as well as various agreements with guarantee providers."
+                title: "Professional Recognition",
+                description: "We work with a panel of renowned experts across diverse sectors, independent appraisers and certification houses, as well as various agreements with guarantee providers. WOTfinance evaluates aspects such as the brand, model, rarity, condition and history of each piece."
             },
             {
                 icon: "🛡️",
                 title: "Under Control",
-                description: "Vehicle tuning and maintenance, environmental monitoring for wines, and armored security for jewelry. The value and integrity of your assets are fully guaranteed."
+                description: "All transactions are documented and executed under WOTfinance's internal control. Vehicle tuning and maintenance, environmental monitoring for wines, and armored security for jewelry. The value and integrity of your assets are fully guaranteed."
             },
             {
                 icon: "🚀",
-                title: "Exit Strategy",
-                description: "At the end of the investment term, WOTfinance implements the most suitable exit strategy (auctions, private resales, sales through a specialized agent). There is the option to reinvest or definitively close the investment."
+                title: "Investment Exit",
+                description: "Our structure offers you flexible exit windows. Before determining and publishing asset values, we research opportunities in primary and secondary markets. We explore private sales, auctions and luxury stores, in order to optimize investment returns."
             }
         ]
     },
@@ -139,44 +139,44 @@ const en = {
         members: [
             {
                 name: "Víctor Rodríguez Esteban",
-                role: "CEO",
-                specialty: "Investment Specialist",
+                role: "Investment Specialist",
+                specialty: "CEO. Wine and whisky specialist.",
                 image: "/team/VICTOR-RODRIGUEZ-GR.jpg",
                 imagePosition: "center 30%"
             },
             {
                 name: "Juan Carlos Gil Vega",
-                role: "Business Manager",
-                specialty: "Digital Marketing",
+                role: "Digital Marketing",
+                specialty: "Business manager, compliance and commercial relations.",
                 image: "/team/JUAN-CARLOS-GIL-GR NEW.jpg.jpeg"
             },
             {
                 name: "Pablo García de los Salmones",
-                role: "CTO",
-                specialty: "Cybersecurity Expert",
+                role: "Cybersecurity Expert",
+                specialty: "CTO. Cybersecurity expert.",
                 image: "/team/PABLO-GARCIA.jpeg",
                 grayscale: true,
                 imagePosition: "center 25%"
             },
             {
                 name: "Corpus Pascua",
-                role: "Jewelry and Watch Specialist",
-                specialty: "Certified Appraisals Manager",
+                role: "Certified Appraisals Manager",
+                specialty: "Jewelry and Watch Specialist. Certified appraisals manager.",
                 image: "/team/CORPUS-PASCUA.jpeg",
                 grayscale: true,
                 imagePosition: "center top"
             },
             {
                 name: "Francisco Carrión Cárdenas",
-                role: "Classic Car Expert",
-                specialty: "Auction Coordinator",
+                role: "Auction Coordinator",
+                specialty: "Classic Car Expert. Auction coordinator.",
                 image: "/team/FRANCISCO-CARRION-GR.jpg",
                 imagePosition: "center 30%"
             },
             {
                 name: "Ángel Arellano Del Olmo",
-                role: "Developer",
-                specialty: "Software Development and Information Security",
+                role: "Technology and Development",
+                specialty: "Technology and development. Software development and information security.",
                 image: "/team/wot-angel.jpg"
             }
         ]
@@ -212,15 +212,16 @@ const en = {
 
     // Footer
     footer: {
-        description: "WOTfinance (Operated by INTERVALUE S.L.) - Technology platform for management and digitalization of high-value tangible assets.",
+        description: "WOTfinance (Operated by INTERVALUE S.L.) – Technology platform for management and digitalization of high-value tangible assets.",
         sections: {
             product: {
                 title: "Catalog",
                 links: [
-                    { text: "Premium Wines", href: "#" },
+                    { text: "Fine Wines", href: "#" },
+                    { text: "Exceptional Whiskies", href: "#" },
                     { text: "Classic Cars", href: "#" },
                     { text: "Antique Jewelry", href: "#" },
-                    { text: "View Catalog", href: "#" }
+                    { text: "Limited Edition Watches", href: "#" }
                 ]
             },
             company: {
@@ -249,7 +250,7 @@ const en = {
             cookies: "Cookies"
         },
         copyright: "All rights reserved.",
-        disclaimer: "Important Notice: WOTfinance is a technology services company (CNAE 6201) and not an Investment Services Company (ESI) or Credit Entity. Services provided are limited to commercial intermediation, digitalization and logistics of movable goods. Information about historical appreciation is purely market illustrative and does not constitute an offer of financial products or regulated investment advice."
+        disclaimer: "Important notice: WOTfinance is a technology-supported company (CNAE 6201) dedicated to commercial intermediation, digitalization and logistics, operating under a model specialized in unlisted tangible assets (real assets). It is not an investment services company (ESI) nor a credit institution."
     },
 
     // Test Selection Page
@@ -266,6 +267,26 @@ const en = {
             description: "For personalized advisory services",
             badge: "Advisory"
         }
+    },
+
+    // Newsletter
+    newsletter: {
+        title: "Join our insight",
+        text: "Receive the WOTfinance newsletter with all the information about market trends, auctions and protagonists of the particular universe of tangible assets.",
+        button: "Sign Up",
+        placeholder: "hello@wot.finance",
+        terms: "By submitting this form you are agreeing to our Terms & Conditions and Privacy Policy."
+    },
+
+    // Financial Plan
+    financialPlan: {
+        accessTitle: "Restricted Access",
+        accessDescription: "Enter the password to access the Financial Plan",
+        placeholder: "Enter the password...",
+        submit: "Access",
+        wrongPassword: "Incorrect password",
+        frontPageDescription: "We present our financial plan for the next five years.",
+        downloadPdf: "Download PDF"
     },
 
     // Convenience Test

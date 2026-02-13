@@ -24,56 +24,56 @@ const zh = {
 
     // 主页横幅
     hero: {
-        badge: "精品葡萄酒 - 顶级威士忌 - 经典汽车 - 古董珠宝 - 收藏腕表",
+        badge: "精品葡萄酒 - 顶级威士忌 - 经典汽车 - 古董珠宝 - 限量版腕表",
         title: {
-            main: "获取奢侈品",
-            highlight: "作为另类资产"
+            main: "将独家商品转化",
+            highlight: "为另类资产"
         },
-        subtitle: "为您提供建议和指导，帮助您以区块链安全技术投资与奢侈品或收藏品相关的避险资产",
+        subtitle: "我们邀请您投资与奢侈品和收藏品相关的避险资产",
         buttons: {
-            primary: "开始",
+            primary: "进入WOTfinance",
             secondary: "估价师"
         },
         trust: {
             rating: "精品葡萄酒 - 顶级威士忌",
             clients: "",
-            clientsLabel: "经典汽车 - 古董珠宝 - 收藏腕表"
+            clientsLabel: "经典汽车 - 古董珠宝 - 限量版腕表"
         }
     },
 
     // 运作方式
     howItWorks: {
-        title: "智慧投资",
-        subtitle: "三个步骤访问您的收藏",
+        title: "运作方式",
+        subtitle: "非凡的目录",
         steps: [
             {
                 number: "01",
-                title: "浏览我们的目录",
-                description: "我们收藏的每件作品都具有产地认证和区块链上记录的文档可追溯性。",
+                title: "非凡的目录",
+                description: "我们以具有经验证增值潜力的独特藏品构建资产。",
                 icon: "🎯",
                 image: "/LA-TACHE.jpeg"
             },
             {
                 number: "02",
-                title: "物流与保管",
-                description: "我们负责实物验证、安全运输和在最佳保存条件下的存储，提供全面保险。",
+                title: "流程控制",
+                description: "我们负责实物验证、最佳条件下的存储、运输保护和全面保险覆盖。",
                 icon: "⚡",
                 image: "/JOYAS.jpeg"
             },
             {
                 number: "03",
-                title: "收藏管理",
-                description: "从您的仪表板跟踪资产的市场价值变化。决定何时持有、提取或转让您的货物所有权。",
+                title: "资产管理",
+                description: "决定保留多长时间，何时促进投资退出，或如何转让您的资产所有权。",
                 icon: "📊",
-                image: "/LLANTA-CLASICO.jpeg"
+                image: "/CADILLAC-ROJO.png"
             }
         ],
         cta: "查看目录",
         startNow: "立即开始",
         expandedDetails: [
-            "沉浸在独特机会的目录中，每项资产都经过我们国际专家委员会进行的严格'尽职调查'流程。我们不提供简单的产品，而是提供历史和价值的巩固：从在认证酒窖中陈酿数十年的'特级葡萄酒'，到限量版经典汽车和具有可追溯性的复古珠宝。我们的团队精心分析全球市场趋势、物品的稀有程度及其保存状态，以确保不仅其真实性，而且其中长期升值的真正潜力。选择WOT，您不仅仅是购买资产——您正在进入一个传统上为大型财富保留的投资类别，现在民主化了，以便您可以建立坚实而有形的遗产。",
-            "我们通过消除传统官僚摩擦的尖端技术基础设施重新定义购买体验。忘记无尽的文书工作和不透明的中介；我们的平台允许您在几秒钟内获取高价值资产的部分或全部，具有与在线购买相同的简单性，但具有公证合同的法律稳健性。每笔交易都不可变地记录在区块链上，生成一个无法伪造且完全透明的'代币'或数字所有权证书。这项技术不仅保证您无可争议的合法所有权，而且为资产提供前所未有的流动性，使您能够随时随地即时、安全且经过审计地转让、出售或交换您的持有。",
-            "通过我们先进的仪表板完全控制您的财务，旨在为您提供实时360°财富视图。观察您的资产如何为您工作：当葡萄酒在最佳温度和湿度条件下成熟，或经典汽车在我们的高安全车库中升值时，您可以逐分钟图形化地跟踪其价格演变，与市场指数进行比较，并接收详细的绩效报告。我们不会束缚您的资本；我们的结构提供灵活的退出窗口和活跃的二级市场。您决定何时是收获收益的最佳时机：无论是等待产品的理想成熟度还是利用需求的短期激增。投资于激情从未如此理性、透明，最重要的是，如此有利可图。"
+            "发现一系列以其独创性、美感或历史年代而脱颖而出的独特珍贵藏品。热门年份的精品葡萄酒、传奇车型的豪华汽车、稀有珠宝和限量版腕表。我们的专家团队已精心挑选和研究这些物品，以验证其真实性和随时间增值的适宜性。",
+            "通过我们先进的仪表板控制您的财务，其设计为您提供实时360°资产视图。观察您的资产如何为您工作。当葡萄酒在最佳温度、湿度和静置条件下陈酿，或经典汽车在高安全车库中升值时，您可以图形化跟踪价格走势，与市场指数比较，并获得详细的绩效报告。",
+            "忘记繁琐的手续和不透明的中间商。我们的平台允许您以在线购物的即时性获取资产的部分或全部，但具有公证合同的法律保障。每笔交易都通过区块链技术记录，生成不可伪造且透明的'代币'或数字所有权证书。该程序保证您的合法所有权，并为资产提供前所未有的流动性，使您能够随时随地即时、安全且经审计地转让、出售或交换您的持有。"
         ]
     },
 
@@ -84,28 +84,28 @@ const zh = {
         items: [
             {
                 icon: "📜",
-                title: "文档可追溯性",
-                description: "我们为每项资产实施严格的数字登记。我们将真品证书、所有权历史和法律文件集中在安全格式中。"
+                title: "有据可查的可追溯性",
+                description: "我们为每项资产实施严格的数字登记。我们将真品证书、所有权历史和法律文件集中在安全且可访问的格式中。我们评估每件物品的品牌、型号、稀有度和状态等方面。"
             },
             {
                 icon: "🔒",
-                title: "真实支持",
-                description: "成为有形资产的所有者。与合成资产不同，您在这里拥有保存在高安全设施中的实物物品。"
+                title: "流动且稳固",
+                description: "与合成资产不同，有形资产已经证明了其对经济危机的抗性。许多投资者将其视为对冲通胀和市场波动性的保护，特别是在不确定的金融环境中。"
             },
             {
                 icon: "🏆",
-                title: "专业验证",
-                description: "我们与来自不同行业的知名专家、独立评估师和认证机构合作，并与担保提供商达成各种协议。"
+                title: "专业认可",
+                description: "我们与来自不同行业的知名专家、独立评估师和认证机构合作，并与担保提供商达成各种协议。WOTfinance评估每件物品的品牌、型号、稀有度、状态和历史等方面。"
             },
             {
                 icon: "🛡️",
                 title: "全程掌控",
-                description: "车辆调校和维护、葡萄酒环境监测以及珠宝装甲安全。您资产的价值和完整性得到充分保障。"
+                description: "所有交易均在WOTfinance的内部控制下记录和执行。车辆调校和维护、葡萄酒环境监测以及珠宝装甲安全。您资产的价值和完整性得到充分保障。"
             },
             {
                 icon: "🚀",
-                title: "退出策略",
-                description: "在投资期限结束时，WOTfinance实施最合适的退出策略（拍卖、私人转售、通过专业代理销售）。您可以选择再投资或最终关闭投资。"
+                title: "投资退出",
+                description: "我们的结构为您提供灵活的退出窗口。在确定和发布资产价值之前，我们会研究一级和二级市场的机会。我们探索私人销售、拍卖和奢侈品商店，以优化投资回报。"
             }
         ]
     },
@@ -139,44 +139,44 @@ const zh = {
         members: [
             {
                 name: "Víctor Rodríguez Esteban",
-                role: "首席执行官",
-                specialty: "投资专家",
+                role: "投资专家",
+                specialty: "首席执行官。葡萄酒和威士忌专家。",
                 image: "/team/VICTOR-RODRIGUEZ-GR.jpg",
                 imagePosition: "center 30%"
             },
             {
                 name: "Juan Carlos Gil Vega",
-                role: "业务经理",
-                specialty: "数字营销",
+                role: "数字营销",
+                specialty: "业务经理，合规与商业关系。",
                 image: "/team/JUAN-CARLOS-GIL-GR NEW.jpg.jpeg"
             },
             {
                 name: "Pablo García de los Salmones",
-                role: "CTO",
-                specialty: "网络安全专家",
+                role: "网络安全专家",
+                specialty: "CTO。网络安全专家。",
                 image: "/team/PABLO-GARCIA.jpeg",
                 grayscale: true,
                 imagePosition: "center 25%"
             },
             {
                 name: "Corpus Pascua",
-                role: "珠宝与腕表专家",
-                specialty: "认证鉴定负责人",
+                role: "认证鉴定负责人",
+                specialty: "珠宝与腕表专家。认证鉴定负责人。",
                 image: "/team/CORPUS-PASCUA.jpeg",
                 grayscale: true,
                 imagePosition: "center top"
             },
             {
                 name: "Francisco Carrión Cárdenas",
-                role: "经典汽车专家",
-                specialty: "拍卖协调员",
+                role: "拍卖协调员",
+                specialty: "经典汽车专家。拍卖协调员。",
                 image: "/team/FRANCISCO-CARRION-GR.jpg",
                 imagePosition: "center 30%"
             },
             {
                 name: "Ángel Arellano Del Olmo",
-                role: "Developer",
-                specialty: "软件开发和信息安全",
+                role: "技术与开发",
+                specialty: "技术与开发。软件开发和信息安全。",
                 image: "/team/wot-angel.jpg"
             }
         ]
@@ -212,15 +212,16 @@ const zh = {
 
     // 页脚
     footer: {
-        description: "WOTfinance（由INTERVALUE S.L.运营）- 高价值实物资产管理和数字化技术平台。",
+        description: "WOTfinance（由INTERVALUE S.L.运营）– 高价值实物资产管理和数字化技术平台。",
         sections: {
             product: {
                 title: "目录",
                 links: [
-                    { text: "优质葡萄酒", href: "#" },
+                    { text: "精品葡萄酒", href: "#" },
+                    { text: "顶级威士忌", href: "#" },
                     { text: "经典汽车", href: "#" },
                     { text: "古董珠宝", href: "#" },
-                    { text: "查看目录", href: "#" }
+                    { text: "限量版腕表", href: "#" }
                 ]
             },
             company: {
@@ -249,7 +250,7 @@ const zh = {
             cookies: "Cookies"
         },
         copyright: "版权所有。",
-        disclaimer: "重要声明：WOTfinance是一家技术服务公司（CNAE 6201），而非投资服务公司（ESI）或信贷机构。提供的服务仅限于商业中介、数字化和动产物流。关于历史增值的信息纯粹是市场说明性的，不构成金融产品要约或监管投资建议。"
+        disclaimer: "重要声明：WOTfinance是一家以技术为支撑的公司（CNAE 6201），专注于商业中介、数字化和物流，在专注于非上市有形资产（实物资产）的模式下运营。它不是投资服务公司（ESI），也不是信贷机构。"
     },
 
     // 测试选择页面
@@ -266,6 +267,26 @@ const zh = {
             description: "用于个性化咨询服务",
             badge: "咨询"
         }
+    },
+
+    // 通讯
+    newsletter: {
+        title: "加入我们的愿景",
+        text: "接收WOTfinance通讯，了解有关市场趋势、拍卖以及有形资产独特世界中的所有信息。",
+        button: "订阅",
+        placeholder: "hello@wot.finance",
+        terms: "提交此表格即表示您接受我们的一般条款和隐私政策。"
+    },
+
+    // 财务计划
+    financialPlan: {
+        accessTitle: "限制访问",
+        accessDescription: "输入密码以访问财务计划",
+        placeholder: "输入密码...",
+        submit: "访问",
+        wrongPassword: "密码错误",
+        frontPageDescription: "我们展示未来五年的财务计划。",
+        downloadPdf: "下载PDF"
     },
 
     // 适当性测试

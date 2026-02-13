@@ -24,56 +24,56 @@ const es = {
 
     // Hero Section
     hero: {
-        badge: "Vinos Finos - Whiskies Excepcionales - Coches Clásicos - Joyas Antiguas - Relojes de Colección",
+        badge: "Vinos Finos - Whiskies Excepcionales - Coches Clásicos - Joyas Antiguas - Relojes de Edición Limitada",
         title: {
-            main: "Acceso a bienes de lujo",
-            highlight: "como activos alternativos"
+            main: "Convierte bienes exclusivos",
+            highlight: "en activos alternativos"
         },
-        subtitle: "La plataforma que asesora y orienta sobre cómo invertir en valores refugio ligados al lujo o al coleccionismo con la seguridad blockchain",
+        subtitle: "Te invitamos a invertir en valores refugio ligados al lujo y al coleccionismo",
         buttons: {
-            primary: "Comenzar",
+            primary: "Entra en WOTfinance",
             secondary: "Tasador"
         },
         trust: {
             rating: "Vinos Finos - Whiskies Excepcionales",
             clients: "",
-            clientsLabel: "Coches Clásicos - Joyas Antiguas - Relojes de Colección"
+            clientsLabel: "Coches Clásicos - Joyas Antiguas - Relojes de Edición Limitada"
         }
     },
 
     // How It Works Section
     howItWorks: {
-        title: "Saber invertir",
-        subtitle: "Tres pasos para acceder a tu colección",
+        title: "Cómo funciona",
+        subtitle: "Un catálogo fuera de serie",
         steps: [
             {
                 number: "01",
-                title: "Consulta nuestro Catálogo",
-                description: "Cada pieza de nuestra colección cuenta con certificación de origen y trazabilidad documental registrada en blockchain.",
+                title: "Un catálogo fuera de serie",
+                description: "Construimos un patrimonio a base de piezas únicas con un contrastado potencial de revalorización.",
                 icon: "🎯",
                 image: "/LA-TACHE.jpeg"
             },
             {
                 number: "02",
-                title: "Logística y Custodia",
-                description: "Nos encargamos de la verificación física, el transporte seguro y el almacenamiento en condiciones óptimas de conservación y seguro a todo riesgo.",
+                title: "Control del proceso",
+                description: "Nos encargamos de la verificación física, el depósito en condiciones óptimas, la protección en el transporte y una cobertura de seguro a todo riesgo.",
                 icon: "⚡",
                 image: "/JOYAS.jpeg"
             },
             {
                 number: "03",
-                title: "Gestión de la Colección",
-                description: "Sigue la evolución de valor de mercado de tus activos desde tu panel de control. Decide cuándo mantener, retirar o transferir la propiedad de tus bienes.",
+                title: "Gestión de tus activos",
+                description: "Decide hasta cuándo conservarlos, en qué momento promover una salida de inversión o cómo transferir la propiedad de tus bienes.",
                 icon: "📊",
-                image: "/LLANTA-CLASICO.jpeg"
+                image: "/CADILLAC-ROJO.png"
             }
         ],
         cta: "Ver Catálogo",
         startNow: "Empezar ahora",
         expandedDetails: [
-            "Sumérgete en un catálogo de oportunidades únicas, donde cada activo ha superado un riguroso proceso de 'Due Diligence' realizado por nuestro comité de expertos internacionales. No ofrecemos simples productos, sino piezas de historia y valor consolidado: desde vinos 'Grand Cru' con décadas de añejamiento en bodegas certificadas, hasta vehículos clásicos de edición limitada y joyas de época con trazabilidad probada. Nuestro equipo analiza minuciosamente las tendencias del mercado global, la rareza de la pieza y su estado de conservación para asegurar no solo su autenticidad, sino su capacidad real de revalorización a medio y largo plazo. Al elegir WOT, no solo compras un bien, accedes a una categoría de inversión reservada tradicionalmente a grandes patrimonios, democratizada ahora para que construyas un legado sólido y tangible.",
-            "Redefinimos la experiencia de compra mediante una infraestructura tecnológica de vanguardia que elimina la fricción burocrática tradicional. Olvida los trámites interminables y los intermediarios opacos; nuestra plataforma te permite adquirir fracciones o la totalidad de activos de alto valor en cuestión de segundos, con la misma sencillez que una compra online pero con la robustez legal de un contrato notarial. Cada transacción queda registrada de forma inmutable en la Blockchain, generando un 'token' o certificado digital de propiedad que es infalsificable y totalmente transparente. Esta tecnología no solo garantiza tu titularidad jurídica indiscutible, sino que dota al activo de una liquidez sin precedentes, permitiéndote transferir, vender o intercambiar tus participaciones de manera instantánea, segura y auditada en cualquier momento del día, desde cualquier lugar del mundo.",
-            "Toma el control absoluto de tus finanzas con nuestro Dashboard avanzado, diseñado para ofrecerte una visión 360º de tu patrimonio en tiempo real. Observa cómo tus activos trabajan por ti: mientras el vino madura en condiciones óptimas de temperatura y humedad, o los clásicos se revalorizan en nuestros garajes de alta seguridad, tú puedes seguir gráficamente su evolución de precio minuto a minuto, compararla con índices de mercado y recibir informes detallados de rendimiento. No atamos tu capital; nuestra estructura te ofrece ventanas de salida flexibles y un mercado secundario activo. Tú decides cuándo es el momento óptimo para recoger beneficios: ya sea esperando a la maduración ideal del producto o aprovechando una subida puntual de demanda. Invertir en pasión nunca había sido tan racional, transparente y, sobre todo, rentable."
+            "Descubre una valiosa colección de piezas únicas que destacan por su originalidad, belleza o antigüedad. Vinos finos de añadas cotizadas, lujosos coches de modelos legendarios, joyas raras y relojes de ediciones limitadas. Objetos que nuestro equipo de expertos ha seleccionado y estudiado con el propósito de comprobar su autenticidad y la idoneidad para incrementar su valor en el transcurso del tiempo.",
+            "Toma el control de tus finanzas a través de nuestro avanzado dashboard, cuyo diseño te ofrece una visión 360º de tu patrimonio en tiempo real. Observa cómo tus activos trabajan por ti. Mientras los vinos reposan y maduran en condiciones inmejorables de temperatura, humedad y silencio, o los coches de época cotizan al alza guardados en garajes de alta seguridad, tú puedes seguir gráficamente la evolución de sus precios, compararla con índices de mercado y recibir informes detallados de rendimiento.",
+            "Olvida los trámites interminables y los intermediarios opacos. Nuestra plataforma te permite adquirir fracciones o la totalidad de activos con idéntica inmediatez que una compra online pero con el soporte legal de un contrato notarial. Cada transacción queda registrada con la tecnología blockchain, generando un 'token' o certificado digital de propiedad que es infalsificable y transparente. Este procedimiento garantiza tu titularidad jurídica y dota al activo de una liquidez sin precedentes, permitiéndote transferir, vender o intercambiar tus participaciones de manera instantánea, segura y auditada en cualquier momento y desde cualquier lugar."
         ]
     },
 
@@ -84,28 +84,28 @@ const es = {
         items: [
             {
                 icon: "📜",
-                title: "Trazabilidad Documental",
-                description: "Implementamos un registro digital riguroso para cada activo. Centralizamos certificados de autenticidad, historial de propiedad y documentación legal en un formato seguro y accesible."
+                title: "Trazabilidad Documentada",
+                description: "Implementamos un registro digital riguroso para cada activo. Centralizamos certificados de autenticidad, historial de propiedad y documentación legal en formato seguro y accesible. Evaluamos aspectos como la marca, el modelo, la rareza y el estado de cada pieza."
             },
             {
                 icon: "🔒",
-                title: "Respaldo Real",
-                description: "Hazte propietario de bienes tangibles. A diferencia de los activos sintéticos, aquí eres dueño de piezas físicas resguardadas en instalaciones de máxima seguridad."
+                title: "Líquidos y Sólidos",
+                description: "A diferencia de los activos sintéticos, los bienes tangibles han demostrado su resiliencia ante las crisis económicas. Muchos inversores los consideran una protección contra la inflación y la volatilidad del mercado, especialmente en entornos financieros inciertos."
             },
             {
                 icon: "🏆",
-                title: "Validación Profesional",
-                description: "Trabajamos con un panel de reconocidos expertos en sectores diversos, peritos independientes y casas de certificación, además de contemplar diversos acuerdos con proveedores de garantía."
+                title: "Reconocimiento Profesional",
+                description: "Trabajamos con un panel de reconocidos expertos en sectores diversos, peritos independientes y casas de certificación, además de contemplar diversos acuerdos con proveedores de garantía. WOTfinance evalúa aspectos como la marca, el modelo, la rareza, el estado y la historia de cada pieza."
             },
             {
                 icon: "🛡️",
                 title: "Bajo control",
-                description: "Reglaje y mantenimiento de los vehículos, vigilancia ambiental de los vinos y seguridad acorazada para las joyas. El valor e integridad de tu patrimonio están plenamente garantizados."
+                description: "Todas las transacciones se documentan y ejecutan bajo el control interno de WOTfinance. Reglaje y mantenimiento de los vehículos, vigilancia ambiental de los vinos y seguridad acorazada para las joyas. El valor e integridad de tu patrimonio están plenamente garantizados."
             },
             {
                 icon: "🚀",
                 title: "Salida de inversión",
-                description: "Al final del plazo de inversión, WOTfinance implementa la estrategia de salida más adecuada (subastas, reventas privadas, ventas a través de un agente especializado). Existe la opción de reinvertir o cerrar la inversión definitivamente."
+                description: "Nuestra estructura te ofrece ventanas de salida flexibles. Antes de determinar y publicar el valor de los activos, investigamos oportunidades en los mercados primario y secundario. Exploramos ventas privadas, subastas y tiendas de lujo, con el fin de optimizar la rentabilidad de la inversión."
             }
         ]
     },
@@ -139,44 +139,44 @@ const es = {
         members: [
             {
                 name: "Víctor Rodríguez Esteban",
-                role: "CEO",
-                specialty: "Especialista en inversiones",
+                role: "Especialista en inversiones",
+                specialty: "CEO. Especialista en vinos y whiskies.",
                 image: "/team/VICTOR-RODRIGUEZ-GR.jpg",
                 imagePosition: "center 30%"
             },
             {
                 name: "Juan Carlos Gil Vega",
-                role: "Gestor de negocios",
-                specialty: "Marketing digital",
+                role: "Marketing digital",
+                specialty: "Gestor de negocios, cumplimiento y relaciones comerciales.",
                 image: "/team/JUAN-CARLOS-GIL-GR NEW.jpg.jpeg"
             },
             {
                 name: "Pablo García de los Salmones",
-                role: "CTO",
-                specialty: "Experto en ciberseguridad",
+                role: "Experto en ciberseguridad",
+                specialty: "CTO. Experto en ciberseguridad.",
                 image: "/team/PABLO-GARCIA.jpeg",
                 grayscale: true,
                 imagePosition: "center 25%"
             },
             {
                 name: "Corpus Pascua",
-                role: "Especialista en Joyas y Relojes",
-                specialty: "Responsable de tasaciones homologadas",
+                role: "Responsable de tasaciones homologadas",
+                specialty: "Especialista en Joyas y Relojes. Responsable de tasaciones homologadas.",
                 image: "/team/CORPUS-PASCUA.jpeg",
                 grayscale: true,
                 imagePosition: "center top"
             },
             {
                 name: "Francisco Carrión Cárdenas",
-                role: "Experto en Coches Clásicos",
-                specialty: "Coordinador de subastas",
+                role: "Coordinador de subastas",
+                specialty: "Experto en Coches Clásicos. Coordinador de subastas.",
                 image: "/team/FRANCISCO-CARRION-GR.jpg",
                 imagePosition: "center 30%"
             },
             {
                 name: "Ángel Arellano Del Olmo",
-                role: "Developer",
-                specialty: "Desarrollo de software y seguridad de la información",
+                role: "Tecnología y desarrollo",
+                specialty: "Tecnología y desarrollo. Desarrollo de software y seguridad de la información.",
                 image: "/team/wot-angel.jpg"
             }
         ]
@@ -212,15 +212,16 @@ const es = {
 
     // Footer
     footer: {
-        description: "WOTfinance (Operado por INTERVALUE S.L.) - Plataforma tecnológica de gestión y digitalización de activos tangibles de alto valor.",
+        description: "WOTfinance (Operado por INTERVALUE S.L.) – Plataforma tecnológica de gestión y digitalización de activos tangibles de alto valor.",
         sections: {
             product: {
                 title: "Catálogo",
                 links: [
-                    { text: "Vinos Premium", href: "#" },
-                    { text: "Coches Clásicos", href: "#" },
-                    { text: "Joyas Antiguas", href: "#" },
-                    { text: "Ver Catálogo", href: "#" }
+                    { text: "Vinos finos", href: "#" },
+                    { text: "Whiskies excepcionales", href: "#" },
+                    { text: "Coches clásicos", href: "#" },
+                    { text: "Joyas antiguas", href: "#" },
+                    { text: "Relojes de edición limitada", href: "#" }
                 ]
             },
             company: {
@@ -249,7 +250,7 @@ const es = {
             cookies: "Cookies"
         },
         copyright: "Todos los derechos reservados.",
-        disclaimer: "Aviso Importante: WOTfinance es una empresa de servicios tecnológicos (CNAE 6201) y no una Empresa de Servicios de Inversión (ESI) ni una Entidad de Crédito. Los servicios prestados se limitan a la intermediación comercial, digitalización y logística de bienes muebles. La información sobre revalorizaciones históricas es meramente ilustrativa del mercado y no constituye una oferta de productos financieros ni asesoramiento de inversión regulado."
+        disclaimer: "Aviso importante: WOTfinance es una empresa con soporte tecnológico (CNAE 6201) dedicada a la intermediación comercial, digitalización y logística, que articula su actividad bajo un modelo especializado en activos tangibles no cotizados (activos reales). No es una empresa de servicios de inversión (ESI) ni una entidad de crédito."
     },
 
     // Test Selection Page
@@ -266,6 +267,26 @@ const es = {
             description: "Para servicios de asesoramiento personalizado",
             badge: "Asesoramiento"
         }
+    },
+
+    // Newsletter
+    newsletter: {
+        title: "Únete a nuestra visión",
+        text: "Recibe la newsletter de WOTfinance con toda la información sobre tendencias del mercado, subastas y protagonistas del universo particular de los bienes tangibles.",
+        button: "Suscribirse",
+        placeholder: "hello@wot.finance",
+        terms: "Al enviar este formulario aceptas nuestros Términos y Condiciones y Política de Privacidad."
+    },
+
+    // Financial Plan
+    financialPlan: {
+        accessTitle: "Acceso Restringido",
+        accessDescription: "Introduce la clave para acceder al plan financiero",
+        placeholder: "Introduce la clave...",
+        submit: "Acceder",
+        wrongPassword: "Contraseña incorrecta",
+        frontPageDescription: "Presentamos nuestro plan financiero para los próximos cinco años.",
+        downloadPdf: "Descargar PDF"
     },
 
     // Convenience Test

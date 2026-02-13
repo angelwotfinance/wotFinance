@@ -1,22 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
-import { useTheme } from '../context/ThemeContext';
 import { motion, AnimatePresence } from 'framer-motion';
 import './HowItWorks.css';
 
 const HowItWorks = () => {
     const { content } = useLanguage();
-    const { theme } = useTheme();
     const navigate = useNavigate();
     const [selectedId, setSelectedId] = useState(null);
-
-    const getStepImage = (step, index) => {
-        if (theme === 'p6' && index === 2) {
-            return '/CADILLAC-ROJO.png';
-        }
-        return step.image;
-    };
 
     return (
         <section id="como-funciona" className="how-it-works">
@@ -38,7 +29,7 @@ const HowItWorks = () => {
                         >
                             <motion.img
                                 layoutId={`img-${index}`}
-                                src={getStepImage(step, index)}
+                                src={step.image}
                                 alt={step.title}
                                 className="step-image"
                             />
@@ -76,7 +67,7 @@ const HowItWorks = () => {
                                 <motion.div className="expanded-image-container">
                                     <motion.img
                                         layoutId={`img-${selectedId}`}
-                                        src={getStepImage(content.howItWorks.steps[selectedId], selectedId)}
+                                        src={content.howItWorks.steps[selectedId].image}
                                         alt={content.howItWorks.steps[selectedId].title}
                                         className="expanded-image"
                                     />

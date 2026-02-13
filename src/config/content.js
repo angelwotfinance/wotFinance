@@ -25,77 +25,82 @@ const content = {
 
     // Hero Section
     hero: {
-        badge: "Inversiones en activos tangibles de lujo",
+        badge: "Vinos Finos - Whiskies Excepcionales - Coches Clásicos - Joyas Antiguas - Relojes de Edición Limitada",
         title: {
-            main: "Inversiones exclusivas en",
-            highlight: "vinos, whiskies, coches clásicos y joyas"
+            main: "Convierte bienes exclusivos",
+            highlight: "en activos alternativos"
         },
-        subtitle: "WOT proporciona asesoramiento de inversión en activos refugio o alternativos vinculados al lujo: vinos finos, whiskies raros, coches clásicos, relojes exclusivos y joyas antiguas. Abrimos las puertas a particulares al mundo de la inversión en estos objetos especiales con rentabilidad probada.",
+        subtitle: "Te invitamos a invertir en valores refugio ligados al lujo y al coleccionismo",
         buttons: {
-            primary: "Comenzar Ahora",
+            primary: "Entra en WOTfinance",
             secondary: "Tasador IA"
         },
         trust: {
-            rating: "Calificación 4.9/5",
-            clients: "850+",
-            clientsLabel: "Inversores satisfechos"
+            rating: "Vinos Finos - Whiskies Excepcionales",
+            clients: "",
+            clientsLabel: "Coches Clásicos - Joyas Antiguas - Relojes de Edición Limitada"
         }
     },
 
     // How It Works Section
     howItWorks: {
         title: "Cómo Funciona",
-        subtitle: "Tres simples pasos para comenzar a invertir",
+        subtitle: "Un catálogo fuera de lo común",
         steps: [
             {
                 number: "01",
-                title: "Selecciona tu activo",
-                description: "Explora nuestra colección curada de vinos premium, coches clásicos certificados y joyas antiguas autenticadas. Cada pieza ha sido verificada por expertos.",
+                title: "Consulta nuestro Catálogo",
+                description: "Descubre una valiosa colección de piezas únicas que destacan por su originalidad, belleza o antigüedad. Vinos finos de añadas cotizadas, coches lujosos de modelos legendarios, joyas raras y relojes de ediciones limitadas.",
                 icon: "🎯",
-                image: "/wot-selecciona-activo.png"
+                image: "/LA-TACHE.jpeg"
             },
             {
                 number: "02",
-                title: "Nosotros gestionamos todo",
-                description: "Nos encargamos del almacenamiento en condiciones óptimas, seguro, mantenimiento y toda la logística. Tu inversión está en las mejores manos.",
+                title: "Control del proceso",
+                description: "Toma el control de tus finanzas a través de nuestro avanzado dashboard, cuyo diseño te ofrece una visión de 360° de tu patrimonio en tiempo real.",
                 icon: "⚡",
-                image: "/nosotros-gestionamos.png"
+                image: "/JOYAS.jpeg"
             },
             {
                 number: "03",
-                title: "Obtén rentabilidad",
-                description: "Sigue la apreciación de tu activo en tiempo real. Vende cuando quieras o disfruta de tu colección. Liquidez y flexibilidad garantizadas.",
-                icon: "📈",
-                image: "/obten-rentabilidad.png"
+                title: "Gestión de tus activos",
+                description: "Decide cuánto tiempo conservarlos, cuándo promover una salida de inversión o cómo transferir la propiedad de tus bienes.",
+                icon: "📊",
+                image: "/CADILLAC-ROJO.png"
             }
         ],
-        cta: "Comenzar Ahora"
+        cta: "Ver Catálogo"
     },
 
     // Benefits Section
     benefits: {
-        title: "¿Por qué invertir con nosotros?",
-        subtitle: "Ventajas exclusivas para inversores inteligentes",
+        title: "Cómodo y seguro",
+        subtitle: "Una elección inteligente",
         items: [
             {
-                icon: "💎",
-                title: "Retornos Superiores",
-                description: "Los vinos raros, coches clásicos y joyas antiguas han ofrecido históricamente retornos del 10-15% anual, superando índices tradicionales."
+                icon: "📜",
+                title: "Trazabilidad Documentada",
+                description: "Implementamos un riguroso registro digital para cada activo. Centralizamos certificados de autenticidad, historial de propiedad y documentación legal en un formato seguro y accesible."
             },
             {
                 icon: "🔒",
-                title: "Activos Tangibles",
-                description: "Invierte en bienes físicos con valor intrínseco. Baja correlación con mercados tradicionales, excelente protección contra inflación."
+                title: "Líquidos y Sólidos",
+                description: "A diferencia de los activos sintéticos, los bienes tangibles han demostrado su resiliencia frente a crisis económicas."
             },
             {
                 icon: "🏆",
-                title: "Autenticación Experta",
-                description: "Cada pieza es verificada por especialistas certificados. Proveniencia documentada, certificados de autenticidad y valuación profesional."
+                title: "Reconocimiento Profesional",
+                description: "Trabajamos con un panel de expertos reconocidos de diversas industrias, tasadores independientes y casas de certificación."
             },
             {
-                icon: "📊",
-                title: "Gestión Profesional",
-                description: "Almacenamiento en condiciones óptimas, seguro completo, mantenimiento especializado. Tu inversión está protegida y cuidada."
+                icon: "🛡️",
+                title: "Bajo control",
+                description: "Todas las transacciones se documentan y ejecutan bajo el control interno de WOTfinance."
+            },
+            {
+                icon: "🚀",
+                title: "Salida de inversión",
+                description: "Nuestra estructura te ofrece ventanas de salida flexibles."
             }
         ]
     },
@@ -128,33 +133,51 @@ const content = {
 
     // Team Section
     team: {
-        title: "Nuestro Equipo de Expertos",
-        subtitle: "Especialistas con experiencia en inversiones alternativas y activos de lujo",
+        title: "Nuestro Equipo",
+        subtitle: "Especialistas con experiencia en inversiones alternativas y en activos de lujo",
         members: [
             {
-                name: "Victor Rodriguez Esteban",
-                role: "Especialista en Inversiones en Vino",
-                specialty: "Amplia experiencia en inversiones en vinos de alta calidad",
-                image: "/team/VICTOR-RODRIGUEZ-GR.jpg"
+                name: "Víctor Rodríguez Esteban",
+                role: "CEO. Especialista en vinos y whiskies.",
+                specialty: "Especialista en inversiones",
+                image: "/team/VICTOR-RODRIGUEZ-GR.jpg",
+                imagePosition: "center 30%"
             },
             {
                 name: "Juan Carlos Gil Vega",
-                role: "Especialista en Negocio",
-                specialty: "Experiencia en gestión de negocios y marketing digital",
+                role: "Gestor de negocio, compliance y relaciones comerciales.",
+                specialty: "Marketing Digital",
                 image: "/team/JUAN-CARLOS-GIL-GR NEW.jpg.jpeg"
             },
             {
-                name: "Ángel Arellano Del Olmo",
-                role: "Especialista en IT",
-                specialty: "Experiencia en desarrollo de software y seguridad de la información",
-                image: "/team/ANGEL-ARELLANO-GR.jpg"
+                name: "Pablo García de los Salmones",
+                role: "CTO. Experto en ciberseguridad.",
+                specialty: "Experto en ciberseguridad",
+                image: "/team/PABLO-GARCIA.jpeg",
+                grayscale: true,
+                imagePosition: "center 25%"
             },
-            /*{
+            {
+                name: "Corpus Pascua",
+                role: "Especialista en Joyas y Relojes. Responsable de peritaciones certificadas.",
+                specialty: "Responsable de peritaciones certificadas",
+                image: "/team/CORPUS-PASCUA.jpeg",
+                grayscale: true,
+                imagePosition: "center top"
+            },
+            {
                 name: "Francisco Carrión Cárdenas",
-                role: "Especialista en Inversiones en Coches Clásicos",
-                specialty: "Experiencia en inversiones en coches clásicos y automóviles de lujo",
-                image: "/team/FRANCISCO-CARRION-GR.jpg"
-            }*/
+                role: "Experto en Coches Clásicos. Coordinador de subastas.",
+                specialty: "Coordinador de subastas",
+                image: "/team/FRANCISCO-CARRION-GR.jpg",
+                imagePosition: "center 30%"
+            },
+            {
+                name: "Ángel Arellano Del Olmo",
+                role: "Tecnología y desarrollo. Desarrollo de software y seguridad de la información.",
+                specialty: "Desarrollo de software y seguridad de la información",
+                image: "/team/wot-angel.jpg"
+            }
         ]
     },
 
@@ -188,15 +211,16 @@ const content = {
 
     // Footer
     footer: {
-        description: "Inversiones exclusivas en vino de colección, coches clásicos y joyas antiguas. Rendimientos excepcionales en activos tangibles.",
+        description: "WOTfinance (Operado por INTERVALUE S.L.) – Plataforma tecnológica de gestión y digitalización de activos tangibles de alto valor.",
         sections: {
             product: {
-                title: "Inversiones",
+                title: "Catálogo",
                 links: [
-                    { text: "Vinos Premium", href: "#" },
+                    { text: "Vinos Finos", href: "#" },
+                    { text: "Whiskies Excepcionales", href: "#" },
                     { text: "Coches Clásicos", href: "#" },
                     { text: "Joyas Antiguas", href: "#" },
-                    { text: "Catálogo Completo", href: "#" }
+                    { text: "Relojes de Edición Limitada", href: "#" }
                 ]
             },
             company: {
@@ -205,7 +229,8 @@ const content = {
                     { text: "Sobre Nosotros", href: "#" },
                     { text: "Equipo de Expertos", href: "#" },
                     { text: "Blog", href: "#" },
-                    { text: "Prensa", href: "#" }
+                    { text: "Prensa", href: "#" },
+                    { text: "Administración", href: "/admin" }
                 ]
             },
             support: {
@@ -214,7 +239,7 @@ const content = {
                     { text: "Centro de Ayuda", href: "#" },
                     { text: "Contacto", href: "#" },
                     { text: "FAQ", href: "#" },
-                    { text: "Privacidad", href: "#" }
+                    { text: "Aviso Legal", href: "#" }
                 ]
             }
         },
@@ -223,7 +248,8 @@ const content = {
             privacy: "Política de Privacidad",
             cookies: "Cookies"
         },
-        copyright: "Todos los derechos reservados."
+        copyright: "Todos los derechos reservados.",
+        disclaimer: "Aviso importante: WOTfinance es una empresa de soporte tecnológico (CNAE 6201) dedicada a la intermediación comercial, digitalización y logística, operando bajo un modelo especializado en activos tangibles no cotizados (activos reales). No es una Empresa de Servicios de Inversión (ESI) ni un establecimiento de crédito."
     }
 };
 

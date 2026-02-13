@@ -7,7 +7,8 @@ import './Hero.css';
 const HERO_IMAGES = [
     '/VIÑEDOS.jpeg',
     '/JOYAS-ANTIGUAS-ANILLOS-BARROCOS-BN.jpg',
-    '/MERCEDES-SL-BN.jpg'
+    '/MERCEDES-SL-BN.jpg',
+    '/WHISKY-BARRELS-MORE.webp'
 ];
 
 const CAROUSEL_INTERVAL = 6000; // 6 seconds per image

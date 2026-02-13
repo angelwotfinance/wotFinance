@@ -24,56 +24,56 @@ const de = {
 
     // Hero Section
     hero: {
-        badge: "Edle Weine - Außergewöhnliche Whiskys - Oldtimer - Antiker Schmuck - Sammleruhren",
+        badge: "Edle Weine - Außergewöhnliche Whiskys - Oldtimer - Antiker Schmuck - Uhren in limitierter Auflage",
         title: {
-            main: "Zugang zu Luxusgütern",
-            highlight: "als alternative Anlagen"
+            main: "Verwandeln Sie exklusive Güter",
+            highlight: "in alternative Anlagen"
         },
-        subtitle: "Die Plattform, die berät und anleitet, wie man in sichere Wertanlagen investiert, die mit Luxus oder Sammlerstücken verbunden sind, mit Blockchain-Sicherheit",
+        subtitle: "Wir laden Sie ein, in sichere Wertanlagen zu investieren, die mit Luxus und Sammlerstücken verbunden sind",
         buttons: {
-            primary: "Loslegen",
+            primary: "WOTfinance entdecken",
             secondary: "Gutachter"
         },
         trust: {
             rating: "Edle Weine - Außergewöhnliche Whiskys",
             clients: "",
-            clientsLabel: "Oldtimer - Antiker Schmuck - Sammleruhren"
+            clientsLabel: "Oldtimer - Antiker Schmuck - Uhren in limitierter Auflage"
         }
     },
 
     // How It Works Section
     howItWorks: {
-        title: "Klug investieren",
-        subtitle: "Drei Schritte zu Ihrer Sammlung",
+        title: "So funktioniert's",
+        subtitle: "Ein außergewöhnlicher Katalog",
         steps: [
             {
                 number: "01",
-                title: "Unseren Katalog durchstöbern",
-                description: "Jedes Stück in unserer Kollektion verfügt über Herkunftszertifizierung und dokumentarische Rückverfolgbarkeit auf der Blockchain.",
+                title: "Ein außergewöhnlicher Katalog",
+                description: "Wir bauen ein Vermögen aus einzigartigen Stücken mit nachgewiesenem Wertsteigerungspotenzial auf.",
                 icon: "🎯",
                 image: "/LA-TACHE.jpeg"
             },
             {
                 number: "02",
-                title: "Logistik & Verwahrung",
-                description: "Wir übernehmen die physische Verifizierung, den sicheren Transport und die Lagerung unter optimalen Erhaltungsbedingungen mit Vollversicherung.",
+                title: "Prozesskontrolle",
+                description: "Wir übernehmen die physische Verifizierung, die Lagerung unter optimalen Bedingungen, den Transportschutz und eine umfassende Versicherungsdeckung.",
                 icon: "⚡",
                 image: "/JOYAS.jpeg"
             },
             {
                 number: "03",
-                title: "Sammlungsmanagement",
-                description: "Verfolgen Sie die Marktpreisentwicklung Ihrer Vermögenswerte über Ihr Dashboard. Entscheiden Sie, wann Sie halten, abheben oder das Eigentum übertragen möchten.",
+                title: "Vermögensverwaltung",
+                description: "Entscheiden Sie, wie lange Sie sie behalten, wann Sie einen Investitionsausstieg fördern oder wie Sie das Eigentum an Ihren Gütern übertragen möchten.",
                 icon: "📊",
-                image: "/LLANTA-CLASICO.jpeg"
+                image: "/CADILLAC-ROJO.png"
             }
         ],
         cta: "Katalog ansehen",
         startNow: "Jetzt starten",
         expandedDetails: [
-            "Tauchen Sie ein in einen Katalog einzigartiger Möglichkeiten, bei dem jedes Asset einen rigorosen ‚Due Diligence'-Prozess durch unser Komitee internationaler Experten durchlaufen hat. Wir bieten keine einfachen Produkte, sondern Stücke der Geschichte und konsolidierten Wertes: von ‚Grand Cru'-Weinen mit jahrzehntelanger Reifung in zertifizierten Kellern bis hin zu limitierten Oldtimern und Vintage-Schmuck mit nachgewiesener Rückverfolgbarkeit. Unser Team analysiert sorgfältig globale Markttrends, die Seltenheit des Stücks und seinen Erhaltungszustand, um nicht nur seine Authentizität, sondern auch sein reales Potenzial für mittel- und langfristige Wertsteigerung sicherzustellen. Mit WOT kaufen Sie nicht nur einen Vermögenswert – Sie erhalten Zugang zu einer Anlagekategorie, die traditionell großen Vermögen vorbehalten war, jetzt demokratisiert, damit Sie ein solides und greifbares Erbe aufbauen können.",
-            "Wir definieren das Kauferlebnis durch modernste technologische Infrastruktur neu, die traditionelle bürokratische Reibung eliminiert. Vergessen Sie endlose Papierarbeit und undurchsichtige Vermittler; unsere Plattform ermöglicht es Ihnen, Anteile oder die Gesamtheit hochwertiger Vermögenswerte in Sekunden zu erwerben, mit der gleichen Einfachheit wie ein Online-Kauf, aber mit der rechtlichen Robustheit eines notariellen Vertrags. Jede Transaktion wird unveränderlich auf der Blockchain aufgezeichnet und generiert ein ‚Token' oder digitales Eigentumszertifikat, das unfälschbar und vollständig transparent ist. Diese Technologie garantiert nicht nur Ihren unbestreitbaren rechtlichen Titel, sondern verleiht dem Vermögenswert eine beispiellose Liquidität, die es Ihnen ermöglicht, Ihre Bestände jederzeit und von überall auf der Welt sofort, sicher und geprüft zu übertragen, zu verkaufen oder zu tauschen.",
-            "Übernehmen Sie die absolute Kontrolle über Ihre Finanzen mit unserem fortschrittlichen Dashboard, das Ihnen einen 360°-Blick auf Ihr Vermögen in Echtzeit bietet. Beobachten Sie, wie Ihre Vermögenswerte für Sie arbeiten: Während Weine bei optimalen Temperatur- und Feuchtigkeitsbedingungen reifen oder Oldtimer in unseren Hochsicherheitsgaragen an Wert gewinnen, können Sie ihre Preisentwicklung minutengenau grafisch verfolgen, mit Marktindizes vergleichen und detaillierte Performance-Berichte erhalten. Wir binden Ihr Kapital nicht; unsere Struktur bietet flexible Ausstiegsfenster und einen aktiven Sekundärmarkt. Sie entscheiden, wann der optimale Zeitpunkt ist, um Gewinne zu realisieren: ob Sie auf die ideale Reifung des Produkts warten oder einen punktuellen Nachfrageanstieg nutzen. Investieren in Leidenschaft war noch nie so rational, transparent und vor allem rentabel."
+            "Entdecken Sie eine wertvolle Sammlung einzigartiger Stücke, die sich durch ihre Originalität, Schönheit oder ihr Alter auszeichnen. Edle Weine begehrter Jahrgänge, luxuriöse Autos legendärer Modelle, seltener Schmuck und Uhren in limitierter Auflage. Objekte, die unser Expertenteam ausgewählt und untersucht hat, um ihre Authentizität und Eignung zur Wertsteigerung im Laufe der Zeit zu überprüfen.",
+            "Übernehmen Sie die Kontrolle über Ihre Finanzen durch unser fortschrittliches Dashboard, dessen Design Ihnen einen 360°-Blick auf Ihr Vermögen in Echtzeit bietet. Beobachten Sie, wie Ihre Vermögenswerte für Sie arbeiten. Während die Weine bei optimalen Bedingungen von Temperatur, Feuchtigkeit und Ruhe reifen oder die Oldtimer in Hochsicherheitsgaragen an Wert gewinnen, können Sie die Preisentwicklung grafisch verfolgen, mit Marktindizes vergleichen und detaillierte Performance-Berichte erhalten.",
+            "Vergessen Sie endlose Formalitäten und undurchsichtige Vermittler. Unsere Plattform ermöglicht es Ihnen, Anteile oder die Gesamtheit von Vermögenswerten mit der gleichen Unmittelbarkeit wie ein Online-Kauf zu erwerben, aber mit der rechtlichen Unterstützung eines notariellen Vertrags. Jede Transaktion wird mit Blockchain-Technologie aufgezeichnet und generiert ein 'Token' oder digitales Eigentumszertifikat, das unfälschbar und transparent ist. Dieses Verfahren garantiert Ihr rechtliches Eigentum und verleiht dem Vermögenswert eine beispiellose Liquidität, die es Ihnen ermöglicht, Ihre Bestände jederzeit und von überall sofort, sicher und geprüft zu übertragen, zu verkaufen oder zu tauschen."
         ]
     },
 
@@ -84,28 +84,28 @@ const de = {
         items: [
             {
                 icon: "📜",
-                title: "Dokumentarische Rückverfolgbarkeit",
-                description: "Wir implementieren ein strenges digitales Register für jeden Vermögenswert. Wir zentralisieren Echtheitszertifikate, Eigentumshistorie und rechtliche Dokumentation in einem sicheren Format."
+                title: "Dokumentierte Rückverfolgbarkeit",
+                description: "Wir implementieren ein strenges digitales Register für jeden Vermögenswert. Wir zentralisieren Echtheitszertifikate, Eigentumshistorie und rechtliche Dokumentation in einem sicheren und zugänglichen Format. Wir bewerten Aspekte wie Marke, Modell, Seltenheit und Zustand jedes Stücks."
             },
             {
                 icon: "🔒",
-                title: "Echte Absicherung",
-                description: "Werden Sie Eigentümer von materiellen Gütern. Anders als bei synthetischen Assets besitzen Sie hier physische Stücke, die in Hochsicherheitsanlagen verwahrt werden."
+                title: "Liquide und Solide",
+                description: "Im Gegensatz zu synthetischen Vermögenswerten haben materielle Güter ihre Widerstandsfähigkeit gegenüber Wirtschaftskrisen bewiesen. Viele Anleger betrachten sie als Schutz gegen Inflation und Marktvolatilität, besonders in unsicheren finanziellen Umgebungen."
             },
             {
                 icon: "🏆",
-                title: "Professionelle Validierung",
-                description: "Wir arbeiten mit einem Panel anerkannter Experten aus verschiedenen Branchen, unabhängigen Gutachtern und Zertifizierungshäusern sowie verschiedenen Vereinbarungen mit Garantieanbietern."
+                title: "Professionelle Anerkennung",
+                description: "Wir arbeiten mit einem Panel anerkannter Experten aus verschiedenen Branchen, unabhängigen Gutachtern und Zertifizierungshäusern sowie verschiedenen Vereinbarungen mit Garantieanbietern. WOTfinance bewertet Aspekte wie Marke, Modell, Seltenheit, Zustand und Geschichte jedes Stücks."
             },
             {
                 icon: "🛡️",
                 title: "Unter Kontrolle",
-                description: "Einstellung und Wartung der Fahrzeuge, Umweltüberwachung für Weine und gepanzerte Sicherheit für Schmuck. Der Wert und die Integrität Ihres Vermögens sind vollständig garantiert."
+                description: "Alle Transaktionen werden unter der internen Kontrolle von WOTfinance dokumentiert und ausgeführt. Einstellung und Wartung der Fahrzeuge, Umweltüberwachung für Weine und gepanzerte Sicherheit für Schmuck. Der Wert und die Integrität Ihres Vermögens sind vollständig garantiert."
             },
             {
                 icon: "🚀",
-                title: "Ausstiegsstrategie",
-                description: "Am Ende der Investitionslaufzeit implementiert WOTfinance die am besten geeignete Ausstiegsstrategie (Auktionen, private Wiederverkäufe, Verkäufe über einen spezialisierten Agenten). Es besteht die Möglichkeit, zu reinvestieren oder die Investition endgültig zu beenden."
+                title: "Investitionsausstieg",
+                description: "Unsere Struktur bietet Ihnen flexible Ausstiegsfenster. Bevor wir den Wert der Vermögenswerte bestimmen und veröffentlichen, recherchieren wir Möglichkeiten auf dem Primär- und Sekundärmarkt. Wir erkunden Privatverkäufe, Auktionen und Luxusgeschäfte, um die Anlagerendite zu optimieren."
             }
         ]
     },
@@ -139,44 +139,44 @@ const de = {
         members: [
             {
                 name: "Víctor Rodríguez Esteban",
-                role: "CEO",
-                specialty: "Investitionsspezialist",
+                role: "Investitionsspezialist",
+                specialty: "CEO. Wein- und Whisky-Spezialist.",
                 image: "/team/VICTOR-RODRIGUEZ-GR.jpg",
                 imagePosition: "center 30%"
             },
             {
                 name: "Juan Carlos Gil Vega",
-                role: "Geschäftsführer",
-                specialty: "Digitales Marketing",
+                role: "Digitales Marketing",
+                specialty: "Geschäftsführer, Compliance und Geschäftsbeziehungen.",
                 image: "/team/JUAN-CARLOS-GIL-GR NEW.jpg.jpeg"
             },
             {
                 name: "Pablo García de los Salmones",
-                role: "CTO",
-                specialty: "Cybersicherheitsexperte",
+                role: "Cybersicherheitsexperte",
+                specialty: "CTO. Cybersicherheitsexperte.",
                 image: "/team/PABLO-GARCIA.jpeg",
                 grayscale: true,
                 imagePosition: "center 25%"
             },
             {
                 name: "Corpus Pascua",
-                role: "Schmuck- und Uhrenspezialistin",
-                specialty: "Leiterin zertifizierter Gutachten",
+                role: "Leiterin zertifizierter Gutachten",
+                specialty: "Schmuck- und Uhrenspezialistin. Leiterin zertifizierter Gutachten.",
                 image: "/team/CORPUS-PASCUA.jpeg",
                 grayscale: true,
                 imagePosition: "center top"
             },
             {
                 name: "Francisco Carrión Cárdenas",
-                role: "Oldtimer-Experte",
-                specialty: "Auktionskoordinator",
+                role: "Auktionskoordinator",
+                specialty: "Oldtimer-Experte. Auktionskoordinator.",
                 image: "/team/FRANCISCO-CARRION-GR.jpg",
                 imagePosition: "center 30%"
             },
             {
                 name: "Ángel Arellano Del Olmo",
-                role: "Developer",
-                specialty: "Softwareentwicklung und Informationssicherheit",
+                role: "Technologie und Entwicklung",
+                specialty: "Technologie und Entwicklung. Softwareentwicklung und Informationssicherheit.",
                 image: "/team/wot-angel.jpg"
             }
         ]
@@ -212,15 +212,16 @@ const de = {
 
     // Footer
     footer: {
-        description: "WOTfinance (Betrieben von INTERVALUE S.L.) - Technologieplattform für die Verwaltung und Digitalisierung hochwertiger Sachwerte.",
+        description: "WOTfinance (Betrieben von INTERVALUE S.L.) – Technologieplattform für die Verwaltung und Digitalisierung hochwertiger Sachwerte.",
         sections: {
             product: {
                 title: "Katalog",
                 links: [
-                    { text: "Premium-Weine", href: "#" },
+                    { text: "Edle Weine", href: "#" },
+                    { text: "Außergewöhnliche Whiskys", href: "#" },
                     { text: "Oldtimer", href: "#" },
                     { text: "Antiker Schmuck", href: "#" },
-                    { text: "Katalog ansehen", href: "#" }
+                    { text: "Uhren in limitierter Auflage", href: "#" }
                 ]
             },
             company: {
@@ -249,7 +250,7 @@ const de = {
             cookies: "Cookies"
         },
         copyright: "Alle Rechte vorbehalten.",
-        disclaimer: "Wichtiger Hinweis: WOTfinance ist ein Technologiedienstleistungsunternehmen (CNAE 6201) und kein Wertpapierdienstleistungsunternehmen (ESI) oder Kreditinstitut. Die erbrachten Dienstleistungen beschränken sich auf die kommerzielle Vermittlung, Digitalisierung und Logistik von beweglichen Gütern. Informationen über historische Wertsteigerungen sind rein marktillustrativ und stellen kein Angebot von Finanzprodukten oder regulierte Anlageberatung dar."
+        disclaimer: "Wichtiger Hinweis: WOTfinance ist ein technologiegestütztes Unternehmen (CNAE 6201), das sich auf kommerzielle Vermittlung, Digitalisierung und Logistik spezialisiert hat und unter einem auf nicht börsennotierte Sachwerte spezialisierten Modell operiert. Es ist kein Wertpapierdienstleistungsunternehmen (ESI) und kein Kreditinstitut."
     },
 
     // Test Selection Page
@@ -266,6 +267,26 @@ const de = {
             description: "Für personalisierte Beratungsdienste",
             badge: "Beratung"
         }
+    },
+
+    // Newsletter
+    newsletter: {
+        title: "Werden Sie Teil unserer Vision",
+        text: "Erhalten Sie den WOTfinance-Newsletter mit allen Informationen über Markttrends, Auktionen und Protagonisten des besonderen Universums der Sachwerte.",
+        button: "Abonnieren",
+        placeholder: "hello@wot.finance",
+        terms: "Mit dem Absenden dieses Formulars akzeptieren Sie unsere Allgemeinen Geschäftsbedingungen und Datenschutzrichtlinie."
+    },
+
+    // Financial Plan
+    financialPlan: {
+        accessTitle: "Eingeschränkter Zugang",
+        accessDescription: "Geben Sie das Passwort ein, um auf den Finanzplan zuzugreifen",
+        placeholder: "Passwort eingeben...",
+        submit: "Zugreifen",
+        wrongPassword: "Falsches Passwort",
+        frontPageDescription: "Wir präsentieren unseren Finanzplan für die nächsten fünf Jahre.",
+        downloadPdf: "PDF herunterladen"
     },
 
     // Convenience Test

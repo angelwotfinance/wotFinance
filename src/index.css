@@ -186,6 +186,14 @@ body {
   transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
 /* Typography */
 h1,
 h2,
@@ -249,6 +257,7 @@ p {
   border: none;
   border-radius: 9999px;
   cursor: pointer;
+  font-family: var(--font-primary);
   transition: all var(--transition-normal);
   text-align: center;
   position: relative;
