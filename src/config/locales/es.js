@@ -146,7 +146,7 @@ const es = {
             },
             {
                 name: "Juan Carlos Gil Vega",
-                role: "Marketing digital",
+                role: "Director comercial",
                 specialty: "",
                 image: "/team/JUAN-CARLOS-GIL-GR NEW.jpg.jpeg"
             },

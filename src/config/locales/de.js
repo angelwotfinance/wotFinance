@@ -146,8 +146,8 @@ const de = {
             },
             {
                 name: "Juan Carlos Gil Vega",
-                role: "Digitales Marketing",
-                specialty: "Geschäftsführer, Compliance und Geschäftsbeziehungen.",
+                role: "Director comercial",
+                specialty: "",
                 image: "/team/JUAN-CARLOS-GIL-GR NEW.jpg.jpeg"
             },
             {

@@ -145,8 +145,8 @@ const content = {
             },
             {
                 name: "Juan Carlos Gil Vega",
-                role: "Gestor de negocio, compliance y relaciones comerciales.",
-                specialty: "Marketing Digital",
+                role: "Director comercial",
+                specialty: "",
                 image: "/team/JUAN-CARLOS-GIL-GR NEW.jpg.jpeg"
             },
             {

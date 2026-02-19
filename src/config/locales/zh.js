@@ -146,8 +146,8 @@ const zh = {
             },
             {
                 name: "Juan Carlos Gil Vega",
-                role: "数字营销",
-                specialty: "业务经理，合规与商业关系。",
+                role: "Director comercial",
+                specialty: "",
                 image: "/team/JUAN-CARLOS-GIL-GR NEW.jpg.jpeg"
             },
             {
