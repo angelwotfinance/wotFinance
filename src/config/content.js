@@ -45,7 +45,7 @@ const content = {
     // How It Works Section
     howItWorks: {
         title: "Cómo Funciona",
-        subtitle: "Un catálogo fuera de lo común",
+        subtitle: "",
         steps: [
             {
                 number: "01",
@@ -134,12 +134,12 @@ const content = {
     // Team Section
     team: {
         title: "Nuestro Equipo",
-        subtitle: "Especialistas con experiencia en inversiones alternativas y en activos de lujo",
+        subtitle: "",
         members: [
             {
                 name: "Víctor Rodríguez Esteban",
-                role: "CEO. Especialista en vinos y whiskies.",
-                specialty: "Especialista en inversiones",
+                role: "CEO",
+                specialty: "",
                 image: "/team/VICTOR-RODRIGUEZ-GR.jpg",
                 imagePosition: "center 30%"
             },
@@ -151,31 +151,31 @@ const content = {
             },
             {
                 name: "Pablo García de los Salmones",
-                role: "CTO. Experto en ciberseguridad.",
-                specialty: "Experto en ciberseguridad",
+                role: "CTO",
+                specialty: "",
                 image: "/team/PABLO-GARCIA.jpeg",
                 grayscale: true,
                 imagePosition: "center 25%"
             },
             {
                 name: "Corpus Pascua",
-                role: "Especialista en Joyas y Relojes. Responsable de peritaciones certificadas.",
-                specialty: "Responsable de peritaciones certificadas",
+                role: "Especialista en Joyas y Relojes",
+                specialty: "",
                 image: "/team/CORPUS-PASCUA.jpeg",
                 grayscale: true,
                 imagePosition: "center top"
             },
             {
                 name: "Francisco Carrión Cárdenas",
-                role: "Experto en Coches Clásicos. Coordinador de subastas.",
-                specialty: "Coordinador de subastas",
+                role: "Experto en Coches Clásicos",
+                specialty: "",
                 image: "/team/FRANCISCO-CARRION-GR.jpg",
                 imagePosition: "center 30%"
             },
             {
                 name: "Ángel Arellano Del Olmo",
-                role: "Tecnología y desarrollo. Desarrollo de software y seguridad de la información.",
-                specialty: "Desarrollo de software y seguridad de la información",
+                role: "Desarrollo de software",
+                specialty: "",
                 image: "/team/wot-angel.jpg"
             }
         ]

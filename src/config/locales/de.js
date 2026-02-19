@@ -44,7 +44,7 @@ const de = {
     // How It Works Section
     howItWorks: {
         title: "So funktioniert's",
-        subtitle: "Ein außergewöhnlicher Katalog",
+        subtitle: "",
         steps: [
             {
                 number: "01",
@@ -135,12 +135,12 @@ const de = {
     // Team Section
     team: {
         title: "Unser Team",
-        subtitle: "Spezialisten mit Erfahrung in alternativen Investitionen und Luxusgütern",
+        subtitle: "",
         members: [
             {
                 name: "Víctor Rodríguez Esteban",
-                role: "Investitionsspezialist",
-                specialty: "CEO. Wein- und Whisky-Spezialist.",
+                role: "CEO",
+                specialty: "",
                 image: "/team/VICTOR-RODRIGUEZ-GR.jpg",
                 imagePosition: "center 30%"
             },
@@ -152,31 +152,31 @@ const de = {
             },
             {
                 name: "Pablo García de los Salmones",
-                role: "Cybersicherheitsexperte",
-                specialty: "CTO. Cybersicherheitsexperte.",
+                role: "CTO",
+                specialty: "",
                 image: "/team/PABLO-GARCIA.jpeg",
                 grayscale: true,
                 imagePosition: "center 25%"
             },
             {
                 name: "Corpus Pascua",
-                role: "Leiterin zertifizierter Gutachten",
-                specialty: "Schmuck- und Uhrenspezialistin. Leiterin zertifizierter Gutachten.",
+                role: "Schmuck- und Uhrenspezialistin",
+                specialty: "",
                 image: "/team/CORPUS-PASCUA.jpeg",
                 grayscale: true,
                 imagePosition: "center top"
             },
             {
                 name: "Francisco Carrión Cárdenas",
-                role: "Auktionskoordinator",
-                specialty: "Oldtimer-Experte. Auktionskoordinator.",
+                role: "Oldtimer-Experte",
+                specialty: "",
                 image: "/team/FRANCISCO-CARRION-GR.jpg",
                 imagePosition: "center 30%"
             },
             {
                 name: "Ángel Arellano Del Olmo",
-                role: "Technologie und Entwicklung",
-                specialty: "Technologie und Entwicklung. Softwareentwicklung und Informationssicherheit.",
+                role: "Softwareentwicklung",
+                specialty: "",
                 image: "/team/wot-angel.jpg"
             }
         ]

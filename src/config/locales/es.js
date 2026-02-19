@@ -44,7 +44,7 @@ const es = {
     // How It Works Section
     howItWorks: {
         title: "Cómo funciona",
-        subtitle: "Un catálogo fuera de serie",
+        subtitle: "",
         steps: [
             {
                 number: "01",
@@ -135,48 +135,48 @@ const es = {
     // Team Section
     team: {
         title: "Nuestro Equipo",
-        subtitle: "Especialistas con experiencia en inversiones alternativas y activos de lujo",
+        subtitle: "",
         members: [
             {
                 name: "Víctor Rodríguez Esteban",
-                role: "Especialista en inversiones",
-                specialty: "CEO. Especialista en vinos y whiskies.",
+                role: "CEO",
+                specialty: "",
                 image: "/team/VICTOR-RODRIGUEZ-GR.jpg",
                 imagePosition: "center 30%"
             },
             {
                 name: "Juan Carlos Gil Vega",
                 role: "Marketing digital",
-                specialty: "Gestor de negocios, cumplimiento y relaciones comerciales.",
+                specialty: "",
                 image: "/team/JUAN-CARLOS-GIL-GR NEW.jpg.jpeg"
             },
             {
                 name: "Pablo García de los Salmones",
-                role: "Experto en ciberseguridad",
-                specialty: "CTO. Experto en ciberseguridad.",
+                role: "CTO",
+                specialty: "",
                 image: "/team/PABLO-GARCIA.jpeg",
                 grayscale: true,
                 imagePosition: "center 25%"
             },
             {
                 name: "Corpus Pascua",
-                role: "Responsable de tasaciones homologadas",
-                specialty: "Especialista en Joyas y Relojes. Responsable de tasaciones homologadas.",
+                role: "Especialista en Joyas y Relojes",
+                specialty: "",
                 image: "/team/CORPUS-PASCUA.jpeg",
                 grayscale: true,
                 imagePosition: "center top"
             },
             {
                 name: "Francisco Carrión Cárdenas",
-                role: "Coordinador de subastas",
-                specialty: "Experto en Coches Clásicos. Coordinador de subastas.",
+                role: "Experto en Coches Clásicos",
+                specialty: "",
                 image: "/team/FRANCISCO-CARRION-GR.jpg",
                 imagePosition: "center 30%"
             },
             {
                 name: "Ángel Arellano Del Olmo",
-                role: "Tecnología y desarrollo",
-                specialty: "Tecnología y desarrollo. Desarrollo de software y seguridad de la información.",
+                role: "Desarrollo de software",
+                specialty: "",
                 image: "/team/wot-angel.jpg"
             }
         ]

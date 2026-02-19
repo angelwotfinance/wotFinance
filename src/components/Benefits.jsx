@@ -4,11 +4,11 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import './Benefits.css';
 
 const BENEFIT_IMAGES = [
-    '/LUPA.jpg',             // Trazabilidad Documental
-    '/JEWELRY-GEMS.jpg',     // Respaldo Real
-    '/PATEK-RELOJ.jpeg',     // Validación Profesional
+    '/TRAZABILIDAD-DOCUMENTADA.jpg',  // Trazabilidad Documentada
+    '/LIQUIDOS-Y-SOLIDOS.jpg',        // Líquidos y Sólidos
+    '/RECONOCIMIENTO-PROFESIONAL.jpg', // Reconocimiento Profesional
     '/BODEGA-AMARILLA.png',  // Bajo control
-    '/ESCARABAJO-VERDE.png'  // Salida de inversión
+    '/SALIDA-DE-INVERSION.jpg'        // Salida de inversión
 ];
 
 const Benefits = () => {

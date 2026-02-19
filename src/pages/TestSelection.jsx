@@ -1,16 +1,11 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import ConvenienceTest from '../components/ConvenienceTest';
 import SuitabilityTest from '../components/SuitabilityTest';
 import './TestSelection.css';
 
 const TestSelection = () => {
     const { content } = useLanguage();
     const [activeTest, setActiveTest] = useState(null);
-
-    if (activeTest === 'convenience') {
-        return <ConvenienceTest onBack={() => setActiveTest(null)} />;
-    }
 
     if (activeTest === 'suitability') {
         return <SuitabilityTest onBack={() => setActiveTest(null)} />;
@@ -29,22 +24,6 @@ const TestSelection = () => {
                 </div>
 
                 <div className="test-cards">
-                    <div
-                        className="test-card"
-                        onClick={() => setActiveTest('convenience')}
-                    >
-                        <div className="test-card-icon">📋</div>
-                        <h2 className="test-card-title">
-                            {content.testSelection?.convenienceTest?.title || 'Realizar test de conveniencia'}
-                        </h2>
-                        <p className="test-card-description">
-                            {content.testSelection?.convenienceTest?.description || 'Evalúa tus conocimientos y experiencia para inversiones no asesoradas'}
-                        </p>
-                        <div className="test-card-badge">
-                            {content.testSelection?.convenienceTest?.badge || 'Obligatorio'}
-                        </div>
-                    </div>
-
                     <div
                         className="test-card test-card-suitability"
                         onClick={() => setActiveTest('suitability')}

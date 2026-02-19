@@ -44,7 +44,7 @@ const zh = {
     // 运作方式
     howItWorks: {
         title: "运作方式",
-        subtitle: "非凡的目录",
+        subtitle: "",
         steps: [
             {
                 number: "01",
@@ -135,12 +135,12 @@ const zh = {
     // 团队部分
     team: {
         title: "我们的团队",
-        subtitle: "在另类投资和奢侈品资产方面经验丰富的专家",
+        subtitle: "",
         members: [
             {
                 name: "Víctor Rodríguez Esteban",
-                role: "投资专家",
-                specialty: "首席执行官。葡萄酒和威士忌专家。",
+                role: "CEO",
+                specialty: "",
                 image: "/team/VICTOR-RODRIGUEZ-GR.jpg",
                 imagePosition: "center 30%"
             },
@@ -152,31 +152,31 @@ const zh = {
             },
             {
                 name: "Pablo García de los Salmones",
-                role: "网络安全专家",
-                specialty: "CTO。网络安全专家。",
+                role: "CTO",
+                specialty: "",
                 image: "/team/PABLO-GARCIA.jpeg",
                 grayscale: true,
                 imagePosition: "center 25%"
             },
             {
                 name: "Corpus Pascua",
-                role: "认证鉴定负责人",
-                specialty: "珠宝与腕表专家。认证鉴定负责人。",
+                role: "珠宝与腕表专家",
+                specialty: "",
                 image: "/team/CORPUS-PASCUA.jpeg",
                 grayscale: true,
                 imagePosition: "center top"
             },
             {
                 name: "Francisco Carrión Cárdenas",
-                role: "拍卖协调员",
-                specialty: "经典汽车专家。拍卖协调员。",
+                role: "经典汽车专家",
+                specialty: "",
                 image: "/team/FRANCISCO-CARRION-GR.jpg",
                 imagePosition: "center 30%"
             },
             {
                 name: "Ángel Arellano Del Olmo",
-                role: "技术与开发",
-                specialty: "技术与开发。软件开发和信息安全。",
+                role: "软件开发",
+                specialty: "",
                 image: "/team/wot-angel.jpg"
             }
         ]

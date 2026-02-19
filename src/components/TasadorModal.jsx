@@ -11,9 +11,9 @@ const TasadorModal = ({ isOpen, onClose }) => {
     const categorias = [
         { value: 'vinos', label: 'Vinos' },
         { value: 'whiskies', label: 'Whiskies' },
-        { value: 'joyas-antiguas', label: 'Joyas Antiguas' },
+        { value: 'joyas', label: 'Joyas' },
         { value: 'relojes', label: 'Relojes' },
-        { value: 'coches-clasicos', label: 'Coches Clásicos' }
+        { value: 'coches', label: 'Coches' }
     ];
 
     const handleSubmit = async (e) => {

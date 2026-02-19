@@ -7,7 +7,7 @@ import './Hero.css';
 const HERO_IMAGES = [
     '/VIÑEDOS.jpeg',
     '/JOYAS-ANTIGUAS-ANILLOS-BARROCOS-BN.jpg',
-    '/MERCEDES-SL-BN.jpg',
+    '/FONDO-HOME-CAR.jpg',
     '/WHISKY-BARRELS-MORE.webp'
 ];
 
@@ -63,6 +63,14 @@ const Hero = () => {
                     >
                         {content.hero.buttons.secondary}
                     </button>
+                </div>
+
+                <div className="hero-trust fade-in-up">
+                    <p className="hero-trust-text">
+                        {content.hero.trust.rating}
+                        {content.hero.trust.clients && ` — ${content.hero.trust.clients}`}
+                        {content.hero.trust.clientsLabel && ` — ${content.hero.trust.clientsLabel}`}
+                    </p>
                 </div>
             </div>
 
