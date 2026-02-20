@@ -16,15 +16,15 @@ const FinancialPlan = () => {
 
     // Sheet definitions with their GIDs
     const sheets = [
-        { name: "Front Page", gid: "1790418939" },
-        { name: "Initial Investment", gid: "1118928409" },
-        { name: "Hypothesis", gid: "681424634" },
-        { name: "Balance", gid: "754840746" },
-        { name: "Profit & Loss", gid: "613276516" },
-        { name: "Cash Flows", gid: "1666784077" },
-        { name: "Projections", gid: "779266301" },
-        { name: "Ratios", gid: "1635277178" },
-        { name: "Summary", gid: "644256773" }
+        { name: "Front Page", gid: "727528765" },
+        { name: "Initial Investment", gid: "719555077" },
+        { name: "Hypothesis", gid: "2036588441" },
+        { name: "Balance", gid: "1019598787" },
+        { name: "Profit & Loss", gid: "1384854310" },
+        { name: "Cash Flows", gid: "1157173270" },
+        { name: "Projections", gid: "1305920543" },
+        { name: "Ratios", gid: "1439296099" },
+        { name: "Summary", gid: "164932976" }
     ];
 
     const [activeTab, setActiveTab] = useState(sheets[0].gid);
@@ -94,7 +94,7 @@ const FinancialPlan = () => {
                         {content.navbar.links.financialPlan || "Plan Financiero"}
                     </h1>
                     <a
-                        href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSf71hszdUp8lCLj7sLgDIQI5ysx6v4wEFOuTXzBRihTpUNdMPE9fqvBVFvUOSJPQ/pub?output=pdf"
+                        href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQFgie3achvWLojgY3tIqz3IVZ0icbW-_UnMI9Ftu5u95n5ZWbUyNFeqgzjfOxVzw/pub?output=pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-primary download-pdf-btn"
@@ -119,7 +119,7 @@ const FinancialPlan = () => {
                 {/* Iframe Container */}
                 <div className="iframe-container">
                     <iframe
-                        src={`https://docs.google.com/spreadsheets/d/e/2PACX-1vSf71hszdUp8lCLj7sLgDIQI5ysx6v4wEFOuTXzBRihTpUNdMPE9fqvBVFvUOSJPQ/pubhtml?gid=${activeTab}&single=true&widget=false&headers=false`}
+                        src={`https://docs.google.com/spreadsheets/d/e/2PACX-1vQFgie3achvWLojgY3tIqz3IVZ0icbW-_UnMI9Ftu5u95n5ZWbUyNFeqgzjfOxVzw/pubhtml?gid=${activeTab}&single=true&widget=false&headers=false`}
                         className="financial-iframe"
                         allowFullScreen
                         title="Plan Financiero"
