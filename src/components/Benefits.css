@@ -118,6 +118,37 @@
     margin-bottom: 10px;
 }
 
+/* Small Mobile Responsive Fix (iPhone SE, etc.) */
+@media (max-width: 480px) {
+    .benefit-card-wrapper {
+        aspect-ratio: auto;
+        height: auto;
+    }
+
+    .benefit-image {
+        height: 200px;
+    }
+
+    .benefit-overlay {
+        height: auto;
+        padding: 16px;
+    }
+
+    .benefit-overlay h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.35rem;
+    }
+
+    .benefit-overlay p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .benefits-header h2 {
+        font-size: 1.8rem;
+    }
+}
+
 /* Desktop Responsive Layout */
 @media (min-width: 900px) {
     .benefit-card-wrapper {
