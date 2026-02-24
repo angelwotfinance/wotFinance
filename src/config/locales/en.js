@@ -84,27 +84,27 @@ const en = {
         items: [
             {
                 icon: "📜",
-                title: "Documented Traceability",
+                title: "Documented traceability",
                 description: "We implement a rigorous digital registry for each asset. We centralize authenticity certificates, ownership history and legal documentation in a secure and accessible format. We evaluate aspects such as the brand, model, rarity and condition of each piece."
             },
             {
                 icon: "🔒",
-                title: "Liquid and Solid",
+                title: "Liquid and solid",
                 description: "Unlike synthetic assets, tangible goods have proven their resilience in the face of economic crises. Many investors consider them a protection against inflation and market volatility, especially in uncertain financial environments."
             },
             {
                 icon: "🏆",
-                title: "Professional Recognition",
+                title: "Professional recognition",
                 description: "We work with a panel of renowned experts across diverse sectors, independent appraisers and certification houses, as well as various agreements with guarantee providers. WOTfinance evaluates aspects such as the brand, model, rarity, condition and history of each piece."
             },
             {
                 icon: "🛡️",
-                title: "Under Control",
+                title: "Under control",
                 description: "All transactions are documented and executed under WOTfinance's internal control. Vehicle tuning and maintenance, environmental monitoring for wines, and armored security for jewelry. The value and integrity of your assets are fully guaranteed."
             },
             {
                 icon: "🚀",
-                title: "Investment Exit",
+                title: "Investment exit",
                 description: "Our structure offers you flexible exit windows. Before determining and publishing asset values, we research opportunities in primary and secondary markets. We explore private sales, auctions and luxury stores, in order to optimize investment returns."
             }
         ]

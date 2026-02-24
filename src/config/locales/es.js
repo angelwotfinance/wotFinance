@@ -84,17 +84,17 @@ const es = {
         items: [
             {
                 icon: "📜",
-                title: "Trazabilidad Documentada",
+                title: "Trazabilidad documentada",
                 description: "Implementamos un registro digital riguroso para cada activo. Centralizamos certificados de autenticidad, historial de propiedad y documentación legal en formato seguro y accesible. Evaluamos aspectos como la marca, el modelo, la rareza y el estado de cada pieza."
             },
             {
                 icon: "🔒",
-                title: "Líquidos y Sólidos",
+                title: "Líquidos y sólidos",
                 description: "A diferencia de los activos sintéticos, los bienes tangibles han demostrado su resiliencia ante las crisis económicas. Muchos inversores los consideran una protección contra la inflación y la volatilidad del mercado, especialmente en entornos financieros inciertos."
             },
             {
                 icon: "🏆",
-                title: "Reconocimiento Profesional",
+                title: "Reconocimiento profesional",
                 description: "Trabajamos con un panel de reconocidos expertos en sectores diversos, peritos independientes y casas de certificación, además de contemplar diversos acuerdos con proveedores de garantía. WOTfinance evalúa aspectos como la marca, el modelo, la rareza, el estado y la historia de cada pieza."
             },
             {

@@ -89,7 +89,7 @@ const de = {
             },
             {
                 icon: "🔒",
-                title: "Liquide und Solide",
+                title: "Liquide und solide",
                 description: "Im Gegensatz zu synthetischen Vermögenswerten haben materielle Güter ihre Widerstandsfähigkeit gegenüber Wirtschaftskrisen bewiesen. Viele Anleger betrachten sie als Schutz gegen Inflation und Marktvolatilität, besonders in unsicheren finanziellen Umgebungen."
             },
             {
