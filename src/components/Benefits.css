@@ -122,25 +122,33 @@
 @media (max-width: 480px) {
     .benefit-card-wrapper {
         aspect-ratio: auto;
-        height: auto;
+        height: 430px;
+    }
+
+    .benefit-card-inner {
+        display: flex;
+        flex-direction: column;
     }
 
     .benefit-image {
-        height: 200px;
+        height: 180px;
+        flex-shrink: 0;
     }
 
     .benefit-overlay {
         height: auto;
-        padding: 16px;
+        flex: 1;
+        padding: 14px 16px;
+        overflow-y: auto;
     }
 
     .benefit-overlay h3 {
-        font-size: 1.2rem;
-        margin-bottom: 0.35rem;
+        font-size: 1.15rem;
+        margin-bottom: 0.3rem;
     }
 
     .benefit-overlay p {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         line-height: 1.4;
     }
 
