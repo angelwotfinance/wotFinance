@@ -16,15 +16,15 @@ const FinancialPlan = () => {
 
     // Sheet definitions with their GIDs
     const sheets = [
-        { name: "Front Page", gid: "727528765" },
-        { name: "Initial Investment", gid: "719555077" },
-        { name: "Hypothesis", gid: "2036588441" },
-        { name: "Balance", gid: "1019598787" },
-        { name: "Profit & Loss", gid: "1384854310" },
-        { name: "Cash Flows", gid: "1157173270" },
-        { name: "Projections", gid: "1305920543" },
-        { name: "Ratios", gid: "1439296099" },
-        { name: "Summary", gid: "164932976" }
+        { name: "Front Page", gid: "325475866" },
+        { name: "Initial Investment", gid: "923326169" },
+        { name: "Hypothesis", gid: "1475867899" },
+        { name: "Balance", gid: "892588757" },
+        { name: "Profit & Loss", gid: "426150334" },
+        { name: "Cash Flows", gid: "1245937982" },
+        { name: "Projections", gid: "470039080" },
+        { name: "Ratios", gid: "1523973162" },
+        { name: "Summary", gid: "759834304" }
     ];
 
     const [activeTab, setActiveTab] = useState(sheets[0].gid);
