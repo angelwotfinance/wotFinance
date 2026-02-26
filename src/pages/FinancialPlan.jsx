@@ -94,7 +94,7 @@ const FinancialPlan = () => {
                         {content.navbar.links.financialPlan || "Plan Financiero"}
                     </h1>
                     <a
-                        href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQFgie3achvWLojgY3tIqz3IVZ0icbW-_UnMI9Ftu5u95n5ZWbUyNFeqgzjfOxVzw/pub?output=pdf"
+                        href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTkM2IN1FbmY-ujfuCt__Kc_F_ppTYmXK5cOvkiHnJxDb3inp06JjsdBCCVbgAXvg/pub?output=pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-primary download-pdf-btn"
@@ -119,7 +119,7 @@ const FinancialPlan = () => {
                 {/* Iframe Container */}
                 <div className="iframe-container">
                     <iframe
-                        src={`https://docs.google.com/spreadsheets/d/e/2PACX-1vQFgie3achvWLojgY3tIqz3IVZ0icbW-_UnMI9Ftu5u95n5ZWbUyNFeqgzjfOxVzw/pubhtml?gid=${activeTab}&single=true&widget=false&headers=false`}
+                        src={`https://docs.google.com/spreadsheets/d/e/2PACX-1vTkM2IN1FbmY-ujfuCt__Kc_F_ppTYmXK5cOvkiHnJxDb3inp06JjsdBCCVbgAXvg/pubhtml?gid=${activeTab}&single=true&widget=false&headers=false`}
                         className="financial-iframe"
                         allowFullScreen
                         title="Plan Financiero"
