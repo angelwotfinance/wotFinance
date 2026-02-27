@@ -1,3 +1,8 @@
+/* ============================================================
+   Financial Plan — Native Web Tables & Charts
+   Uses CSS variables from the palette system for full theming
+   ============================================================ */
+
 .financial-plan-page {
     display: flex;
     flex-direction: column;
@@ -8,6 +13,7 @@
 .financial-plan-container {
     flex: 1;
     padding-bottom: 40px;
+    max-width: 1300px;
 }
 
 .financial-plan-title {
@@ -45,26 +51,22 @@
     }
 }
 
-/* Tabs Container - Single Row with Horizontal Scroll */
+/* ── Tab Bar ──────────────────────────────────────────────── */
 .tabs-container {
     display: flex;
     flex-wrap: nowrap;
     gap: 0;
-    /* Connected tabs */
     margin-bottom: 25px;
     padding: 4px;
     background: rgba(255, 255, 255, 0.5);
-    /* Lighter background */
     border-radius: 12px;
     border: 1px solid rgba(0, 0, 0, 0.05);
     justify-content: space-between;
     width: 100%;
 }
 
-/* Tab Button - Compact for Single Row */
 .tab-button {
     flex: 1;
-    /* Occupy full width */
     background: transparent;
     color: var(--text-secondary);
     border: none;
@@ -87,12 +89,9 @@
     box-shadow: none;
 }
 
-/* Tab Button - Active State */
 .tab-button.active {
     background: var(--accent-color);
-    /* Racing Green */
     color: #ffffff;
-    /* White text */
     font-weight: 600;
     box-shadow: 0 4px 12px rgba(0, 66, 37, 0.2);
     transform: none;
@@ -104,107 +103,7 @@
     color: #ffffff;
 }
 
-/* Iframe Container - Simple approach */
-.iframe-container {
-    position: relative;
-    width: 100%;
-    height: 650px;
-    border-radius: 16px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    overflow: hidden;
-}
-
-/* Top overlay - Covers Google Sheets title bar */
-.iframe-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    background: linear-gradient(180deg, #1a1a1a 0%, #1a1a1a 70%, transparent 100%);
-    z-index: 10;
-    pointer-events: none;
-    border-radius: 16px 16px 0 0;
-}
-
-/* Bottom overlay - Covers Google Sheets footer */
-.iframe-container::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 35px;
-    background: linear-gradient(0deg, #1a1a1a 0%, #1a1a1a 70%, transparent 100%);
-    z-index: 10;
-    pointer-events: none;
-    border-radius: 0 0 16px 16px;
-}
-
-.financial-iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    background: #ffffff;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .tabs-container {
-        gap: 8px;
-        padding: 12px;
-        flex-direction: column;
-        height: auto;
-        overflow-x: hidden;
-    }
-
-    .tab-button {
-        padding: 12px 16px;
-        font-size: 14px;
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .iframe-container {
-        height: 550px;
-        /* Base height */
-        overflow: hidden;
-        /* Hide overflow from scaling if any */
-        position: relative;
-    }
-
-    .financial-iframe {
-        width: 200%;
-        /* Double width to shrink back to 100% with scale(0.5) */
-        height: 200%;
-        /* Double height */
-        transform: scale(0.5);
-        transform-origin: 0 0;
-        border: 0;
-    }
-
-    /* Strengthen overlay positioning for mobile */
-    .iframe-container::before {
-        height: 55px;
-        /* Slightly larger to ensure coverage */
-        width: 100%;
-        top: 0;
-        left: 0;
-    }
-
-    .iframe-container::after {
-        height: 40px;
-        /* Slightly larger to ensure coverage */
-        width: 100%;
-        bottom: 0;
-        left: 0;
-    }
-}
-
-/* Light mode adjustments */
+/* Light mode tab tweaks */
 [data-theme="light"] .tab-button {
     background: linear-gradient(145deg, #f5f5f5 0%, #e8e8e8 100%);
     color: #333333;
@@ -223,20 +122,819 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-[data-theme="light"] .iframe-container::before {
-    background: linear-gradient(180deg, #ffffff 0%, #ffffff 70%, transparent 100%);
+/* ── Content Area ─────────────────────────────────────────── */
+.fp-content-area {
+    background: var(--card-bg);
+    border-radius: 16px;
+    border: 1px solid var(--card-border, rgba(0, 0, 0, 0.08));
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    padding: 32px;
+    min-height: 500px;
+    animation: fadeIn 0.3s ease-out;
 }
 
-[data-theme="light"] .iframe-container::after {
-    background: linear-gradient(0deg, #ffffff 0%, #ffffff 70%, transparent 100%);
+.fp-tab-content {
+    animation: fadeIn 0.25s ease-out;
 }
 
-[data-theme="light"] .iframe-container {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+/* ── Section Titles ───────────────────────────────────────── */
+.fp-section-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--accent-color);
+    display: inline-block;
 }
 
-/* Password Modal Styles */
-/* Password Modal Styles - Matching Newsletter Popup */
+.fp-subsection {
+    margin-bottom: 28px;
+}
+
+.fp-subsection-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    padding-left: 4px;
+}
+
+/* ── Data Tables ──────────────────────────────────────────── */
+.fp-table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    border: 1px solid var(--card-border, rgba(0, 0, 0, 0.08));
+}
+
+.fp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    min-width: 600px;
+}
+
+.fp-table thead th {
+    background: var(--accent-color);
+    color: #ffffff;
+    padding: 10px 14px;
+    text-align: right;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.fp-table thead th:first-child {
+    text-align: left;
+    border-radius: 8px 0 0 0;
+}
+
+.fp-table thead th:last-child {
+    border-radius: 0 8px 0 0;
+}
+
+.fp-table tbody tr {
+    transition: background-color 0.15s ease;
+}
+
+.fp-table tbody tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.fp-table tbody tr:hover {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.fp-label-cell {
+    padding: 8px 14px;
+    text-align: left;
+    color: var(--text-primary);
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.fp-value-cell {
+    padding: 8px 14px;
+    text-align: right;
+    color: var(--text-secondary);
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+/* Bold & highlight rows */
+.fp-row-bold .fp-label-cell,
+.fp-row-bold .fp-value-cell {
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.fp-row-highlight {
+    background: rgba(0, 66, 37, 0.06) !important;
+}
+
+.fp-row-highlight .fp-label-cell,
+.fp-row-highlight .fp-value-cell {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.fp-row-total .fp-label-cell,
+.fp-row-total .fp-value-cell {
+    font-weight: 700;
+    border-top: 2px solid var(--accent-color);
+}
+
+.fp-row-separator .fp-label-cell {
+    padding-top: 18px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--accent-color);
+}
+
+/* Negative numbers */
+.fp-negative {
+    color: #c62828 !important;
+}
+
+/* ── Notes Bar ────────────────────────────────────────────── */
+.fp-notes-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.fp-note-chip {
+    display: inline-block;
+    background: rgba(0, 66, 37, 0.08);
+    color: var(--accent-color);
+    padding: 6px 14px;
+    border-radius: 99px;
+    font-size: 0.78rem;
+    font-weight: 500;
+}
+
+/* ── Front Page ───────────────────────────────────────────── */
+.fp-front-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 440px;
+}
+
+.fp-front-inner {
+    text-align: center;
+    max-width: 600px;
+}
+
+.fp-front-badge {
+    display: inline-block;
+    background: var(--accent-color);
+    color: #fff;
+    padding: 6px 20px;
+    border-radius: 99px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.fp-front-company {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--accent-color);
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+.fp-front-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+}
+
+.fp-front-image {
+    display: block;
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto 24px;
+    border-radius: 12px;
+}
+
+.fp-front-divider {
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    margin: 0 auto 24px;
+    border-radius: 3px;
+}
+
+.fp-front-meta {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.fp-front-meta span {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.fp-front-description {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* ── Initial Investment Cards ──────────────────────────────── */
+.fp-invest-hero {
+    text-align: center;
+    padding: 28px;
+    background: var(--accent-color);
+    border-radius: 14px;
+    color: #fff;
+    margin-bottom: 28px;
+    box-shadow: 0 8px 32px rgba(0, 66, 37, 0.2);
+}
+
+.fp-invest-hero-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+    margin-bottom: 6px;
+}
+
+.fp-invest-hero-value {
+    display: block;
+    font-size: 2.4rem;
+    font-weight: 800;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+}
+
+.fp-invest-hero-note {
+    display: block;
+    font-size: 0.75rem;
+    opacity: 0.65;
+    font-style: italic;
+}
+
+.fp-invest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 18px;
+}
+
+.fp-invest-card {
+    background: var(--bg-primary);
+    border-radius: 12px;
+    border: 1px solid var(--card-border, rgba(0, 0, 0, 0.08));
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fp-invest-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.fp-invest-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    background: var(--accent-color);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+}
+
+.fp-invest-card-total {
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    font-variant-numeric: tabular-nums;
+}
+
+.fp-invest-card-body {
+    padding: 12px 20px 16px;
+}
+
+.fp-invest-line {
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.fp-invest-line:last-child {
+    border-bottom: none;
+}
+
+.fp-invest-line-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.84rem;
+    color: var(--text-primary);
+}
+
+.fp-invest-amount {
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.fp-invest-note {
+    display: block;
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+    opacity: 0.7;
+    font-style: italic;
+    margin-top: 2px;
+}
+
+/* ── Hypothesis Sections ──────────────────────────────────── */
+.fp-hyp-section {
+    margin-bottom: 40px;
+}
+
+/* ── Balance Sheet Cards ──────────────────────────────────── */
+.fp-balance-year {
+    margin-bottom: 40px;
+}
+
+.fp-year-badge {
+    display: inline-block;
+    background: var(--accent-color);
+    color: #fff;
+    padding: 6px 22px;
+    border-radius: 99px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.fp-balance-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.fp-balance-card {
+    background: var(--bg-primary);
+    border-radius: 12px;
+    border: 1px solid var(--card-border, rgba(0, 0, 0, 0.08));
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.fp-balance-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    background: var(--accent-color);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.fp-balance-header-eq {
+    background: #1565C0;
+}
+
+.fp-balance-amount {
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    font-variant-numeric: tabular-nums;
+}
+
+.fp-balance-body {
+    padding: 16px 20px;
+}
+
+.fp-balance-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+}
+
+.fp-balance-line span:last-child,
+.fp-balance-subline span:last-child {
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    font-variant-numeric: tabular-nums;
+}
+
+.fp-balance-subline {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0 4px 12px;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+}
+
+.fp-balance-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border-top: 2px solid var(--accent-color);
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    background: rgba(0, 66, 37, 0.04);
+}
+
+.fp-balance-footer span:last-child {
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    font-variant-numeric: tabular-nums;
+}
+
+.fp-balance-check {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
+/* ── Cash Flows ───────────────────────────────────────────── */
+.fp-cf-section {
+    margin-bottom: 36px;
+}
+
+.fp-cf-formula {
+    font-size: 0.8rem;
+    font-family: 'Courier New', monospace;
+    color: var(--text-secondary);
+    background: rgba(0, 0, 0, 0.03);
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.fp-cf-description {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    line-height: 1.5;
+    max-width: 700px;
+}
+
+/* ── Projections ──────────────────────────────────────────── */
+.fp-proj-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.fp-proj-card {
+    background: var(--bg-primary);
+    border-radius: 12px;
+    border: 1px solid var(--card-border, rgba(0, 0, 0, 0.08));
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.fp-proj-card h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--card-border, rgba(0, 0, 0, 0.08));
+}
+
+.fp-proj-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.fp-proj-result {
+    background: rgba(0, 66, 37, 0.06);
+    margin: 4px -8px;
+    padding: 8px;
+    border-radius: 6px;
+    border-bottom: none;
+}
+
+.fp-proj-label {
+    font-size: 0.83rem;
+    color: var(--text-secondary);
+    flex: 1;
+    min-width: 120px;
+}
+
+.fp-proj-value {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    font-variant-numeric: tabular-nums;
+}
+
+.fp-proj-detail {
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+    opacity: 0.7;
+    width: 100%;
+    font-style: italic;
+}
+
+/* WACC / NPV Hero */
+.fp-proj-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding: 36px;
+    background: var(--accent-color);
+    border-radius: 16px;
+    color: #fff;
+    box-shadow: 0 8px 32px rgba(0, 66, 37, 0.25);
+}
+
+.fp-proj-hero-divider {
+    width: 2px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+}
+
+.fp-proj-hero-item {
+    text-align: center;
+}
+
+.fp-proj-hero-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.8;
+    margin-bottom: 8px;
+}
+
+.fp-proj-hero-value {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 800;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+}
+
+.fp-proj-npv {
+    color: #A5D6A7;
+}
+
+/* ── Ratios ───────────────────────────────────────────────── */
+.fp-ratio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.fp-ratio-card {
+    background: var(--bg-primary);
+    border-radius: 12px;
+    border: 1px solid var(--card-border, rgba(0, 0, 0, 0.08));
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fp-ratio-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.fp-ratio-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--accent-color);
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    margin-bottom: 4px;
+}
+
+.fp-ratio-label {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.fp-ratio-formula {
+    font-size: 0.75rem;
+    font-family: 'Courier New', monospace;
+    color: var(--text-secondary);
+    opacity: 0.6;
+    margin-bottom: 8px;
+}
+
+.fp-ratio-desc {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+/* Break-even */
+.fp-breakeven-card {
+    background: var(--bg-primary);
+    border-radius: 12px;
+    border: 1px solid var(--card-border, rgba(0, 0, 0, 0.08));
+    padding: 28px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    margin-bottom: 24px;
+}
+
+.fp-breakeven-grid {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.fp-breakeven-item {
+    text-align: center;
+    min-width: 140px;
+}
+
+.fp-breakeven-label {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+
+.fp-breakeven-value {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+}
+
+.fp-breakeven-main .fp-breakeven-value {
+    color: var(--accent-color);
+    font-size: 1.8rem;
+}
+
+.fp-breakeven-desc {
+    text-align: center;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* ── Summary Charts ───────────────────────────────────────── */
+.fp-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.fp-chart-card {
+    background: var(--bg-primary);
+    border-radius: 12px;
+    border: 1px solid var(--card-border, rgba(0, 0, 0, 0.08));
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.fp-chart-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--card-border, rgba(0, 0, 0, 0.08));
+}
+
+.fp-chart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fp-chart-row {
+    display: grid;
+    grid-template-columns: 55px 1fr 100px;
+    align-items: center;
+    gap: 10px;
+}
+
+.fp-chart-year {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.fp-chart-bar-track {
+    height: 22px;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.fp-chart-bar {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    min-width: 4px;
+}
+
+.fp-chart-bar-neg {
+    opacity: 0.85;
+}
+
+.fp-chart-val {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: right;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    font-variant-numeric: tabular-nums;
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .tabs-container {
+        gap: 8px;
+        padding: 12px;
+        flex-direction: column;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    .tab-button {
+        padding: 12px 16px;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .fp-content-area {
+        padding: 16px;
+    }
+
+    .fp-balance-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fp-proj-hero {
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px;
+    }
+
+    .fp-proj-hero-divider {
+        width: 60px;
+        height: 2px;
+    }
+
+    .fp-proj-hero-value {
+        font-size: 1.6rem;
+    }
+
+    .fp-chart-row {
+        grid-template-columns: 50px 1fr 80px;
+    }
+
+    .fp-front-company {
+        font-size: 2.2rem;
+    }
+}
+
+/* ── Password Modal ───────────────────────────────────────── */
 .password-overlay {
     position: fixed;
     top: 0;
@@ -253,9 +951,7 @@
 
 .password-modal {
     background: #F2F0E6;
-    /* Base cream color */
     border: 4px solid var(--accent-color);
-    /* Thick racing green border */
     border-radius: 20px;
     padding: 40px;
     max-width: 400px;
@@ -301,10 +997,8 @@
 
 .password-logo {
     height: 32px;
-    /* Adjusted height for alignment */
     width: auto;
     object-fit: contain;
-    /* Racing Green Filter */
     filter: brightness(0) saturate(100%) invert(18%) sepia(85%) saturate(1200%) hue-rotate(130deg) brightness(0.7);
 }
 
@@ -369,7 +1063,6 @@
     box-shadow: 0 4px 12px rgba(0, 66, 37, 0.2);
 }
 
-/* Light mode overrides (already handled by base styles above, just ensuring consistency) */
 [data-theme="light"] .password-modal {
     background: #F2F0E6;
 }
