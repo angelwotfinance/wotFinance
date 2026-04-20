@@ -19,6 +19,10 @@ const en = {
         buttons: {
             login: "Sign In",
             getStarted: "Sign Up"
+        },
+        loginModal: {
+            message: "We’re working on it!\n\nYou’ll soon be able to access your account directly from here.\n\nWe’re putting the finishing touches in place — please check back soon!",
+            closeAriaLabel: "Close sign in dialog"
         }
     },
 

@@ -19,6 +19,10 @@ const zh = {
         buttons: {
             login: "登录",
             getStarted: "注册"
+        },
+        loginModal: {
+            message: "我们正在积极完善中！\n\n不久后，您就可以直接从这里访问您的账户。\n\n我们正在做最后的细节优化，欢迎您很快再来看看！",
+            closeAriaLabel: "关闭登录弹窗"
         }
     },
 

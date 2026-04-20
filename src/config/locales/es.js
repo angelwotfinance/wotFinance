@@ -19,6 +19,10 @@ const es = {
         buttons: {
             login: "Entrar",
             getStarted: "Registrarse"
+        },
+        loginModal: {
+            message: "¡Estamos trabajando en ello!\n\nEn breve podrás acceder a tu cuenta directamente desde aquí.\n\nEstamos ultimando los detalles, ¡vuelve pronto!",
+            closeAriaLabel: "Cerrar ventana de acceso"
         }
     },
 
@@ -478,4 +482,3 @@ const es = {
 };
 
 export default es;
-

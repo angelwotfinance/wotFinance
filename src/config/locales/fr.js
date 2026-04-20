@@ -19,6 +19,10 @@ const fr = {
         buttons: {
             login: "Connexion",
             getStarted: "S'inscrire"
+        },
+        loginModal: {
+            message: "Nous y travaillons !\n\nVous pourrez bientôt accéder directement à votre compte depuis ici.\n\nNous finalisons les derniers détails — revenez très bientôt !",
+            closeAriaLabel: "Fermer la fenêtre de connexion"
         }
     },
 

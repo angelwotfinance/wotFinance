@@ -19,6 +19,10 @@ const de = {
         buttons: {
             login: "Anmelden",
             getStarted: "Registrieren"
+        },
+        loginModal: {
+            message: "Wir arbeiten daran!\n\nSchon bald können Sie direkt von hier aus auf Ihr Konto zugreifen.\n\nWir geben den letzten Details den Feinschliff – schauen Sie bald wieder vorbei!",
+            closeAriaLabel: "Anmeldedialog schließen"
         }
     },
 
